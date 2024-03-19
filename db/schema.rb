@@ -10,9 +10,51 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_03_18_160353) do
+ActiveRecord::Schema[7.1].define(version: 2024_03_19_110234) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "commandes", force: :cascade do |t|
+    t.integer "total_price"
+    t.boolean "status"
+    t.bigint "creneau_id", null: false
+    t.bigint "produit_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["creneau_id"], name: "index_commandes_on_creneau_id"
+    t.index ["produit_id"], name: "index_commandes_on_produit_id"
+  end
+
+  create_table "creneaus", force: :cascade do |t|
+    t.date "date"
+    t.time "start_time"
+    t.time "end_time"
+    t.bigint "user_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_creneaus_on_user_id"
+  end
+
+  create_table "exploitations", force: :cascade do |t|
+    t.string "name"
+    t.string "address"
+    t.bigint "user_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_exploitations_on_user_id"
+  end
+
+  create_table "produits", force: :cascade do |t|
+    t.string "name"
+    t.string "category"
+    t.integer "price"
+    t.integer "quantity"
+    t.boolean "availability"
+    t.bigint "exploitation_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["exploitation_id"], name: "index_produits_on_exploitation_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -22,8 +64,14 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_18_160353) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "name"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "commandes", "creneaus"
+  add_foreign_key "commandes", "produits"
+  add_foreign_key "creneaus", "users"
+  add_foreign_key "exploitations", "users"
+  add_foreign_key "produits", "exploitations"
 end

@@ -1,0 +1,2 @@
+class CreneausController < ApplicationController
+end
