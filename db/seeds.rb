@@ -10,8 +10,6 @@
 User.destroy_all
 Exploitation.destroy_all
 
-
-
 user1 = User.create!(email: "superman@lewagon.com", password: "123456", name: "Superman")
 
 exploitation1 = Exploitation.create!(name: 'Salade', address: "4 rue des choux", user_id: user1.id)
