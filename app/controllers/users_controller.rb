@@ -2,7 +2,6 @@ class UsersController < ApplicationController
   def show
   @user = User.find(params[:id])
   @exploitations = @user.exploitations
-  @commandes = @exploitations.commandes
   end
 
   def update
