@@ -1,6 +1,18 @@
 // Specific CSS for your home-page
-div {
-  background-image: url('app/assets/images/panierdelegumes.jpg');
+.bannerpanierdefruits {
+  background-image: asset-url('panierdelegumes.jpg');
   background-size: cover;
   background-position: center;
+  width: 1470px;
+  height: 716px;
+}
+
+.row {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    text-align: center;
+    color: white;
 }
