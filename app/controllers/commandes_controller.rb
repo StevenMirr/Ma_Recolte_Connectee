@@ -21,7 +21,7 @@ class CommandesController < ApplicationController
     @commande = Commande.new(commande_params)
 
     if @commande.save
-      redirect_to @commande, notice: 'Votre commande a été créée ! merci !'
+      redirect_to @commande, notice: 'Votre commande a été créée !'
     else
       render :new
     end
