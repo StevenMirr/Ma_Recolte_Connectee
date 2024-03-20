@@ -1,0 +1,10 @@
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* Header, contenu, footer */
+  min-height: 98vh;
+  width: 100%;
+}
+
+footer {
+  grid-row: 3; /* Le footer occupe la troisième rangée */
+}
