@@ -1,26 +1,42 @@
+<div class="container mycontainer">
+<div class="row">
 <div class="bannerpanierdefruits">
-  <div class="row">
-
   <div class="col-6">
   <h1> <strong> Je fais mon marché </strong></h1>
     <h2>Je souhaite commander mes fruits et légumes et aller les récupérer directement chez le producteur que j’ai choisi.</h2>
   </div>
-
   <div class="col-6">
     <h1> <strong> Je propose mes produits </strong> </h1>
       <h2>Je souhaite vendre mes fruits et légumes  et  mettre les commandes à disposition directement à la ferme</h2>
   </div>
+</div>
+</div>
 
+<div class="row">
+<div class="containercarte">
+  <div class="col-6">
+  <h1>Où trouver nos producteurs autour de Nantes</h1>
+  <p><%= link_to "Voir tous nos producteurs", exploitations_path, class:"button" %></p>
+  </div>
+   <div class="imagecarte col-6">
+  </div>
+   </div>
+</div>
+<div class="row">
+<div class="containerrecettes">
+  <div class="col-6">
+  <h1>Idée recette de la semaine</h1>
+  <ul class="list">
+    <li>2 Carotte(s)</li>
+    <li>2 Pomme(s) de terre</li>
+    <li>2 Poireau(x)</li>
+    <li>3 Navet(s)</li>
+    <li>4 Feuille(s) de chou</li>
+  </ul>
+  <%= link_to "Voir la recette", exploitations_path, class:"button" %>
+  </div>
+  <div class="imagerecettes col-6">
   </div>
 </div>
-
-<div class="containercarte">
-  <h1>Où trouver nos producteurs</h1>
-  <%= link_to "Voir tous nos producteurs", exploitations_path, class:"button" %>
 </div>
-
-<div class="containerrecettes">
-  <h1>Idée recette de la semaine</h1>
-  <h2>Ingrédients 2 Carotte(s) 2 Pomme(s) de terre 2 Poireau(x) 3 Navet(s) 4 Feuille(s) de chou</h2>
-  <%= link_to "Voir la recette", exploitations_path, class:"button" %>
 </div>

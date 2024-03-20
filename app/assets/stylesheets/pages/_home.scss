@@ -1,18 +1,60 @@
 // Specific CSS for your home-page
 .bannerpanierdefruits {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
   background-image: asset-url('panierdelegumes.jpg');
   background-size: cover;
   background-position: center;
   width: 1470px;
-  height: 716px;
+  height: 450px;
 }
 
 .row {
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
     padding: 20px;
     text-align: center;
     color: white;
+}
+
+.containercarte  {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+
+.imagecarte {
+  background-image: asset-url('Nantes.png');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+.containerrecettes {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 20px;
+  text-align: center;
+  color: black;
+
+}
+.imagerecettes {
+  background-image: asset-url('soupes.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+.list {
+  list-style: none;
+}
+
+.mycontainer {
+  width: 100%;
+  max-width: 1400px;
 }

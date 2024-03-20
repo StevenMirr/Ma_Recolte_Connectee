@@ -1,6 +1,7 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: $brown2;
+  background: linear-gradient(to bottom, #332005, #734b28);
+
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
@@ -8,7 +9,26 @@
   flex-grow: 0;
 }
 
+.nav-link {
+  color: $light-gray;
+}
+
 .navbar-lewagon .navbar-brand img {
   width: 60px;
   border-radius: 10px;
+}
+.nom {
+  color: $light-gray;
+  p {
+    text-align: center;
+    font-size: small;
+  }
+}
+
+.navbartitle {
+  padding: 0px  !important;
+  align-items: center;
+  a {
+    color: $green;
+  }
 }

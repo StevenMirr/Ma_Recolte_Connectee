@@ -3,7 +3,10 @@
     <%= link_to "#", class: "navbar-brand" do %>
       <%= image_tag "Logov5.png" %>
     <% end %>
-
+  <div class="nom">
+    <h3>Ma Récolte Connectée</h3>
+    <p>Envie de produits frais et locaux</p>
+  </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -12,19 +15,21 @@
       <ul class="navbar-nav me-auto">
         <% if user_signed_in? %>
           <li class="nav-item active">
-            <%= link_to "Home", "#", class: "nav-link" %>
+            <%= link_to "Ma Ferme", "#", class: "nav-link" %>
           </li>
           <li class="nav-item">
-            <%= link_to "Messages", "#", class: "nav-link" %>
+            <%= link_to "Producteur", "#", class: "nav-link" %>
           </li>
           <li class="nav-item dropdown">
           <a href="#" class="avatar" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar", alt: "dropdown menu" %>
           </a>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <%= link_to "Action", "#", class: "dropdown-item" %>
-              <%= link_to "Another action", "#", class: "dropdown-item" %>
-              <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "dropdown-item" %>
+              <%= link_to "Produits", "#", class: "dropdown-item" %>
+              <%= link_to "Commandes", "#", class: "dropdown-item" %>
+              <%= link_to "Ma Ferme", "#", class: "dropdown-item" %>
+              <%= link_to "Qui Sommes-nous?", "#", class: "dropdown-item" %>
+              <%= link_to "Déconnexion", destroy_user_session_path, data: {turbo_method: :delete}, class: "dropdown-item" %>
             </div>
           </li>
         <% else %>
@@ -36,3 +41,37 @@
     </div>
   </div>
 </div>
+
+<div class="navbarfooter">
+  <div class="row navbartitle">
+    <div class="col-3">
+        <a href="#"> Nos produits</a>
+    </div>
+        <div class="col-3">
+          <a href="#"> Nos producteurs </a>
+        </div>
+          <div class="col-3">
+            <a href="#"> Qui sommes nous?</a>
+          </div>
+              <div class="col-3">
+  <div class="search-form-control form-group">
+    <%= form_with url: "#", method: :get, class: "d-flex" do %>
+      <div class="input-group">
+        <%= text_field_tag :query,
+          params[:query],
+          class: "form-control",
+          placeholder: "Rechercher"
+        %>
+        <div class="input-group-append">
+          <button type="submit" class="btn btn-gradient">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+        </div>
+      </div>
+  </div>
+  </div>
