@@ -3,6 +3,7 @@ body {
   grid-template-rows: auto 1fr auto; /* Header, contenu, footer */
   min-height: 98vh;
   width: 100%;
+  background-color: $tan;
 }
 
 footer {
