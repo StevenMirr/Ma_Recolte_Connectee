@@ -1,6 +1,22 @@
-<div class = container >
+<div class=container >
   <div>
-    <h1>Hello <%=  %> </h1>
+    <h1>Hello</h1>
+    <div class="row">
+      <% @produits.each do |produit| %>
+        <div class="col-md-6">
+          <div class="card my-1">
+            <div class="card-product">
+              <div><img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" /></div>
+                <div class="card-product-infos">
+                  <div><h2><%= produit.name %></h2></div>
+                  <div><p class="card-product-infos">Category<%= produit.category %>prix<%= produit.price %></p></div>
+                </div>
+              </div>
+            </div>
+        </div>
+      <% end %>
+    </div>
+
 
 
   </div>
