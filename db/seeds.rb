@@ -22,3 +22,9 @@ exploitation2 = Exploitation.create!(name: 'Marmelade', address: "4 rue Distille
 exploitation3 = Exploitation.create!(name: "Graines d'ici", address: "71 boulevard Alfred Nobel, Rezé", user: user3)
 exploitation4 = Exploitation.create!(name: 'Moi, moche et bon', address: "93 rue Libération, Saint Sébastien sur Loire", user: user4)
 exploitation5 = Exploitation.create!(name: "C'est qui le patron", address: "5 Place Alexandre Vincent, Nantes", user: user5)
+
+produit1 = Produit.create!(name: "carottes", category:"légume", price:"3€/kg", quantity:"2", availability:"true", exploitation: exploitation1)
+produit2 = Produit.create!(name: "pommes de terre", category:"tubercule", price:"3€/kg", quantity:"2", availability:"true", exploitation: exploitation1)
+produit3 = Produit.create!(name: "oeufs", category:"oeuf", price:"3€/kg", quantity:"2", availability:"true", exploitation: exploitation1)
+produit4 = Produit.create!(name: "salades", category:"salade", price:"3€/kg", quantity:"2", availability:"true", exploitation: exploitation1)
+produit5 = Produit.create!(name: "navets", category:"légume", price:"3€/kg", quantity:"2", availability:"true", exploitation: exploitation1)
