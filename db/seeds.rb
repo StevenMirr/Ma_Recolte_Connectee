@@ -20,6 +20,7 @@ user5 = User.create!(email: "sophie@lewagon.com", password: "123456", name: "Sop
 
 file = URI.open("https://storage.sbg.cloud.ovh.net/v1/AUTH_dd430e2a89404e97bf6a772afa5dd938/2als-production-public/producer_photo/1768e9f244a.png")
 exploitation1 = Exploitation.new(name: 'Les Côteaux Nantais', address: "3 place Pierre Desfossés, Vertou", user: user1)
+exploitation1.description = "Mon exploitation est située à 20 minutes au sud-est de Nantes. Je vous acceuille afin de récupérer vos cmmandes, le mercredi de 15h à 19h et le samedi de 16h à 19h. Vous pouvez également me retrouver au marché de Remuillé le dimanche matin."
 exploitation1.logo.attach(io: file, filename: "coteaux.png", content_type: "image/png")
 exploitation1.save
 file = URI.open("https://cleliablabla.com/wp-content/uploads/2020/06/22195791_1968979266714699_3202439830026857682_n.png")
