@@ -33,7 +33,6 @@ class ProduitsController < ApplicationController
     end
   end
 
-
   def destroy
     @produit.destroy
     redirect_to exploitation_produits(@exploitation), notice: 'Suppression confirmée'
