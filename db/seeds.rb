@@ -37,3 +37,9 @@ file = URI.open("https://www.3moulins.fr/sites/default/files/logo_3moulins.png")
 exploitation5 = Exploitation.new(name: "Les 3 moulins", address: "La Brosse Tenaud, Saint Philbert de Grand Lieu", user: user5)
 exploitation5.logo.attach(io: file, filename: "moulins.png", content_type: "image/png")
 exploitation5.save
+
+produit1 = Produit.create!(name: "carottes", category:"légume", price:"3€/kg", quantity:"2", availability:"true", exploitation: exploitation1)
+produit2 = Produit.create!(name: "pommes de terre", category:"tubercule", price:"3€/kg", quantity:"2", availability:"true", exploitation: exploitation1)
+produit3 = Produit.create!(name: "oeufs", category:"oeuf", price:"3€/kg", quantity:"2", availability:"true", exploitation: exploitation1)
+produit4 = Produit.create!(name: "salades", category:"salade", price:"3€/kg", quantity:"2", availability:"true", exploitation: exploitation1)
+produit5 = Produit.create!(name: "navets", category:"légume", price:"3€/kg", quantity:"2", availability:"true", exploitation: exploitation1)
