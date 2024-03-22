@@ -12,7 +12,7 @@ class CreneausController < ApplicationController
     @creneau = current_user.creneaus.build(creneau_params)
 
     if @creneau.save
-      redirect_to root_path, notice: 'Le créneau choisi a été enregistré'
+      redirect_to root_path, notice: 'Le créneau choisi a été enregistré !'
     else
       render :new
     end
