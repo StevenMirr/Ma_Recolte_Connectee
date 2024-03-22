@@ -3,6 +3,7 @@ class ProduitsController < ApplicationController
 
   def index
     @produits = Produit.all
+    # @exploitation = Exploitation.find(params[:id])
   end
 
   def show

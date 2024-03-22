@@ -5,17 +5,23 @@
       <div class="col-md-6">
         <div class="card my-1">
           <div class="card-product">
-            <div><img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" /></div>
+            <div>
+                  <% if produit.photo.attached? %>
+                    <%= cl_image_tag produit.photo.key, crop: :fill %>
+                  <% else %>
+                  <p width: 100>pas de photo</p>
+                  <%end %>
+            </div>
             <div class="card-product-infos">
               <div><h2><%= produit.name %></h2></div>
               <div><p class="card-product-infos">Prix <%= produit.price %>€ | Quantité <%= produit.quantity %></p></div>
+              <div>ajouter au panier</div>
             </div>
           </div>
         </div>
       </div>
     <% end %>
   </div>
-<h3>Je choisis un créneau de retrait pour la commade</h3>
 
 
 </div>

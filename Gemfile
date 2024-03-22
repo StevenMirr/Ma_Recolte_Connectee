@@ -76,3 +76,4 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+gem "simple_calendar", "~> 2.4"

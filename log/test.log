@@ -1,0 +1,79 @@
+  [1m[35m (194.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "ma_recolte_connectee_test"[0m
+  [1m[35m (1577.8ms)[0m  [1m[35mCREATE DATABASE "ma_recolte_connectee_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (5.8ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (3.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "active_storage_attachments" CASCADE[0m
+  [1m[35m (72.6ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" bigserial primary key, "name" character varying NOT NULL, "record_type" character varying NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (15.0ms)[0m  [1m[35mCREATE INDEX "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments" ("blob_id")[0m
+  [1m[35m (14.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_attachments_uniqueness" ON "active_storage_attachments" ("record_type", "record_id", "name", "blob_id")[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "active_storage_blobs" CASCADE[0m
+  [1m[35m (30.1ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" bigserial primary key, "key" character varying NOT NULL, "filename" character varying NOT NULL, "content_type" character varying, "metadata" text, "service_name" character varying NOT NULL, "byte_size" bigint NOT NULL, "checksum" character varying, "created_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (18.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_blobs_on_key" ON "active_storage_blobs" ("key")[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "active_storage_variant_records" CASCADE[0m
+  [1m[35m (22.6ms)[0m  [1m[35mCREATE TABLE "active_storage_variant_records" ("id" bigserial primary key, "blob_id" bigint NOT NULL, "variation_digest" character varying NOT NULL)[0m
+  [1m[35m (12.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_variant_records_uniqueness" ON "active_storage_variant_records" ("blob_id", "variation_digest")[0m
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "commandes" CASCADE[0m
+  [1m[35m (21.6ms)[0m  [1m[35mCREATE TABLE "commandes" ("id" bigserial primary key, "total_price" integer, "status" boolean, "creneau_id" bigint NOT NULL, "produit_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (29.9ms)[0m  [1m[35mCREATE INDEX "index_commandes_on_creneau_id" ON "commandes" ("creneau_id")[0m
+  [1m[35m (13.2ms)[0m  [1m[35mCREATE INDEX "index_commandes_on_produit_id" ON "commandes" ("produit_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "creneaus" CASCADE[0m
+  [1m[35m (13.7ms)[0m  [1m[35mCREATE TABLE "creneaus" ("id" bigserial primary key, "date" date, "start_time" time, "end_time" time, "user_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (7.2ms)[0m  [1m[35mCREATE INDEX "index_creneaus_on_user_id" ON "creneaus" ("user_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "exploitations" CASCADE[0m
+  [1m[35m (15.6ms)[0m  [1m[35mCREATE TABLE "exploitations" ("id" bigserial primary key, "name" character varying, "address" character varying, "user_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "logo" character varying, "latitude" float, "longitude" float)[0m
+  [1m[35m (7.2ms)[0m  [1m[35mCREATE INDEX "index_exploitations_on_user_id" ON "exploitations" ("user_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "produits" CASCADE[0m
+  [1m[35m (23.4ms)[0m  [1m[35mCREATE TABLE "produits" ("id" bigserial primary key, "name" character varying, "category" character varying, "price" integer, "quantity" integer, "availability" boolean, "exploitation_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "photo" character varying)[0m
+  [1m[35m (10.4ms)[0m  [1m[35mCREATE INDEX "index_produits_on_exploitation_id" ON "produits" ("exploitation_id")[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (26.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp(6), "remember_created_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "name" character varying, "user_img" character varying)[0m
+  [1m[35m (12.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (7.6ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (20.2ms)[0m  [1m[35mALTER TABLE "active_storage_attachments" ADD CONSTRAINT "fk_rails_c3b3935057"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+[0m
+  [1m[35m (4.3ms)[0m  [1m[35mALTER TABLE "active_storage_variant_records" ADD CONSTRAINT "fk_rails_993965df05"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+[0m
+  [1m[35m (7.5ms)[0m  [1m[35mALTER TABLE "commandes" ADD CONSTRAINT "fk_rails_f2eaa6b346"
+FOREIGN KEY ("creneau_id")
+  REFERENCES "creneaus" ("id")
+[0m
+  [1m[35m (3.6ms)[0m  [1m[35mALTER TABLE "commandes" ADD CONSTRAINT "fk_rails_f7b77e4186"
+FOREIGN KEY ("produit_id")
+  REFERENCES "produits" ("id")
+[0m
+  [1m[35m (4.8ms)[0m  [1m[35mALTER TABLE "creneaus" ADD CONSTRAINT "fk_rails_68664ddcad"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (6.5ms)[0m  [1m[35mALTER TABLE "exploitations" ADD CONSTRAINT "fk_rails_a4d122ac52"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (2.9ms)[0m  [1m[35mALTER TABLE "produits" ADD CONSTRAINT "fk_rails_1e9dc521a7"
+FOREIGN KEY ("exploitation_id")
+  REFERENCES "exploitations" ("id")
+[0m
+  [1m[35m (23.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (8.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20240321103112)[0m
+  [1m[35m (4.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20240321102510),
+(20240321102405),
+(20240321102327),
+(20240321101258),
+(20240319110234),
+(20240319102804),
+(20240319102803),
+(20240319102130),
+(20240319101420),
+(20240318160353);[0m
+  [1m[35m (26.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (5.9ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Create (7.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'test', '2024-03-21 13:06:15.486179', '2024-03-21 13:06:15.486189') RETURNING "key"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::InternalMetadata Create (3.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', '8f6bdc9f26247966f7085941443ffe08a09079cb', '2024-03-21 13:06:15.504197', '2024-03-21 13:06:15.504202') RETURNING "key"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
