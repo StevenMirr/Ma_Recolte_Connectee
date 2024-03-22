@@ -1,0 +1,26 @@
+<h1>Liste des commandes</h1>
+
+<% if @commandes.any? %>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Date de création</th>
+        <!-- Ajoutez d'autres en-têtes de colonne au besoin -->
+      </tr>
+    </thead>
+    <tbody>
+      <% @commandes.each do |commande| %>
+        <tr>
+          <td><%= commande.id %></td>
+          <td><%= commande.created_at %></td>
+          <!-- Ajoutez d'autres cellules de données au besoin -->
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% else %>
+  <p>Aucune commande n'a été trouvée.</p>
+<% end %>
+
+<%= link_to "Nouvelle Commande", commandes_path %>

@@ -1,1 +1,19 @@
-Mes commandes
+<!-- app/views/commandes/index.html.erb -->
+
+<h1>Liste des commandes</h1>
+
+<% if @commandes.any? %>
+  <ul>
+    <% @commandes.each do |commande| %>
+      <li>
+        <!-- Afficher les détails de la commande -->
+        <p>Commande ID: <%= commande.id %></p>
+        <!-- Ajoutez d'autres attributs de commande que vous souhaitez afficher -->
+      </li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>Aucune commande n'a été trouvée.</p>
+<% end %>
+
+<%= link_to "Nouvelle Commande", new_commande_path %>
