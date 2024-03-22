@@ -547,3 +547,1634 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 3906ms (Views: 3223.3ms | ActiveRecord: 186.1ms | Allocations: 43500)
 
 
+Started GET "/users/sign_in" for ::1 at 2024-03-22 11:11:30 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (8.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate
+
+You have 1 pending migration:
+
+db/migrate/20240321155551_add_description_to_exploitations.rb
+
+
+):
+  
+activerecord (7.1.3.2) lib/active_record/migration.rb:755:in `check_pending_migrations'
+activerecord (7.1.3.2) lib/active_record/migration.rb:644:in `block (2 levels) in call'
+activesupport (7.1.3.2) lib/active_support/file_update_checker.rb:85:in `execute'
+activesupport (7.1.3.2) lib/active_support/file_update_checker.rb:95:in `execute_if_updated'
+activerecord (7.1.3.2) lib/active_record/migration.rb:651:in `block in call'
+activerecord (7.1.3.2) lib/active_record/migration.rb:641:in `synchronize'
+activerecord (7.1.3.2) lib/active_record/migration.rb:641:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.3.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.3.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.3.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.9.1) lib/rack/method_override.rb:28:in `call'
+rack (3.0.9.1) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.9.1) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.3.2) lib/rails/engine.rb:536:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/camille/code/StevenMirr-ops/Ma_Recolte_Connectee/config/environment.rb:5)
+Started GET "/users/sign_in" for ::1 at 2024-03-22 11:12:25 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (6.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate
+
+You have 1 pending migration:
+
+db/migrate/20240321155551_add_description_to_exploitations.rb
+
+
+):
+  
+activerecord (7.1.3.2) lib/active_record/migration.rb:755:in `check_pending_migrations'
+activerecord (7.1.3.2) lib/active_record/migration.rb:644:in `block (2 levels) in call'
+activesupport (7.1.3.2) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.1.3.2) lib/active_record/migration.rb:649:in `block in call'
+activerecord (7.1.3.2) lib/active_record/migration.rb:641:in `synchronize'
+activerecord (7.1.3.2) lib/active_record/migration.rb:641:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.3.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.3.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.3.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.9.1) lib/rack/method_override.rb:28:in `call'
+rack (3.0.9.1) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.9.1) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.3.2) lib/rails/engine.rb:536:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/camille/code/StevenMirr-ops/Ma_Recolte_Connectee/config/environment.rb:5)
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5483163850383299325)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (16.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+Migrating to AddDescriptionToExploitations (20240321155551)
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (40.2ms)[0m  [1m[35mALTER TABLE "exploitations" ADD "description" text[0m
+  [1m[36mActiveRecord::SchemaMigration Create (6.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20240321155551') RETURNING "version"[0m
+  [1m[36mTRANSACTION (7.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(5483163850383299325)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/users/sign_in" for ::1 at 2024-03-22 11:12:47 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 4.4ms | Allocations: 613)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 144.1ms | Allocations: 10851)
+  Rendered shared/_navbar.html.erb (Duration: 4.2ms | Allocations: 1243)
+  Rendered shared/_flashes.html.erb (Duration: 1.7ms | Allocations: 210)
+  Rendered shared/_footer.html.erb (Duration: 1.6ms | Allocations: 98)
+  Rendered layout layouts/application.html.erb (Duration: 15905.5ms | Allocations: 253911)
+Completed 200 OK in 16106ms (Views: 15915.4ms | ActiveRecord: 18.9ms | Allocations: 275604)
+
+
+Started POST "/users/sign_in" for ::1 at 2024-03-22 11:13:18 +0100
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"superman@lewagon.fr", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (4.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "superman@lewagon.fr"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 52ms (ActiveRecord: 4.9ms | Allocations: 5120)
+
+
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"superman@lewagon.fr", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.4ms | Allocations: 121)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 11.6ms | Allocations: 2049)
+  Rendered shared/_navbar.html.erb (Duration: 2.5ms | Allocations: 562)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 20)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 60.7ms | Allocations: 12423)
+Completed 200 OK in 376ms (Views: 63.1ms | ActiveRecord: 0.0ms | Allocations: 13757)
+
+
+Started POST "/users/sign_in" for ::1 at 2024-03-22 11:13:27 +0100
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"superman@lewagon.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (5.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "superman@lewagon.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/exploitations
+Completed 303 See Other in 313ms (ActiveRecord: 5.4ms | Allocations: 3343)
+
+
+Started GET "/exploitations" for ::1 at 2024-03-22 11:13:27 +0100
+Processing by ExploitationsController#index as TURBO_STREAM
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mExploitation Load (8.6ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE (exploitations.latitude IS NOT NULL AND exploitations.longitude IS NOT NULL)[0m
+  ↳ app/controllers/exploitations_controller.rb:9:in `map'
+  Rendered exploitations/_info_window.html.erb (Duration: 0.9ms | Allocations: 167)
+  [1m[36mActiveStorage::Attachment Load (6.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:2
+  Rendered exploitations/_marker.html.erb (Duration: 133.5ms | Allocations: 11678)
+Completed 500 Internal Server Error in 347ms (ActiveRecord: 55.2ms | Allocations: 34075)
+
+
+  
+ActionView::Template::Error (no implicit conversion of nil into String):
+    1: 
+    2: <%= cl_image_tag exploitation.logo.key, height: 50, width: 50, alt: "Logo" %>
+  
+app/views/exploitations/_marker.html.erb:2
+app/controllers/exploitations_controller.rb:14:in `block in index'
+app/controllers/exploitations_controller.rb:9:in `map'
+app/controllers/exploitations_controller.rb:9:in `index'
+Started GET "/users/sign_in" for ::1 at 2024-03-22 11:13:33 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 29ms (ActiveRecord: 0.7ms | Allocations: 1968)
+
+
+Started GET "/" for ::1 at 2024-03-22 11:13:33 +0100
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.5ms | Allocations: 307)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:16
+  Rendered shared/_navbar.html.erb (Duration: 11.7ms | Allocations: 1745)
+  Rendered shared/_flashes.html.erb (Duration: 1.0ms | Allocations: 42)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 61.5ms | Allocations: 12383)
+Completed 200 OK in 69ms (Views: 64.2ms | ActiveRecord: 0.5ms | Allocations: 13057)
+
+
+Started GET "/exploitations" for ::1 at 2024-03-22 11:14:26 +0100
+Processing by ExploitationsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mExploitation Load (3.8ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE (exploitations.latitude IS NOT NULL AND exploitations.longitude IS NOT NULL)[0m
+  ↳ app/controllers/exploitations_controller.rb:9:in `map'
+  Rendered exploitations/_info_window.html.erb (Duration: 0.7ms | Allocations: 14)
+  [1m[36mActiveStorage::Attachment Load (1.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:2
+  Rendered exploitations/_marker.html.erb (Duration: 35.2ms | Allocations: 2311)
+Completed 500 Internal Server Error in 66ms (ActiveRecord: 6.1ms | Allocations: 4689)
+
+
+  
+ActionView::Template::Error (no implicit conversion of nil into String):
+    1: 
+    2: <%= cl_image_tag exploitation.logo.key, height: 50, width: 50, alt: "Logo" %>
+  
+app/views/exploitations/_marker.html.erb:2
+app/controllers/exploitations_controller.rb:14:in `block in index'
+app/controllers/exploitations_controller.rb:9:in `map'
+app/controllers/exploitations_controller.rb:9:in `index'
+Started GET "/" for ::1 at 2024-03-22 11:17:52 +0100
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 35.5ms | Allocations: 313)
+  [1m[36mUser Load (5.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:16
+  Rendered shared/_navbar.html.erb (Duration: 149.4ms | Allocations: 6791)
+  Rendered shared/_flashes.html.erb (Duration: 2.5ms | Allocations: 193)
+  Rendered shared/_footer.html.erb (Duration: 2.3ms | Allocations: 98)
+  Rendered layout layouts/application.html.erb (Duration: 597.1ms | Allocations: 35587)
+Completed 200 OK in 649ms (Views: 551.2ms | ActiveRecord: 61.1ms | Allocations: 37558)
+
+
+Started GET "/" for ::1 at 2024-03-22 11:17:57 +0100
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.5ms | Allocations: 67)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:16
+  Rendered shared/_navbar.html.erb (Duration: 7.5ms | Allocations: 1551)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 52.6ms | Allocations: 11517)
+Completed 200 OK in 61ms (Views: 53.5ms | ActiveRecord: 0.7ms | Allocations: 11807)
+
+
+Started GET "/" for ::1 at 2024-03-22 11:18:00 +0100
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 67)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:16
+  Rendered shared/_navbar.html.erb (Duration: 11.3ms | Allocations: 1532)
+  Rendered shared/_flashes.html.erb (Duration: 0.4ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 79.3ms | Allocations: 11491)
+Completed 200 OK in 86ms (Views: 81.8ms | ActiveRecord: 0.7ms | Allocations: 11756)
+
+
+Started GET "/" for ::1 at 2024-03-22 11:19:44 +0100
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 136.1ms | Allocations: 67)
+  [1m[36mUser Load (55.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:16
+  Rendered shared/_navbar.html.erb (Duration: 730.5ms | Allocations: 1535)
+  Rendered shared/_flashes.html.erb (Duration: 9.1ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 2.8ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 2748.9ms | Allocations: 11493)
+Completed 200 OK in 3100ms (Views: 2917.0ms | ActiveRecord: 53.5ms | Allocations: 11759)
+
+
+Started GET "/" for ::1 at 2024-03-22 11:20:19 +0100
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.1ms | Allocations: 67)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:16
+  Rendered shared/_navbar.html.erb (Duration: 54.4ms | Allocations: 1532)
+  Rendered shared/_flashes.html.erb (Duration: 0.5ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 382.5ms | Allocations: 11494)
+Completed 200 OK in 409ms (Views: 398.9ms | ActiveRecord: 0.8ms | Allocations: 11759)
+
+
+Started GET "/" for ::1 at 2024-03-22 11:20:22 +0100
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.3ms | Allocations: 67)
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:16
+  Rendered shared/_navbar.html.erb (Duration: 34.2ms | Allocations: 1532)
+  Rendered shared/_flashes.html.erb (Duration: 0.6ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 327.2ms | Allocations: 11486)
+Completed 200 OK in 362ms (Views: 353.0ms | ActiveRecord: 1.6ms | Allocations: 11751)
+
+
+Started DELETE "/users/sign_out?_method=delete" for ::1 at 2024-03-22 11:20:36 +0100
+Processing by Devise::SessionsController#destroy as TURBO_STREAM
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 598ms (ActiveRecord: 0.9ms | Allocations: 3607)
+
+
+Started GET "/" for ::1 at 2024-03-22 11:20:37 +0100
+Processing by PagesController#home as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 9.7ms | Allocations: 86)
+  Rendered shared/_navbar.html.erb (Duration: 62.5ms | Allocations: 647)
+  Rendered shared/_flashes.html.erb (Duration: 1.4ms | Allocations: 31)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 722.4ms | Allocations: 10968)
+Completed 200 OK in 759ms (Views: 738.6ms | ActiveRecord: 0.0ms | Allocations: 11330)
+
+
+Started GET "/users/sign_in" for ::1 at 2024-03-22 11:20:42 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 19.7ms | Allocations: 545)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 202.9ms | Allocations: 2889)
+  Rendered shared/_navbar.html.erb (Duration: 11.1ms | Allocations: 629)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 34)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 395.9ms | Allocations: 13409)
+Completed 200 OK in 501ms (Views: 469.4ms | ActiveRecord: 0.0ms | Allocations: 14688)
+
+
+Started POST "/users/sign_in" for ::1 at 2024-03-22 11:20:52 +0100
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"superman@lewagon.fr", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (85.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "superman@lewagon.fr"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 215ms (ActiveRecord: 84.9ms | Allocations: 1897)
+
+
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"superman@lewagon.fr", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 3.8ms | Allocations: 119)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 178.2ms | Allocations: 1862)
+  Rendered shared/_navbar.html.erb (Duration: 3.1ms | Allocations: 552)
+  Rendered shared/_flashes.html.erb (Duration: 3.2ms | Allocations: 19)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 594.7ms | Allocations: 12106)
+Completed 200 OK in 1287ms (Views: 604.1ms | ActiveRecord: 0.0ms | Allocations: 12689)
+
+
+Started GET "/users/sign_in" for ::1 at 2024-03-22 11:21:00 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.7ms | Allocations: 119)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 65.7ms | Allocations: 1865)
+  Rendered shared/_navbar.html.erb (Duration: 10.9ms | Allocations: 578)
+  Rendered shared/_flashes.html.erb (Duration: 0.5ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 237.5ms | Allocations: 12153)
+Completed 200 OK in 278ms (Views: 252.4ms | ActiveRecord: 0.0ms | Allocations: 12788)
+
+
+Started POST "/users/sign_in" for ::1 at 2024-03-22 11:21:07 +0100
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"superman@lewagon.fr", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "superman@lewagon.fr"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 57ms (ActiveRecord: 3.3ms | Allocations: 1639)
+
+
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"superman@lewagon.fr", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.4ms | Allocations: 119)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 53.7ms | Allocations: 1858)
+  Rendered shared/_navbar.html.erb (Duration: 10.6ms | Allocations: 552)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 201.3ms | Allocations: 12095)
+Completed 200 OK in 556ms (Views: 207.6ms | ActiveRecord: 0.0ms | Allocations: 12618)
+
+
+Started POST "/users/sign_in" for ::1 at 2024-03-22 11:21:17 +0100
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"superman@lewagon.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "superman@lewagon.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 408ms (ActiveRecord: 0.7ms | Allocations: 2840)
+
+
+Started GET "/" for ::1 at 2024-03-22 11:21:17 +0100
+Processing by PagesController#home as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.0ms | Allocations: 67)
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:16
+  Rendered shared/_navbar.html.erb (Duration: 36.2ms | Allocations: 1538)
+  Rendered shared/_flashes.html.erb (Duration: 1.5ms | Allocations: 29)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 179.6ms | Allocations: 11614)
+Completed 200 OK in 269ms (Views: 184.1ms | ActiveRecord: 1.8ms | Allocations: 11883)
+
+
+Started GET "/exploitations" for ::1 at 2024-03-22 11:29:04 +0100
+Processing by ExploitationsController#index as HTML
+  [1m[36mUser Load (8.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mExploitation Load (5.8ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE (exploitations.latitude IS NOT NULL AND exploitations.longitude IS NOT NULL)[0m
+  ↳ app/controllers/exploitations_controller.rb:9:in `map'
+  Rendered exploitations/_info_window.html.erb (Duration: 22.6ms | Allocations: 162)
+  [1m[36mActiveStorage::Attachment Load (2.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 168.0ms | Allocations: 4260)
+  Rendered exploitations/_info_window.html.erb (Duration: 0.1ms | Allocations: 20)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 11.6ms | Allocations: 1331)
+  Rendered exploitations/_info_window.html.erb (Duration: 0.1ms | Allocations: 14)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 5.6ms | Allocations: 1329)
+  Rendered exploitations/_info_window.html.erb (Duration: 0.1ms | Allocations: 14)
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 43.3ms | Allocations: 1329)
+  Rendered exploitations/_info_window.html.erb (Duration: 0.1ms | Allocations: 14)
+  [1m[36mActiveStorage::Attachment Load (2.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 5], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 21.3ms | Allocations: 1329)
+  Rendering layout layouts/application.html.erb
+  Rendering exploitations/index.html.erb within layouts/application
+  [1m[36mExploitation Load (0.7ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations"[0m
+  ↳ app/views/exploitations/index.html.erb:11
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 5], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  Rendered exploitations/index.html.erb within layouts/application (Duration: 131.5ms | Allocations: 5853)
+  Rendered shared/_navbar.html.erb (Duration: 18.2ms | Allocations: 685)
+  Rendered shared/_flashes.html.erb (Duration: 1.0ms | Allocations: 29)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 527.0ms | Allocations: 16506)
+Completed 200 OK in 1891ms (Views: 548.4ms | ActiveRecord: 207.6ms | Allocations: 40860)
+
+
+Started GET "/exploitations" for ::1 at 2024-03-22 11:29:18 +0100
+Processing by ExploitationsController#index as HTML
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mExploitation Load (2.1ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE (exploitations.latitude IS NOT NULL AND exploitations.longitude IS NOT NULL)[0m
+  ↳ app/controllers/exploitations_controller.rb:9:in `map'
+  Rendered exploitations/_info_window.html.erb (Duration: 0.1ms | Allocations: 14)
+  [1m[36mActiveStorage::Attachment Load (3.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 18.4ms | Allocations: 1421)
+  Rendered exploitations/_info_window.html.erb (Duration: 0.1ms | Allocations: 14)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 15.1ms | Allocations: 1329)
+  Rendered exploitations/_info_window.html.erb (Duration: 0.1ms | Allocations: 14)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 5.9ms | Allocations: 1329)
+  Rendered exploitations/_info_window.html.erb (Duration: 0.1ms | Allocations: 14)
+  [1m[36mActiveStorage::Attachment Load (1.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 12.8ms | Allocations: 1329)
+  Rendered exploitations/_info_window.html.erb (Duration: 0.1ms | Allocations: 14)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 5], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 9.7ms | Allocations: 1329)
+  Rendering layout layouts/application.html.erb
+  Rendering exploitations/index.html.erb within layouts/application
+  [1m[36mExploitation Load (0.6ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations"[0m
+  ↳ app/views/exploitations/index.html.erb:11
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 5], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  Rendered exploitations/index.html.erb within layouts/application (Duration: 46.4ms | Allocations: 5358)
+  Rendered shared/_navbar.html.erb (Duration: 7.0ms | Allocations: 670)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 112.4ms | Allocations: 15719)
+Completed 200 OK in 224ms (Views: 112.3ms | ActiveRecord: 11.9ms | Allocations: 25918)
+
+
+Started GET "/commandes" for ::1 at 2024-03-22 11:29:32 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/commandes"):
+  
+Started GET "/commandes" for ::1 at 2024-03-22 11:31:21 +0100
+Processing by CommandesController#index as HTML
+  [1m[36mUser Load (21.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 406 Not Acceptable in 2452ms (ActiveRecord: 670.5ms | Allocations: 9201)
+
+
+  
+ActionController::MissingExactTemplate (CommandesController#index is missing a template for request formats: text/html):
+  
+actionpack (7.1.3.2) lib/action_controller/metal/implicit_render.rb:47:in `default_render'
+actionpack (7.1.3.2) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+actionpack (7.1.3.2) lib/abstract_controller/base.rb:224:in `process_action'
+actionpack (7.1.3.2) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.1.3.2) lib/abstract_controller/callbacks.rb:259:in `block in process_action'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+turbo-rails (2.0.5) lib/turbo-rails.rb:24:in `with_request_id'
+turbo-rails (2.0.5) app/controllers/concerns/turbo/request_id_tracking.rb:10:in `turbo_tracking_request_id'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+actiontext (7.1.3.2) lib/action_text/rendering.rb:23:in `with_renderer'
+actiontext (7.1.3.2) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:130:in `instance_exec'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:141:in `run_callbacks'
+actionpack (7.1.3.2) lib/abstract_controller/callbacks.rb:258:in `process_action'
+actionpack (7.1.3.2) lib/action_controller/metal/rescue.rb:25:in `process_action'
+actionpack (7.1.3.2) lib/action_controller/metal/instrumentation.rb:74:in `block in process_action'
+activesupport (7.1.3.2) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.1.3.2) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.1.3.2) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.1.3.2) lib/action_controller/metal/instrumentation.rb:73:in `process_action'
+actionpack (7.1.3.2) lib/action_controller/metal/params_wrapper.rb:261:in `process_action'
+activerecord (7.1.3.2) lib/active_record/railties/controller_runtime.rb:32:in `process_action'
+actionpack (7.1.3.2) lib/abstract_controller/base.rb:160:in `process'
+actionview (7.1.3.2) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.1.3.2) lib/action_controller/metal.rb:227:in `dispatch'
+actionpack (7.1.3.2) lib/action_controller/metal.rb:309:in `dispatch'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:51:in `block in serve'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:882:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (3.0.9.1) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.0.9.1) lib/rack/etag.rb:29:in `call'
+rack (3.0.9.1) lib/rack/conditional_get.rb:31:in `call'
+rack (3.0.9.1) lib/rack/head.rb:15:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.3.2) lib/active_record/migration.rb:655:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.3.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.3.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.3.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.9.1) lib/rack/method_override.rb:28:in `call'
+rack (3.0.9.1) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.9.1) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.3.2) lib/rails/engine.rb:536:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/commandes" for ::1 at 2024-03-22 11:35:58 +0100
+Processing by CommandesController#index as HTML
+  [1m[36mUser Load (7.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 406 Not Acceptable in 275ms (ActiveRecord: 91.9ms | Allocations: 9139)
+
+
+  
+ActionController::MissingExactTemplate (CommandesController#index is missing a template for request formats: text/html):
+  
+actionpack (7.1.3.2) lib/action_controller/metal/implicit_render.rb:47:in `default_render'
+actionpack (7.1.3.2) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+actionpack (7.1.3.2) lib/abstract_controller/base.rb:224:in `process_action'
+actionpack (7.1.3.2) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.1.3.2) lib/abstract_controller/callbacks.rb:259:in `block in process_action'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+turbo-rails (2.0.5) lib/turbo-rails.rb:24:in `with_request_id'
+turbo-rails (2.0.5) app/controllers/concerns/turbo/request_id_tracking.rb:10:in `turbo_tracking_request_id'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+actiontext (7.1.3.2) lib/action_text/rendering.rb:23:in `with_renderer'
+actiontext (7.1.3.2) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:130:in `instance_exec'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:141:in `run_callbacks'
+actionpack (7.1.3.2) lib/abstract_controller/callbacks.rb:258:in `process_action'
+actionpack (7.1.3.2) lib/action_controller/metal/rescue.rb:25:in `process_action'
+actionpack (7.1.3.2) lib/action_controller/metal/instrumentation.rb:74:in `block in process_action'
+activesupport (7.1.3.2) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.1.3.2) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.1.3.2) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.1.3.2) lib/action_controller/metal/instrumentation.rb:73:in `process_action'
+actionpack (7.1.3.2) lib/action_controller/metal/params_wrapper.rb:261:in `process_action'
+activerecord (7.1.3.2) lib/active_record/railties/controller_runtime.rb:32:in `process_action'
+actionpack (7.1.3.2) lib/abstract_controller/base.rb:160:in `process'
+actionview (7.1.3.2) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.1.3.2) lib/action_controller/metal.rb:227:in `dispatch'
+actionpack (7.1.3.2) lib/action_controller/metal.rb:309:in `dispatch'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:51:in `block in serve'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:882:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (3.0.9.1) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.0.9.1) lib/rack/etag.rb:29:in `call'
+rack (3.0.9.1) lib/rack/conditional_get.rb:31:in `call'
+rack (3.0.9.1) lib/rack/head.rb:15:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.3.2) lib/active_record/migration.rb:655:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.3.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.3.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.3.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.9.1) lib/rack/method_override.rb:28:in `call'
+rack (3.0.9.1) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.9.1) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.3.2) lib/rails/engine.rb:536:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/commandes" for ::1 at 2024-03-22 11:42:32 +0100
+Processing by CommandesController#index as HTML
+  [1m[36mUser Load (6.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 406 Not Acceptable in 481ms (ActiveRecord: 111.4ms | Allocations: 11647)
+
+
+  
+ActionController::MissingExactTemplate (CommandesController#index is missing a template for request formats: text/html):
+  
+actionpack (7.1.3.2) lib/action_controller/metal/implicit_render.rb:47:in `default_render'
+actionpack (7.1.3.2) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+actionpack (7.1.3.2) lib/abstract_controller/base.rb:224:in `process_action'
+actionpack (7.1.3.2) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.1.3.2) lib/abstract_controller/callbacks.rb:259:in `block in process_action'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+turbo-rails (2.0.5) lib/turbo-rails.rb:24:in `with_request_id'
+turbo-rails (2.0.5) app/controllers/concerns/turbo/request_id_tracking.rb:10:in `turbo_tracking_request_id'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+actiontext (7.1.3.2) lib/action_text/rendering.rb:23:in `with_renderer'
+actiontext (7.1.3.2) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:130:in `instance_exec'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:141:in `run_callbacks'
+actionpack (7.1.3.2) lib/abstract_controller/callbacks.rb:258:in `process_action'
+actionpack (7.1.3.2) lib/action_controller/metal/rescue.rb:25:in `process_action'
+actionpack (7.1.3.2) lib/action_controller/metal/instrumentation.rb:74:in `block in process_action'
+activesupport (7.1.3.2) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.1.3.2) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.1.3.2) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.1.3.2) lib/action_controller/metal/instrumentation.rb:73:in `process_action'
+actionpack (7.1.3.2) lib/action_controller/metal/params_wrapper.rb:261:in `process_action'
+activerecord (7.1.3.2) lib/active_record/railties/controller_runtime.rb:32:in `process_action'
+actionpack (7.1.3.2) lib/abstract_controller/base.rb:160:in `process'
+actionview (7.1.3.2) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.1.3.2) lib/action_controller/metal.rb:227:in `dispatch'
+actionpack (7.1.3.2) lib/action_controller/metal.rb:309:in `dispatch'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:51:in `block in serve'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:882:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (3.0.9.1) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.0.9.1) lib/rack/etag.rb:29:in `call'
+rack (3.0.9.1) lib/rack/conditional_get.rb:31:in `call'
+rack (3.0.9.1) lib/rack/head.rb:15:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.3.2) lib/active_record/migration.rb:655:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.3.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.3.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.3.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.9.1) lib/rack/method_override.rb:28:in `call'
+rack (3.0.9.1) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.9.1) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.3.2) lib/rails/engine.rb:536:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/commandes" for ::1 at 2024-03-22 11:42:42 +0100
+Processing by CommandesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 406 Not Acceptable in 34ms (ActiveRecord: 0.7ms | Allocations: 2260)
+
+
+  
+ActionController::MissingExactTemplate (CommandesController#index is missing a template for request formats: text/html):
+  
+actionpack (7.1.3.2) lib/action_controller/metal/implicit_render.rb:47:in `default_render'
+actionpack (7.1.3.2) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+actionpack (7.1.3.2) lib/abstract_controller/base.rb:224:in `process_action'
+actionpack (7.1.3.2) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.1.3.2) lib/abstract_controller/callbacks.rb:259:in `block in process_action'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+turbo-rails (2.0.5) lib/turbo-rails.rb:24:in `with_request_id'
+turbo-rails (2.0.5) app/controllers/concerns/turbo/request_id_tracking.rb:10:in `turbo_tracking_request_id'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+actiontext (7.1.3.2) lib/action_text/rendering.rb:23:in `with_renderer'
+actiontext (7.1.3.2) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:130:in `instance_exec'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:141:in `run_callbacks'
+actionpack (7.1.3.2) lib/abstract_controller/callbacks.rb:258:in `process_action'
+actionpack (7.1.3.2) lib/action_controller/metal/rescue.rb:25:in `process_action'
+actionpack (7.1.3.2) lib/action_controller/metal/instrumentation.rb:74:in `block in process_action'
+activesupport (7.1.3.2) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.1.3.2) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.1.3.2) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.1.3.2) lib/action_controller/metal/instrumentation.rb:73:in `process_action'
+actionpack (7.1.3.2) lib/action_controller/metal/params_wrapper.rb:261:in `process_action'
+activerecord (7.1.3.2) lib/active_record/railties/controller_runtime.rb:32:in `process_action'
+actionpack (7.1.3.2) lib/abstract_controller/base.rb:160:in `process'
+actionview (7.1.3.2) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.1.3.2) lib/action_controller/metal.rb:227:in `dispatch'
+actionpack (7.1.3.2) lib/action_controller/metal.rb:309:in `dispatch'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:51:in `block in serve'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:882:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (3.0.9.1) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.0.9.1) lib/rack/etag.rb:29:in `call'
+rack (3.0.9.1) lib/rack/conditional_get.rb:31:in `call'
+rack (3.0.9.1) lib/rack/head.rb:15:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.3.2) lib/active_record/migration.rb:655:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.3.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.3.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.3.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.9.1) lib/rack/method_override.rb:28:in `call'
+rack (3.0.9.1) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.9.1) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.3.2) lib/rails/engine.rb:536:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/exploitations" for ::1 at 2024-03-22 11:49:07 +0100
+Processing by ExploitationsController#index as HTML
+  [1m[36mUser Load (7.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mExploitation Load (3.6ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE (exploitations.latitude IS NOT NULL AND exploitations.longitude IS NOT NULL)[0m
+  ↳ app/controllers/exploitations_controller.rb:9:in `map'
+  Rendered exploitations/_info_window.html.erb (Duration: 6.8ms | Allocations: 163)
+  [1m[36mActiveStorage::Attachment Load (2.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 73.7ms | Allocations: 4258)
+  Rendered exploitations/_info_window.html.erb (Duration: 0.1ms | Allocations: 20)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 5.2ms | Allocations: 1331)
+  Rendered exploitations/_info_window.html.erb (Duration: 0.1ms | Allocations: 14)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 4.2ms | Allocations: 1329)
+  Rendered exploitations/_info_window.html.erb (Duration: 0.0ms | Allocations: 14)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 10.0ms | Allocations: 1329)
+  Rendered exploitations/_info_window.html.erb (Duration: 0.1ms | Allocations: 14)
+  [1m[36mActiveStorage::Attachment Load (1.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 5], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 6.2ms | Allocations: 1329)
+  Rendering layout layouts/application.html.erb
+  Rendering exploitations/index.html.erb within layouts/application
+  [1m[36mExploitation Load (0.6ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations"[0m
+  ↳ app/views/exploitations/index.html.erb:11
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 5], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  Rendered exploitations/index.html.erb within layouts/application (Duration: 100.8ms | Allocations: 7877)
+  Rendered layout layouts/application.html.erb (Duration: 101.4ms | Allocations: 7963)
+Completed 500 Internal Server Error in 823ms (ActiveRecord: 179.0ms | Allocations: 41235)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass
+
+'.freeze;     @commandes.each do |commande| 
+                        ^^^^^):
+    30:   </div>
+    31: 
+    32:   <div class="commandes">
+    33:     <% @commandes.each do |commande| %>
+    34:       <div class="commande">
+    35:         <p><%= commande.produits %></p>
+    36:       </div>
+  
+app/views/exploitations/index.html.erb:33
+Started GET "/exploitations" for ::1 at 2024-03-22 11:50:20 +0100
+Processing by ExploitationsController#index as HTML
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mExploitation Load (2.4ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE (exploitations.latitude IS NOT NULL AND exploitations.longitude IS NOT NULL)[0m
+  ↳ app/controllers/exploitations_controller.rb:9:in `map'
+  Rendered exploitations/_info_window.html.erb (Duration: 4.6ms | Allocations: 165)
+  [1m[36mActiveStorage::Attachment Load (1.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 51.5ms | Allocations: 4249)
+  Rendered exploitations/_info_window.html.erb (Duration: 0.1ms | Allocations: 20)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 8.2ms | Allocations: 1331)
+  Rendered exploitations/_info_window.html.erb (Duration: 0.1ms | Allocations: 14)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 12.3ms | Allocations: 1329)
+  Rendered exploitations/_info_window.html.erb (Duration: 0.1ms | Allocations: 14)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 3.6ms | Allocations: 1329)
+  Rendered exploitations/_info_window.html.erb (Duration: 0.1ms | Allocations: 14)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 5], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 9.2ms | Allocations: 1329)
+  Rendering layout layouts/application.html.erb
+  Rendering exploitations/index.html.erb within layouts/application
+  [1m[36mExploitation Load (0.9ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations"[0m
+  ↳ app/views/exploitations/index.html.erb:11
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 5], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  Rendered exploitations/index.html.erb within layouts/application (Duration: 72.8ms | Allocations: 7818)
+  Rendered layout layouts/application.html.erb (Duration: 73.4ms | Allocations: 7904)
+Completed 500 Internal Server Error in 447ms (ActiveRecord: 60.5ms | Allocations: 34989)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass
+
+'.freeze;     @commandes.each do |commande| 
+                        ^^^^^):
+    30:   </div>
+    31: 
+    32:   <div class="commandes">
+    33:     <% @commandes.each do |commande| %>
+    34:       <div class="commande">
+    35:         <p><%= commande.produits %></p>
+    36:       </div>
+  
+app/views/exploitations/index.html.erb:33
+Started GET "/exploitations" for ::1 at 2024-03-22 11:52:43 +0100
+Processing by ExploitationsController#index as HTML
+  [1m[36mUser Load (6.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mExploitation Load (3.2ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE (exploitations.latitude IS NOT NULL AND exploitations.longitude IS NOT NULL)[0m
+  ↳ app/controllers/exploitations_controller.rb:10:in `map'
+  Rendered exploitations/_info_window.html.erb (Duration: 5.7ms | Allocations: 165)
+  [1m[36mActiveStorage::Attachment Load (1.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 65.6ms | Allocations: 4250)
+  Rendered exploitations/_info_window.html.erb (Duration: 0.2ms | Allocations: 20)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 10.1ms | Allocations: 1331)
+  Rendered exploitations/_info_window.html.erb (Duration: 0.1ms | Allocations: 14)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 5.2ms | Allocations: 1329)
+  Rendered exploitations/_info_window.html.erb (Duration: 0.1ms | Allocations: 14)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 8.5ms | Allocations: 1329)
+  Rendered exploitations/_info_window.html.erb (Duration: 0.1ms | Allocations: 14)
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 5], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 10.0ms | Allocations: 1329)
+  Rendering layout layouts/application.html.erb
+  Rendering exploitations/index.html.erb within layouts/application
+  [1m[36mExploitation Load (0.5ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations"[0m
+  ↳ app/views/exploitations/index.html.erb:11
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 5], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  Rendered exploitations/index.html.erb within layouts/application (Duration: 80.1ms | Allocations: 7818)
+  Rendered layout layouts/application.html.erb (Duration: 80.9ms | Allocations: 7904)
+Completed 500 Internal Server Error in 1143ms (ActiveRecord: 98.5ms | Allocations: 34902)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass
+
+'.freeze;     @commandes.each do |commande| 
+                        ^^^^^):
+    30:   </div>
+    31: 
+    32:   <div class="commandes">
+    33:     <% @commandes.each do |commande| %>
+    34:       <div class="commande">
+    35:         <p><%= commande.produits %></p>
+    36:       </div>
+  
+app/views/exploitations/index.html.erb:33
+Started GET "/commandes" for ::1 at 2024-03-22 11:56:49 +0100
+Processing by CommandesController#index as HTML
+  [1m[36mUser Load (39.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 406 Not Acceptable in 443ms (ActiveRecord: 38.5ms | Allocations: 3801)
+
+
+  
+ActionController::MissingExactTemplate (CommandesController#index is missing a template for request formats: text/html):
+  
+actionpack (7.1.3.2) lib/action_controller/metal/implicit_render.rb:47:in `default_render'
+actionpack (7.1.3.2) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+actionpack (7.1.3.2) lib/abstract_controller/base.rb:224:in `process_action'
+actionpack (7.1.3.2) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.1.3.2) lib/abstract_controller/callbacks.rb:259:in `block in process_action'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+turbo-rails (2.0.5) lib/turbo-rails.rb:24:in `with_request_id'
+turbo-rails (2.0.5) app/controllers/concerns/turbo/request_id_tracking.rb:10:in `turbo_tracking_request_id'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+actiontext (7.1.3.2) lib/action_text/rendering.rb:23:in `with_renderer'
+actiontext (7.1.3.2) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:130:in `instance_exec'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:141:in `run_callbacks'
+actionpack (7.1.3.2) lib/abstract_controller/callbacks.rb:258:in `process_action'
+actionpack (7.1.3.2) lib/action_controller/metal/rescue.rb:25:in `process_action'
+actionpack (7.1.3.2) lib/action_controller/metal/instrumentation.rb:74:in `block in process_action'
+activesupport (7.1.3.2) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.1.3.2) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.1.3.2) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.1.3.2) lib/action_controller/metal/instrumentation.rb:73:in `process_action'
+actionpack (7.1.3.2) lib/action_controller/metal/params_wrapper.rb:261:in `process_action'
+activerecord (7.1.3.2) lib/active_record/railties/controller_runtime.rb:32:in `process_action'
+actionpack (7.1.3.2) lib/abstract_controller/base.rb:160:in `process'
+actionview (7.1.3.2) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.1.3.2) lib/action_controller/metal.rb:227:in `dispatch'
+actionpack (7.1.3.2) lib/action_controller/metal.rb:309:in `dispatch'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:51:in `block in serve'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:882:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (3.0.9.1) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.0.9.1) lib/rack/etag.rb:29:in `call'
+rack (3.0.9.1) lib/rack/conditional_get.rb:31:in `call'
+rack (3.0.9.1) lib/rack/head.rb:15:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.3.2) lib/active_record/migration.rb:655:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.3.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.3.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.3.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.9.1) lib/rack/method_override.rb:28:in `call'
+rack (3.0.9.1) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.9.1) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.3.2) lib/rails/engine.rb:536:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/exploitations" for ::1 at 2024-03-22 11:59:38 +0100
+Processing by ExploitationsController#index as HTML
+  [1m[36mUser Load (18.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mExploitation Load (13.6ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE (exploitations.latitude IS NOT NULL AND exploitations.longitude IS NOT NULL)[0m
+  ↳ app/controllers/exploitations_controller.rb:10:in `map'
+  Rendered exploitations/_info_window.html.erb (Duration: 21.4ms | Allocations: 163)
+  [1m[36mActiveStorage::Attachment Load (1.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 227.5ms | Allocations: 4249)
+  Rendered exploitations/_info_window.html.erb (Duration: 0.5ms | Allocations: 20)
+  [1m[36mActiveStorage::Attachment Load (2.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 48.2ms | Allocations: 1331)
+  Rendered exploitations/_info_window.html.erb (Duration: 0.1ms | Allocations: 14)
+  [1m[36mActiveStorage::Attachment Load (1.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 27.4ms | Allocations: 1329)
+  Rendered exploitations/_info_window.html.erb (Duration: 0.3ms | Allocations: 14)
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 21.3ms | Allocations: 1329)
+  Rendered exploitations/_info_window.html.erb (Duration: 0.1ms | Allocations: 14)
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 5], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 60.1ms | Allocations: 1329)
+  Rendering layout layouts/application.html.erb
+  Rendering exploitations/index.html.erb within layouts/application
+  [1m[36mExploitation Load (0.7ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations"[0m
+  ↳ app/views/exploitations/index.html.erb:11
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 5], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  Rendered exploitations/index.html.erb within layouts/application (Duration: 181.7ms | Allocations: 7819)
+  Rendered layout layouts/application.html.erb (Duration: 183.9ms | Allocations: 7905)
+Completed 500 Internal Server Error in 2007ms (ActiveRecord: 217.3ms | Allocations: 34897)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass
+
+'.freeze;     @commandes.each do |commande| 
+                        ^^^^^):
+    30:   </div>
+    31: 
+    32:   <div class="commandes">
+    33:     <% @commandes.each do |commande| %>
+    34:       <div class="commande">
+    35:         <p><%= commande.produits %></p>
+    36:       </div>
+  
+app/views/exploitations/index.html.erb:33
+Started GET "/exploitations" for ::1 at 2024-03-22 12:09:26 +0100
+Processing by ExploitationsController#index as HTML
+  [1m[36mUser Load (8.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mExploitation Load (3.6ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE (exploitations.latitude IS NOT NULL AND exploitations.longitude IS NOT NULL)[0m
+  ↳ app/controllers/exploitations_controller.rb:10:in `map'
+  Rendered exploitations/_info_window.html.erb (Duration: 7.3ms | Allocations: 163)
+  [1m[36mActiveStorage::Attachment Load (4.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 76.9ms | Allocations: 3977)
+  Rendered exploitations/_info_window.html.erb (Duration: 0.2ms | Allocations: 20)
+  [1m[36mActiveStorage::Attachment Load (1.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 21.8ms | Allocations: 1331)
+  Rendered exploitations/_info_window.html.erb (Duration: 0.1ms | Allocations: 14)
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 8.0ms | Allocations: 1329)
+  Rendered exploitations/_info_window.html.erb (Duration: 0.1ms | Allocations: 14)
+  [1m[36mActiveStorage::Attachment Load (1.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 14.0ms | Allocations: 1329)
+  Rendered exploitations/_info_window.html.erb (Duration: 0.1ms | Allocations: 14)
+  [1m[36mActiveStorage::Attachment Load (1.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 5], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 9.5ms | Allocations: 1329)
+  Rendering layout layouts/application.html.erb
+  Rendering exploitations/index.html.erb within layouts/application
+  [1m[36mExploitation Load (1.8ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations"[0m
+  ↳ app/views/exploitations/index.html.erb:11
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 5], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  Rendered exploitations/index.html.erb within layouts/application (Duration: 90.2ms | Allocations: 7819)
+  Rendered layout layouts/application.html.erb (Duration: 91.3ms | Allocations: 7905)
+Completed 500 Internal Server Error in 951ms (ActiveRecord: 156.6ms | Allocations: 40446)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass
+
+'.freeze;     @commandes.each do |commande| 
+                        ^^^^^):
+    30:   </div>
+    31: 
+    32:   <div class="commandes">
+    33:     <% @commandes.each do |commande| %>
+    34:       <div class="commande">
+    35:         <p><%= commande.produits %></p>
+    36:       </div>
+  
+app/views/exploitations/index.html.erb:33
+Started GET "/exploitations" for ::1 at 2024-03-22 12:09:38 +0100
+Processing by ExploitationsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mExploitation Load (1.1ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE (exploitations.latitude IS NOT NULL AND exploitations.longitude IS NOT NULL)[0m
+  ↳ app/controllers/exploitations_controller.rb:10:in `map'
+  Rendered exploitations/_info_window.html.erb (Duration: 0.2ms | Allocations: 14)
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 9.7ms | Allocations: 1421)
+  Rendered exploitations/_info_window.html.erb (Duration: 0.1ms | Allocations: 14)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 4.1ms | Allocations: 1329)
+  Rendered exploitations/_info_window.html.erb (Duration: 0.1ms | Allocations: 14)
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 4.0ms | Allocations: 1329)
+  Rendered exploitations/_info_window.html.erb (Duration: 0.1ms | Allocations: 14)
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 4.5ms | Allocations: 1329)
+  Rendered exploitations/_info_window.html.erb (Duration: 0.0ms | Allocations: 14)
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 5], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 10.7ms | Allocations: 1329)
+  Rendering layout layouts/application.html.erb
+  Rendering exploitations/index.html.erb within layouts/application
+  [1m[36mExploitation Load (0.7ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations"[0m
+  ↳ app/views/exploitations/index.html.erb:11
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 5], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  Rendered exploitations/index.html.erb within layouts/application (Duration: 33.9ms | Allocations: 7300)
+  Rendered layout layouts/application.html.erb (Duration: 34.4ms | Allocations: 7383)
+Completed 500 Internal Server Error in 106ms (ActiveRecord: 5.1ms | Allocations: 17568)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass
+
+'.freeze;     @commandes.each do |commande| 
+                        ^^^^^):
+    30:   </div>
+    31: 
+    32:   <div class="commandes">
+    33:     <% @commandes.each do |commande| %>
+    34:       <div class="commande">
+    35:         <p><%= commande.produits %></p>
+    36:       </div>
+  
+app/views/exploitations/index.html.erb:33
+Started GET "/exploitations" for ::1 at 2024-03-22 12:12:19 +0100
+Processing by ExploitationsController#index as HTML
+  [1m[36mUser Load (32.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mExploitation Load (12.2ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE (exploitations.latitude IS NOT NULL AND exploitations.longitude IS NOT NULL)[0m
+  ↳ app/controllers/exploitations_controller.rb:10:in `map'
+  Rendered exploitations/_info_window.html.erb (Duration: 3.1ms | Allocations: 14)
+  [1m[36mActiveStorage::Attachment Load (1.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 97.1ms | Allocations: 1421)
+  Rendered exploitations/_info_window.html.erb (Duration: 0.1ms | Allocations: 14)
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 20.4ms | Allocations: 1329)
+  Rendered exploitations/_info_window.html.erb (Duration: 0.1ms | Allocations: 14)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 25.9ms | Allocations: 1329)
+  Rendered exploitations/_info_window.html.erb (Duration: 0.1ms | Allocations: 14)
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 24.5ms | Allocations: 1329)
+  Rendered exploitations/_info_window.html.erb (Duration: 0.1ms | Allocations: 14)
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 5], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 11.9ms | Allocations: 1329)
+  Rendering layout layouts/application.html.erb
+  Rendering exploitations/index.html.erb within layouts/application
+  [1m[36mExploitation Load (1.4ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations"[0m
+  ↳ app/views/exploitations/index.html.erb:11
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 5], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  Rendered exploitations/index.html.erb within layouts/application (Duration: 182.9ms | Allocations: 7372)
+  Rendered layout layouts/application.html.erb (Duration: 184.1ms | Allocations: 7455)
+Completed 500 Internal Server Error in 804ms (ActiveRecord: 49.6ms | Allocations: 17537)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass
+
+'.freeze;     @commandes.each do |commande| 
+                        ^^^^^):
+    30:   </div>
+    31: 
+    32:   <div class="commandes">
+    33:     <% @commandes.each do |commande| %>
+    34:       <div class="commande">
+    35:         <p><%= commande.produits %></p>
+    36:       </div>
+  
+app/views/exploitations/index.html.erb:33
+Started GET "/commandes" for ::1 at 2024-03-22 12:12:30 +0100
+Processing by CommandesController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering commandes/index.html.erb within layouts/application
+  [1m[36mCommande Exists? (12.9ms)[0m  [1m[34mSELECT 1 AS one FROM "commandes" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/commandes/index.html.erb:3
+  Rendered commandes/index.html.erb within layouts/application (Duration: 149.2ms | Allocations: 6996)
+  Rendered layout layouts/application.html.erb (Duration: 149.8ms | Allocations: 7082)
+Completed 500 Internal Server Error in 209ms (ActiveRecord: 97.9ms | Allocations: 10584)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_commande_path' for #<ActionView::Base:0x00000000057760>
+
+'.freeze; @output_buffer.append=( link_to "Nouvelle Commande", new_commande_path );
+                                                               ^^^^^^^^^^^^^^^^^
+Did you mean?  new_password_path):
+    23:   <p>Aucune commande n'a été trouvée.</p>
+    24: <% end %>
+    25: 
+    26: <%= link_to "Nouvelle Commande", new_commande_path %>
+  
+app/views/commandes/index.html.erb:26
+Started GET "/commandes" for ::1 at 2024-03-22 12:14:50 +0100
+Processing by CommandesController#index as HTML
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering commandes/index.html.erb within layouts/application
+  [1m[36mCommande Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "commandes" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/commandes/index.html.erb:3
+  Rendered commandes/index.html.erb within layouts/application (Duration: 68.3ms | Allocations: 6821)
+  Rendered layout layouts/application.html.erb (Duration: 69.6ms | Allocations: 6908)
+Completed 500 Internal Server Error in 556ms (ActiveRecord: 68.8ms | Allocations: 19213)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `commande_path' for #<ActionView::Base:0x0000000005f0f0>
+
+'.freeze; @output_buffer.append=( link_to "Nouvelle Commande", commande_path );
+                                                               ^^^^^^^^^^^^^
+Did you mean?  commandes_path):
+    23:   <p>Aucune commande n'a été trouvée.</p>
+    24: <% end %>
+    25: 
+    26: <%= link_to "Nouvelle Commande", commande_path %>
+  
+app/views/commandes/index.html.erb:26
+Started GET "/commandes" for ::1 at 2024-03-22 12:19:24 +0100
+Processing by CommandesController#index as HTML
+  [1m[36mUser Load (8.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering commandes/index.html.erb within layouts/application
+  [1m[36mCommande Exists? (2.9ms)[0m  [1m[34mSELECT 1 AS one FROM "commandes" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/commandes/index.html.erb:3
+  Rendered commandes/index.html.erb within layouts/application (Duration: 32.1ms | Allocations: 1602)
+  Rendered shared/_navbar.html.erb (Duration: 19.1ms | Allocations: 1251)
+  Rendered shared/_flashes.html.erb (Duration: 2.3ms | Allocations: 193)
+  Rendered shared/_footer.html.erb (Duration: 1.2ms | Allocations: 99)
+  Rendered layout layouts/application.html.erb (Duration: 691.9ms | Allocations: 31180)
+Completed 200 OK in 1117ms (Views: 705.0ms | ActiveRecord: 172.4ms | Allocations: 43504)
+
+
+Started GET "/commandes" for ::1 at 2024-03-22 12:19:54 +0100
+Processing by CommandesController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering commandes/index.html.erb within layouts/application
+  [1m[36mCommande Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "commandes" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/commandes/index.html.erb:3
+  Rendered commandes/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 618)
+  Rendered shared/_navbar.html.erb (Duration: 1.9ms | Allocations: 670)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 37.5ms | Allocations: 10991)
+Completed 200 OK in 48ms (Views: 37.8ms | ActiveRecord: 1.9ms | Allocations: 12897)
+
+
+Started GET "/commandes" for ::1 at 2024-03-22 12:19:56 +0100
+Processing by CommandesController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering commandes/index.html.erb within layouts/application
+  [1m[36mCommande Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "commandes" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/commandes/index.html.erb:3
+  Rendered commandes/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 614)
+  Rendered shared/_navbar.html.erb (Duration: 2.4ms | Allocations: 670)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 39.0ms | Allocations: 10979)
+Completed 200 OK in 56ms (Views: 39.2ms | ActiveRecord: 2.3ms | Allocations: 12688)
+
+
+Started GET "/commandes" for ::1 at 2024-03-22 12:19:57 +0100
+Processing by CommandesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering commandes/index.html.erb within layouts/application
+  [1m[36mCommande Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "commandes" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/commandes/index.html.erb:3
+  Rendered commandes/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 614)
+  Rendered shared/_navbar.html.erb (Duration: 1.4ms | Allocations: 670)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 35.3ms | Allocations: 10979)
+Completed 200 OK in 45ms (Views: 35.6ms | ActiveRecord: 0.7ms | Allocations: 12724)
+
+
+Started GET "/commandes" for ::1 at 2024-03-22 12:20:00 +0100
+Processing by CommandesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering commandes/index.html.erb within layouts/application
+  [1m[36mCommande Exists? (3.3ms)[0m  [1m[34mSELECT 1 AS one FROM "commandes" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/commandes/index.html.erb:3
+  Rendered commandes/index.html.erb within layouts/application (Duration: 11.6ms | Allocations: 614)
+  Rendered shared/_navbar.html.erb (Duration: 3.7ms | Allocations: 670)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 50.6ms | Allocations: 10980)
+Completed 200 OK in 66ms (Views: 48.4ms | ActiveRecord: 3.5ms | Allocations: 12722)
+
+
+Started GET "/commandes" for ::1 at 2024-03-22 12:20:07 +0100
+Processing by CommandesController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering commandes/index.html.erb within layouts/application
+  [1m[36mCommande Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "commandes" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/commandes/index.html.erb:3
+  Rendered commandes/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 614)
+  Rendered shared/_navbar.html.erb (Duration: 1.4ms | Allocations: 670)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 32.0ms | Allocations: 10983)
+Completed 200 OK in 42ms (Views: 32.3ms | ActiveRecord: 1.7ms | Allocations: 12719)
+
+
+Started GET "/commandes" for ::1 at 2024-03-22 12:20:42 +0100
+Processing by CommandesController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering commandes/index.html.erb within layouts/application
+  [1m[36mCommande Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "commandes" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/commandes/index.html.erb:3
+  Rendered commandes/index.html.erb within layouts/application (Duration: 9.8ms | Allocations: 614)
+  Rendered shared/_navbar.html.erb (Duration: 7.8ms | Allocations: 673)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 360.2ms | Allocations: 10991)
+Completed 200 OK in 397ms (Views: 361.3ms | ActiveRecord: 1.9ms | Allocations: 12710)
+
+
+Started GET "/commandes" for ::1 at 2024-03-22 12:22:42 +0100
+Processing by CommandesController#index as HTML
+  [1m[36mUser Load (17.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering commandes/index.html.erb within layouts/application
+  [1m[36mCommande Exists? (27.2ms)[0m  [1m[34mSELECT 1 AS one FROM "commandes" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/commandes/index.html.erb:3
+  Rendered commandes/index.html.erb within layouts/application (Duration: 49.9ms | Allocations: 614)
+  Rendered shared/_navbar.html.erb (Duration: 23.6ms | Allocations: 672)
+  Rendered shared/_flashes.html.erb (Duration: 0.9ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 528.2ms | Allocations: 10989)
+Completed 200 OK in 836ms (Views: 519.3ms | ActiveRecord: 44.1ms | Allocations: 12698)
+
+
+Started GET "/commandes" for ::1 at 2024-03-22 12:27:25 +0100
+Processing by CommandesController#index as HTML
+  [1m[36mUser Load (38.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering commandes/index.html.erb within layouts/application
+  [1m[36mCommande Exists? (31.1ms)[0m  [1m[34mSELECT 1 AS one FROM "commandes" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/commandes/index.html.erb:3
+  Rendered commandes/index.html.erb within layouts/application (Duration: 136.7ms | Allocations: 614)
+  Rendered shared/_navbar.html.erb (Duration: 90.3ms | Allocations: 670)
+  Rendered shared/_flashes.html.erb (Duration: 3.4ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 1481.6ms | Allocations: 11060)
+Completed 200 OK in 2283ms (Views: 1499.5ms | ActiveRecord: 68.5ms | Allocations: 12813)
+
+
+Started GET "/commandes" for ::1 at 2024-03-22 12:29:10 +0100
+Processing by CommandesController#index as HTML
+  [1m[36mUser Load (43.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering commandes/index.html.erb within layouts/application
+  [1m[36mCommande Exists? (56.5ms)[0m  [1m[34mSELECT 1 AS one FROM "commandes" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/commandes/index.html.erb:3
+  Rendered commandes/index.html.erb within layouts/application (Duration: 322.1ms | Allocations: 614)
+  Rendered shared/_navbar.html.erb (Duration: 104.7ms | Allocations: 670)
+  Rendered shared/_flashes.html.erb (Duration: 14.9ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 2.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 4087.2ms | Allocations: 10992)
+Completed 200 OK in 5636ms (Views: 4103.2ms | ActiveRecord: 102.1ms | Allocations: 12705)
+
+
+Started GET "/commandes" for ::1 at 2024-03-22 12:29:37 +0100
+Processing by CommandesController#index as HTML
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering commandes/index.html.erb within layouts/application
+  [1m[36mCommande Exists? (1.8ms)[0m  [1m[34mSELECT 1 AS one FROM "commandes" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/commandes/index.html.erb:3
+  Rendered commandes/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 614)
+  Rendered shared/_navbar.html.erb (Duration: 80.2ms | Allocations: 670)
+  Rendered shared/_flashes.html.erb (Duration: 0.3ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 611.7ms | Allocations: 10984)
+Completed 200 OK in 788ms (Views: 613.9ms | ActiveRecord: 5.2ms | Allocations: 12703)
+
+
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/camille/code/StevenMirr-ops/Ma_Recolte_Connectee/config/environment.rb:5)
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/camille/code/StevenMirr-ops/Ma_Recolte_Connectee/config/environment.rb:5)
