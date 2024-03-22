@@ -16,10 +16,12 @@
 <div class="containercarte">
   <div class="col-6">
   <h1>Où trouver nos producteurs autour de Nantes</h1>
-  <p><%= link_to "Voir tous nos producteurs", exploitations_path, class:"button" %></p>
   </div>
-   <div class="imagecarte col-6">
-  </div>
+    <div class="carte-exploitation" style="width: 50%; height: 400px;"
+              data-controller="map"
+              data-map-markers-value="<%= @markers.to_json %>"
+              data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
+          </div>
    </div>
 </div>
 <div class="row">
