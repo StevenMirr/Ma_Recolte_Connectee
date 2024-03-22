@@ -3,7 +3,7 @@ class ProduitsController < ApplicationController
 
   def index
     @produits = Produit.all
-    # @exploitation = Exploitation.find(params[:id])
+    @exploitation = Exploitation.find(params[:exploitation_id])
   end
 
   def show
@@ -11,10 +11,13 @@ class ProduitsController < ApplicationController
 
   def new
     @produit = Produit.new
+    @exploitation = Exploitation.find(params[:exploitation_id])
   end
 
   def create
+    @exploitation = Exploitation.find(params[:exploitation_id])
     @produit = Produit.new(produit_params)
+    @produit.exploitation = @exploitation
     if @produit.save
       redirect_to exploitation_produits_path(@exploitation)
     else
@@ -28,7 +31,7 @@ class ProduitsController < ApplicationController
   def update
     if current_user == @exploitation.user
       @produit.update(produit_params)
-      redirect_to exploitation_produits(@exploitation), notice: "Produit mis à jour"
+      redirect_to exploitation_produits_path(@exploitation), notice: "Produit mis à jour"
     else
       render edit
     end
@@ -36,7 +39,7 @@ class ProduitsController < ApplicationController
 
   def destroy
     @produit.destroy
-    redirect_to exploitation_produits(@exploitation), notice: 'Suppression confirmée'
+    redirect_to exploitation_produits_path(@exploitation), notice: 'Suppression confirmée'
   end
 
   private

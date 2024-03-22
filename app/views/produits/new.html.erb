@@ -1,0 +1,9 @@
+<h1>Ajouter un nouveau produit à mon catalogue</h1>
+<%= simple_form_for [@exploitation, @produit] do |f| %>
+<%= f.input :name, placeholder: 'Produit', label: "Nom" %>
+<%= f.input :category, collection: ["légume", "fruit", "épicerie"], label: "Catégorie" %>
+<%= f.input :price, label: "Prix" %>
+<%= f.input :quantity, label: "quantité" %>
+<%= f.input :photo, as: :file %>
+<%= f.submit class:'btn button' %>
+<% end  %>
