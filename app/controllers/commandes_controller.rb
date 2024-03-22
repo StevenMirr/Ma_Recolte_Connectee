@@ -4,11 +4,13 @@ class CommandesController < ApplicationController
 
   # GET /commandes toutes
   def index
-    @commandes = Commande.all
+    @exploitations = Exploitation.all
+    @commandes = Commande.all 
   end
 
   # GET /commandes /show
   def show
+    @commandes = Commande.all
   end
 
   # GET /commandes/new

@@ -26,7 +26,7 @@
           </a>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <%= link_to "Produits", "#", class: "dropdown-item" %>
-              <%= link_to "Commandes", "#", class: "dropdown-item" %>
+              <%= link_to "Commandes", "/commandes", class: "dropdown-item" %>
               <%= link_to "Ma Ferme", "#", class: "dropdown-item" %>
               <%= link_to "Qui Sommes-nous?", "#", class: "dropdown-item" %>
               <%= link_to "Déconnexion", destroy_user_session_path, data: {turbo_method: :delete}, class: "dropdown-item" %>
