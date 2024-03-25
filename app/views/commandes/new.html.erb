@@ -1,30 +1,5 @@
 <h1>Nouvelle Commande</h1>
 
-<%= form_with(model: @commande, url: commandes_path, method: :post) do |form| %>
-  <% if @commande.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@commande.errors.count, "erreur") %> ont empêché cette commande d'être enregistrée :</h2>
-      <ul>
-        <% @commande.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= form.label :creneau_id %>
-    <%= form.collection_select :creneau_id, Creneau.all, :id, :heure, prompt: "Sélectionnez un créneau" %>
-  </div>
-
-  <div class="field">
-    <%= form.label :exploitation_id %>
-    <%= form.collection_select :exploitation_id, Exploitation.all, :id, :name, prompt: "Sélectionnez une exploitation" %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit "Créer la commande" %>
-  </div>
+<% @baskets.each do |basket| %>
+<%= basket.produit.name %>
 <% end %>
-
-<%= link_to "Retour à la liste des commandes", commandes_path %>

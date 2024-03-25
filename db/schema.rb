@@ -10,7 +10,8 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_03_22_142401) do
+ActiveRecord::Schema[7.1].define(version: 2024_03_25_115459) do
+
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -53,13 +54,15 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_22_142401) do
 
   create_table "commandes", force: :cascade do |t|
     t.integer "total_price"
-    t.boolean "status"
+    t.boolean "status", default: false
     t.bigint "creneau_id", null: false
     t.bigint "produit_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "user_id"
     t.index ["creneau_id"], name: "index_commandes_on_creneau_id"
     t.index ["produit_id"], name: "index_commandes_on_produit_id"
+    t.index ["user_id"], name: "index_commandes_on_user_id"
   end
 
   create_table "creneaus", force: :cascade do |t|
@@ -82,6 +85,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_22_142401) do
     t.float "latitude"
     t.float "longitude"
     t.text "description"
+    t.string "siret"
     t.index ["user_id"], name: "index_exploitations_on_user_id"
   end
 
@@ -108,6 +112,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_22_142401) do
     t.datetime "updated_at", null: false
     t.string "name"
     t.string "user_img"
+    t.string "telephone"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
@@ -118,6 +123,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_22_142401) do
   add_foreign_key "baskets", "produits", column: "produits_id"
   add_foreign_key "commandes", "creneaus"
   add_foreign_key "commandes", "produits"
+  add_foreign_key "commandes", "users"
   add_foreign_key "creneaus", "users"
   add_foreign_key "exploitations", "users"
   add_foreign_key "produits", "exploitations"

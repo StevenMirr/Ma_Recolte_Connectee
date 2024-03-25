@@ -1,4 +1,4 @@
-Mes commandes
+<h1> Ma commande </h1>
    <%= month_calendar do |date| %>
       <%= date %>
     <% end %>
@@ -7,7 +7,7 @@ Mes commandes
 
 <h1>Liste des commandes</h1>
 
-<% if @commandes.any? %>
+<% if @commandes.exist? %>
   <ul>
     <% @commandes.each do |commande| %>
       <li>
@@ -22,4 +22,3 @@ Mes commandes
 <% end %>
 
 <%= link_to "Nouvelle Commande", new_commande_path %>
-

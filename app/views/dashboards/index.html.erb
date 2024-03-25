@@ -1,0 +1,108 @@
+<link rel="stylesheet" href="dashboard.css">
+
+<div class="row" class="title-dashboard">
+  <h1 class ="title-dashboard">Mon Exploitation</h1>
+  <div class="col-md-6">
+    <h2 class="formulaire" class="totel-dashboard">Mon profil</h2>
+
+    <%= form_for @user do |f| %>
+
+      <div class="field">
+        <%= f.label :email %>
+        <%= f.email_field :email, placeholder: "Adresse email", disabled: true %>
+      </div>
+
+      <div class="field">
+        <%= f.label :name %>
+        <%= f.text_field :name, placeholder: "Nom", disabled: true %>
+      </div>
+
+      <div class="field">
+        <%= f.label :telephone %>
+        <%= f.text_field :telephone, placeholder: "Numéro de téléphone", disabled: true %>
+      </div>
+
+      <% @exploitations.each do |exploitation| %>
+        <div class="field">
+          <%= label_tag "Nom de l'exploitation" %>
+          <%= text_field_tag "exploitation_name", exploitation.name, disabled: true, placeholder: "Nom de l'exploitation" %>
+        </div>
+
+        <div class="field">
+          <%= label_tag "Adresse de l'exploitation" %>
+          <%= text_field_tag "exploitation_address", exploitation.address, disabled: true, placeholder: "Adresse de l'exploitation" %>
+        </div>
+
+        <div class="field">
+          <%= label_tag "Numéro SIRET" %>
+          <%= text_field_tag "exploitation_siret", exploitation.siret, disabled: true, placeholder: "Numéro SIRET" %>
+        </div>
+      <% end %>
+
+    <% end %>
+  </div>
+
+<div class="col-md-6 dashboard-container">
+  <div class="chart-container dashboard-title">
+    <!-- Insérer votre code de chart ici -->
+    <canvas id="myChart" width="400" height="300"></canvas>
+  </div>
+  <div class="podium-container">
+    <h2>Podium des produits phares</h2>
+    <div class="podium-items">
+      <div class="podium-item">
+        <div class="product-image cerise"></div>
+        <span class="product-label">Cerise</span>
+      </div>
+      <div class="podium-item">
+        <div class="product-image carrot"></div>
+        <span class="product-label">Carotte</span>
+      </div>
+      <div class="podium-item">
+        <div class="product-image apple"></div>
+        <span class="product-label">Pommes</span>
+      </div>
+      <div class="podium-item">
+        <div class="product-image broccoli"></div>
+        <span class="product-label">Brocolis</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Ventes (€)', 'panier moyen (€)', 'Nd de clients (Nb)',],
+        datasets: [{
+          label: 'Résultats du mois',
+          data: [10, 12, 3,],
+          backgroundColor: [
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(255, 206, 86, 0.2)',
+
+          ],
+          borderColor: [
+            'rgba(255, 99, 132, 1)',
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 206, 86, 1)',
+
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  });
+</script>
