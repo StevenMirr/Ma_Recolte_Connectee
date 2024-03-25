@@ -4,9 +4,16 @@ class ProduitsController < ApplicationController
   def index
     @produits = Produit.all
     @exploitation = Exploitation.find(params[:exploitation_id])
+    @markers = [{
+        lat: @exploitation.latitude,
+        lng: @exploitation.longitude,
+        info_window_html: render_to_string(partial: "info_window", locals: { exploitation: @exploitation }),
+        marker_html: render_to_string(partial: "marker", locals: { exploitation: @exploitation })
+      }]
   end
 
   def show
+    @exploitation = Exploitation.find(params[:exploitation_id])
   end
 
   def new
@@ -29,17 +36,13 @@ class ProduitsController < ApplicationController
   end
 
   def update
-    if current_user == @exploitation.user
       @produit.update(produit_params)
       redirect_to exploitation_produits_path(@exploitation), notice: "Produit mis à jour"
-    else
-      render edit
-    end
   end
 
   def destroy
     @produit.destroy
-    redirect_to exploitation_produits_path(@exploitation), notice: 'Suppression confirmée'
+    redirect_to exploitation_produits_path(@produit.exploitation), notice: 'Suppression confirmée'
   end
 
   private
