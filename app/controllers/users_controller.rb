@@ -2,6 +2,11 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @exploitations = @user.exploitations
+    @siret = @user.siret
+  end
+
+  def siret
+    self[:siret]
   end
 
   def update
