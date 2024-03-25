@@ -1,5 +1,16 @@
 <div class=container >
-  <h1><%= @exploitation.name %></h1>
+  <div class="banner-exploit">
+    <div class="exploit-description">
+      <h1> <%= @exploitation.name %> </h1>
+        <h5><%= @exploitation.description %> </h5>
+    </div>
+    <div class="carte-exploitation" style="width: 50%; height: 300px;"
+      data-controller="map"
+      data-map-markers-value="<%= @markers.to_json %>"
+      data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
+    </div>
+   </div>
+</div>
   <div class="row">
     <% @produits.each do |produit| %>
       <div class="col-md-6">
@@ -7,15 +18,17 @@
           <div class="card-product">
             <div>
                   <% if produit.photo.attached? %>
-                    <%= cl_image_tag produit.photo.key, crop: :fill %>
+                    <%= link_to(cl_image_tag(produit.photo.key, crop: :fill), exploitation_produit_path(exploitation_id: produit.exploitation_id, id: produit.id)) %>
                   <% else %>
                   <p width: 100>pas de photo</p>
-                  <%end %>
+                  <% end %>
             </div>
             <div class="card-product-infos">
-              <div><h2><%= produit.name %></h2></div>
+              <div><h2><%= link_to produit.name, exploitation_produit_path(exploitation_id: produit.exploitation_id, id: produit.id) %></h2></div>
               <div><p class="card-product-infos">Prix <%= produit.price %>€ | Quantité <%= produit.quantity %></p></div>
+
               <div><%= link_to 'Ajouter au panier', exploitation_produit_panier_index_path(@exploitation, produit) , data: { turbo_method: :post} %></div>
+
               <p><%= link_to "Supprimer le produit", exploitation_produits_path(@exploitation), class: "btn button", data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %> </p>
             </div>
           </div>
@@ -23,8 +36,8 @@
       </div>
     <% end %>
   </div>
-  <div>
-  <%= link_to "Ajouter un nouveau produit", new_exploitation_produit_path %>
+  <div class="text-end p-3">
+  <%= link_to "Ajouter un nouveau produit", new_exploitation_produit_path, class:"button" %>
   </div>
 
 </div>

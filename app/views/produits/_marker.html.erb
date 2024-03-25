@@ -1,0 +1,5 @@
+<% if exploitation.logo.key.present? %>
+  <%= cl_image_tag @exploitation.logo.key, height: 50, width: 50, alt: "Logo" %>
+<% else %>
+  <!-- Fallback content ou traitement alternatif -->
+<% end %>
