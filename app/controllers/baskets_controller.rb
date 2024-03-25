@@ -1,11 +1,16 @@
 class BasketsController < ApplicationController
   def create
-    @basket = Basket.new(basket_params)
+    @basket = Basket.new
     @produit = Produit.find(params[:produit_id])
     @basket.produit = @produit
-    @commande = current_user.commande.find_or_create_by(statut: :pending)
+    @commande = current_user.commandes.find_or_create_by(user: current_user)
+    @commande.save!
     @basket.commande = @commande
-    redirect_to produits_path, notice: 'Produit ajouté au panier.'
+     if @basket.save
+      redirect_to "/produits/index", notice: 'Produit ajouté au panier.'
+     else
+      redirect_to produits_path, notice: 'erreur'
+     end
   end
 
   private

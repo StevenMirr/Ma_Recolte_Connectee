@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_03_25_115459) do
+ActiveRecord::Schema[7.1].define(version: 2024_03_25_161500) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -44,24 +44,20 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_25_115459) do
   end
 
   create_table "baskets", force: :cascade do |t|
-    t.bigint "produits_id", null: false
-    t.bigint "commandes_id", null: false
+    t.bigint "produit_id", null: false
+    t.bigint "commande_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["commandes_id"], name: "index_baskets_on_commandes_id"
-    t.index ["produits_id"], name: "index_baskets_on_produits_id"
+    t.index ["commande_id"], name: "index_baskets_on_commande_id"
+    t.index ["produit_id"], name: "index_baskets_on_produit_id"
   end
 
   create_table "commandes", force: :cascade do |t|
-    t.integer "total_price"
+    t.float "total_price", default: 0.0
     t.boolean "status", default: false
-    t.bigint "creneau_id", null: false
-    t.bigint "produit_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id"
-    t.index ["creneau_id"], name: "index_commandes_on_creneau_id"
-    t.index ["produit_id"], name: "index_commandes_on_produit_id"
     t.index ["user_id"], name: "index_commandes_on_user_id"
   end
 
@@ -72,6 +68,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_25_115459) do
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "commande_id"
+    t.index ["commande_id"], name: "index_creneaus_on_commande_id"
     t.index ["user_id"], name: "index_creneaus_on_user_id"
   end
 
@@ -119,11 +117,10 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_25_115459) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "baskets", "commandes", column: "commandes_id"
-  add_foreign_key "baskets", "produits", column: "produits_id"
-  add_foreign_key "commandes", "creneaus"
-  add_foreign_key "commandes", "produits"
+  add_foreign_key "baskets", "commandes"
+  add_foreign_key "baskets", "produits"
   add_foreign_key "commandes", "users"
+  add_foreign_key "creneaus", "commandes"
   add_foreign_key "creneaus", "users"
   add_foreign_key "exploitations", "users"
   add_foreign_key "produits", "exploitations"

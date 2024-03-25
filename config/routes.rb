@@ -14,12 +14,14 @@ Rails.application.routes.draw do
   end
 
   resources :exploitations do
+    resources :produits do
+      resources :baskets, only: [:create], as: "panier"
     resources :produits, except: [:destroy] do
       resources :commandes
     end
   end
 
-  resources :baskets
   resources :produits, only: [:destroy]
+
   # root "posts#index"
 end
