@@ -1,4 +1,4 @@
 class Basket < ApplicationRecord
-  belongs_to :produits
-  belongs_to :commandes
+  belongs_to :commande
+  belongs_to :produit
 end
