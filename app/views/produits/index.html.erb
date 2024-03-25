@@ -1,5 +1,5 @@
 <div class=container >
-  <h1>Hello</h1>
+  <h1><%= @exploitation.name %></h1>
   <div class="row">
     <% @produits.each do |produit| %>
       <div class="col-md-6">
@@ -16,11 +16,15 @@
               <div><h2><%= produit.name %></h2></div>
               <div><p class="card-product-infos">Prix <%= produit.price %>€ | Quantité <%= produit.quantity %></p></div>
               <div><%= link_to 'Ajouter au panier', baskets_path(produit.id), method: :post %></div>
+              <p><%= link_to "Supprimer le produit", exploitation_produits_path(@exploitation), class: "btn button", data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %> </p>
             </div>
           </div>
         </div>
       </div>
     <% end %>
+  </div>
+  <div>
+  <%= link_to "Ajouter un nouveau produit", new_exploitation_produit_path %>
   </div>
 
 
