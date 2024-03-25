@@ -14,6 +14,6 @@ class BasketsController < ApplicationController
   private
 
   def set_basket
-    @basket = current_user.basket
+    @basket = current_user
   end
 end
