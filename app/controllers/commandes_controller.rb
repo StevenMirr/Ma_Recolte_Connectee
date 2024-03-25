@@ -2,10 +2,9 @@
 class CommandesController < ApplicationController
   before_action :set_commande, only: [:show, :edit, :update, :destroy]
 
-  # GET /commandes toutes
   def index
     @exploitations = Exploitation.all
-    @commandes = Commande.all 
+    @commandes = Commande.all
   end
 
   # GET /commandes /show
@@ -20,7 +19,8 @@ class CommandesController < ApplicationController
 
   # POST /commandes
   def create
-    @commande = Commande.new(commande_params)
+    commande = current_user.commandes.create
+    commande.produit << current_user.panier.produits
 
     if @commande.save
       redirect_to @commande, notice: 'Votre commande a été créée !'

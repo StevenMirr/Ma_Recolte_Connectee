@@ -1,4 +1,5 @@
 class Commande < ApplicationRecord
   belongs_to :creneau
-  has_many :produits
+  has_many :baskets
+  has_many :produits, through: :baskets
 end

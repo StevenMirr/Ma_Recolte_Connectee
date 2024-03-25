@@ -15,7 +15,7 @@
             <div class="card-product-infos">
               <div><h2><%= produit.name %></h2></div>
               <div><p class="card-product-infos">Prix <%= produit.price %>€ | Quantité <%= produit.quantity %></p></div>
-              <div>ajouter au panier</div>
+              <div><%= link_to 'Ajouter au panier', baskets_path(produit.id), method: :post %></div>
             </div>
           </div>
         </div>

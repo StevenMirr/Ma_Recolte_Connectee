@@ -17,6 +17,8 @@ Rails.application.routes.draw do
       resources :commandes
     end
   end
+
+  resources :baskets
+
   # root "posts#index"
-  
 end
