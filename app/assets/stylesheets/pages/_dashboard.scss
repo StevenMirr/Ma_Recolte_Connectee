@@ -1,0 +1,46 @@
+.title-dashboard {
+    color: $brown
+}
+
+.formulaire {
+  margin-bottom :458px;
+  color: $brown;
+}
+
+.field {
+  text-align: left;
+  color: $brown;
+}
+.podium-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $brown
+}
+
+.podium-item {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  color: $brown
+}
+
+.product-image {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  margin-right: 10px;
+}
+
+.product-label {
+  font-size: 18px;
+
+}
+
+.cerise {
+  width: 100px;
+  height: 100px;
+  background-image: url('https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F4%2F40%2FBing_Cherries_%2528USDA_ARS%2529.jpg&tbnid=iGdZirZUTf0rRM&vet=12ahUKEwiE6O-_2I-FAxWdlycCHcSXD60QMygAegQIARBx..i&imgrefurl=https%3A%2F%2Ffr.wikipedia.org%2Fwiki%2FCerise&docid=p-jCeFL2WvlsnM&w=1795&h=2700&q=cerise&ved=2ahUKEwiE6O-_2I-FAxWdlycCHcSXD60QMygAegQIARBx');
+  background-size: cover;
+  margin-right: 10px;
+}

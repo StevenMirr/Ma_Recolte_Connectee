@@ -5086,3 +5086,1658 @@ NoMethodError (undefined method `siret' for #<User id: 11, email: "superman@lewa
   
 app/controllers/users_controller.rb:5:in `show'
 Started POST "/__web_console/repl_sessions/583ba9e6dde150078d6b3f65727badfd/trace" for ::1 at 2024-03-22 16:39:47 +0100
+[dotenv] Set [36mCLOUDINARY_URL[0m
+[dotenv] Loaded [33m.env[0m
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/camille/code/StevenMirr-ops/Ma_Recolte_Connectee/config/environment.rb:5)
+Started GET "/" for ::1 at 2024-03-25 11:56:34 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (12.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+Started GET "/" for ::1 at 2024-03-25 11:56:35 +0100
+  [1m[36mExploitation Load (30.1ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE (exploitations.latitude IS NOT NULL AND exploitations.longitude IS NOT NULL)[0m
+  ↳ app/controllers/pages_controller.rb:6:in `map'
+Processing by PagesController#home as HTML
+  [1m[36mExploitation Load (238.9ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE (exploitations.latitude IS NOT NULL AND exploitations.longitude IS NOT NULL)[0m
+  ↳ app/controllers/pages_controller.rb:6:in `map'
+  Rendered exploitations/_info_window.html.erb (Duration: 2.0ms | Allocations: 269)
+  Rendered exploitations/_info_window.html.erb (Duration: 1.2ms | Allocations: 283)
+  [1m[36mActiveStorage::Attachment Load (5.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  [1m[36mActiveStorage::Attachment Load (2.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  [1m[36mActiveStorage::Blob Load (2.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (3.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 256.5ms | Allocations: 38744)
+  Rendered exploitations/_marker.html.erb (Duration: 258.1ms | Allocations: 38951)
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 10.8ms | Allocations: 520)
+  Rendered pages/home.html.erb within layouts/application (Duration: 9.8ms | Allocations: 329)
+  Rendered shared/_navbar.html.erb (Duration: 14.2ms | Allocations: 2791)
+  Rendered shared/_navbar.html.erb (Duration: 17.2ms | Allocations: 3069)
+  Rendered shared/_flashes.html.erb (Duration: 2.9ms | Allocations: 227)
+  Rendered shared/_flashes.html.erb (Duration: 3.2ms | Allocations: 264)
+  Rendered shared/_footer.html.erb (Duration: 5.4ms | Allocations: 116)
+  Rendered shared/_footer.html.erb (Duration: 3.7ms | Allocations: 122)
+  Rendered layout layouts/application.html.erb (Duration: 6769.7ms | Allocations: 315243)
+  Rendered layout layouts/application.html.erb (Duration: 6774.4ms | Allocations: 315596)
+Completed 200 OK in 7658ms (Views: 6794.7ms | ActiveRecord: 262.0ms | Allocations: 395397)
+
+
+Completed 200 OK in 7338ms (Views: 6796.6ms | ActiveRecord: 417.6ms | Allocations: 379850)
+
+
+Started GET "/users/sign_in" for ::1 at 2024-03-25 11:56:54 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.4ms | Allocations: 611)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 231.0ms | Allocations: 15766)
+  Rendered shared/_navbar.html.erb (Duration: 9.3ms | Allocations: 627)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 343.0ms | Allocations: 26489)
+Completed 200 OK in 439ms (Views: 348.4ms | ActiveRecord: 10.9ms | Allocations: 40407)
+
+
+Started GET "/users/password/new" for ::1 at 2024-03-25 11:57:03 +0100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 149)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 27.8ms | Allocations: 1790)
+  Rendered shared/_navbar.html.erb (Duration: 2.2ms | Allocations: 604)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 29)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 74.9ms | Allocations: 12424)
+Completed 200 OK in 97ms (Views: 78.4ms | ActiveRecord: 0.0ms | Allocations: 13563)
+
+
+Started POST "/users/sign_in" for ::1 at 2024-03-25 11:57:03 +0100
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"superman@lewagon.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (4.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "superman@lewagon.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 322ms (ActiveRecord: 3.9ms | Allocations: 6152)
+
+
+Started GET "/" for ::1 at 2024-03-25 11:57:04 +0100
+Processing by PagesController#home as TURBO_STREAM
+  [1m[36mExploitation Load (0.9ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE (exploitations.latitude IS NOT NULL AND exploitations.longitude IS NOT NULL)[0m
+  ↳ app/controllers/pages_controller.rb:6:in `map'
+  Rendered exploitations/_info_window.html.erb (Duration: 0.2ms | Allocations: 22)
+  [1m[36mActiveStorage::Attachment Load (1.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 15.8ms | Allocations: 2156)
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 91)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:16
+  Rendered shared/_navbar.html.erb (Duration: 5.3ms | Allocations: 1579)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 41.8ms | Allocations: 12001)
+Completed 200 OK in 70ms (Views: 47.4ms | ActiveRecord: 3.4ms | Allocations: 15465)
+
+
+Started GET "/commandes" for ::1 at 2024-03-25 11:57:13 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/commandes"):
+  
+Started GET "/commandes" for ::1 at 2024-03-25 11:57:15 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/commandes"):
+  
+Started GET "/commandes" for ::1 at 2024-03-25 11:57:18 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/commandes"):
+  
+Started GET "/" for ::1 at 2024-03-25 11:57:29 +0100
+Processing by PagesController#home as HTML
+  [1m[36mExploitation Load (0.9ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE (exploitations.latitude IS NOT NULL AND exploitations.longitude IS NOT NULL)[0m
+  ↳ app/controllers/pages_controller.rb:6:in `map'
+  Rendered exploitations/_info_window.html.erb (Duration: 0.2ms | Allocations: 16)
+  [1m[36mActiveStorage::Attachment Load (3.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  [1m[36mActiveStorage::Blob Load (0.9ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 28.7ms | Allocations: 2145)
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 99)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:16
+  Rendered shared/_navbar.html.erb (Duration: 12.1ms | Allocations: 1558)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 29)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 66.1ms | Allocations: 11905)
+Completed 200 OK in 107ms (Views: 66.2ms | ActiveRecord: 5.8ms | Allocations: 15288)
+
+
+Started GET "/commandes" for ::1 at 2024-03-25 11:57:35 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/commandes"):
+  
+Started GET "/commandes" for ::1 at 2024-03-25 11:57:41 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/commandes"):
+  
+Started GET "/exploitations" for ::1 at 2024-03-25 11:57:43 +0100
+Processing by ExploitationsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mExploitation Load (0.4ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE (exploitations.latitude IS NOT NULL AND exploitations.longitude IS NOT NULL)[0m
+  ↳ app/controllers/exploitations_controller.rb:10:in `map'
+  Rendered exploitations/_info_window.html.erb (Duration: 0.1ms | Allocations: 20)
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  [1m[36mActiveStorage::Blob Load (1.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 11.0ms | Allocations: 2114)
+  Rendering layout layouts/application.html.erb
+  Rendering exploitations/index.html.erb within layouts/application
+  [1m[36mExploitation Load (0.5ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations"[0m
+  ↳ app/views/exploitations/index.html.erb:11
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  [1m[36mCACHE ActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:16
+  Rendered exploitations/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 2957)
+  Rendered shared/_navbar.html.erb (Duration: 1.5ms | Allocations: 678)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 29)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 38.9ms | Allocations: 13678)
+Completed 200 OK in 65ms (Views: 41.0ms | ActiveRecord: 2.8ms | Allocations: 18957)
+
+
+Started GET "/exploitations" for ::1 at 2024-03-25 11:57:59 +0100
+Processing by ExploitationsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mExploitation Load (0.9ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE (exploitations.latitude IS NOT NULL AND exploitations.longitude IS NOT NULL)[0m
+  ↳ app/controllers/exploitations_controller.rb:10:in `map'
+  Rendered exploitations/_info_window.html.erb (Duration: 0.2ms | Allocations: 14)
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  [1m[36mActiveStorage::Blob Load (1.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 15.3ms | Allocations: 1978)
+  Rendering layout layouts/application.html.erb
+  Rendering exploitations/index.html.erb within layouts/application
+  [1m[36mExploitation Load (0.5ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations"[0m
+  ↳ app/views/exploitations/index.html.erb:11
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  [1m[36mCACHE ActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:16
+  Rendered exploitations/index.html.erb within layouts/application (Duration: 16.4ms | Allocations: 2506)
+  Rendered shared/_navbar.html.erb (Duration: 1.5ms | Allocations: 666)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 55.7ms | Allocations: 13066)
+Completed 200 OK in 88ms (Views: 56.7ms | ActiveRecord: 3.9ms | Allocations: 17580)
+
+
+Started GET "/exploitations" for ::1 at 2024-03-25 11:58:10 +0100
+Processing by ExploitationsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mExploitation Load (0.5ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE (exploitations.latitude IS NOT NULL AND exploitations.longitude IS NOT NULL)[0m
+  ↳ app/controllers/exploitations_controller.rb:10:in `map'
+  Rendered exploitations/_info_window.html.erb (Duration: 0.1ms | Allocations: 14)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  [1m[36mActiveStorage::Blob Load (1.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/exploitations/_marker.html.erb:1
+  Rendered exploitations/_marker.html.erb (Duration: 13.0ms | Allocations: 1979)
+  Rendering layout layouts/application.html.erb
+  Rendering exploitations/index.html.erb within layouts/application
+  [1m[36mExploitation Load (0.7ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations"[0m
+  ↳ app/views/exploitations/index.html.erb:11
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Exploitation"], ["name", "logo"], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:15
+  [1m[36mCACHE ActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/exploitations/index.html.erb:16
+  Rendered exploitations/index.html.erb within layouts/application (Duration: 12.6ms | Allocations: 2506)
+  Rendered shared/_navbar.html.erb (Duration: 2.6ms | Allocations: 666)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 50.1ms | Allocations: 13066)
+Completed 200 OK in 74ms (Views: 50.3ms | ActiveRecord: 3.0ms | Allocations: 17577)
+
+
+Started GET "/producteur" for ::1 at 2024-03-25 12:11:18 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/producteur"):
+  
+Started GET "/dashboard" for ::1 at 2024-03-25 12:13:17 +0100
+  
+ActionController::RoutingError (uninitialized constant DashboardController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  DashboardsController
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 12:16:14 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboards"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 12:17:26 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboards"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 12:18:21 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (8.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 406 Not Acceptable in 567ms (ActiveRecord: 152.5ms | Allocations: 18051)
+
+
+  
+ActionController::MissingExactTemplate (DashboardsController#index is missing a template for request formats: text/html):
+  
+actionpack (7.1.3.2) lib/action_controller/metal/implicit_render.rb:47:in `default_render'
+actionpack (7.1.3.2) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+actionpack (7.1.3.2) lib/abstract_controller/base.rb:224:in `process_action'
+actionpack (7.1.3.2) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.1.3.2) lib/abstract_controller/callbacks.rb:259:in `block in process_action'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+turbo-rails (2.0.5) lib/turbo-rails.rb:24:in `with_request_id'
+turbo-rails (2.0.5) app/controllers/concerns/turbo/request_id_tracking.rb:10:in `turbo_tracking_request_id'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+actiontext (7.1.3.2) lib/action_text/rendering.rb:23:in `with_renderer'
+actiontext (7.1.3.2) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:130:in `instance_exec'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:141:in `run_callbacks'
+actionpack (7.1.3.2) lib/abstract_controller/callbacks.rb:258:in `process_action'
+actionpack (7.1.3.2) lib/action_controller/metal/rescue.rb:25:in `process_action'
+actionpack (7.1.3.2) lib/action_controller/metal/instrumentation.rb:74:in `block in process_action'
+activesupport (7.1.3.2) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.1.3.2) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.1.3.2) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.1.3.2) lib/action_controller/metal/instrumentation.rb:73:in `process_action'
+actionpack (7.1.3.2) lib/action_controller/metal/params_wrapper.rb:261:in `process_action'
+activerecord (7.1.3.2) lib/active_record/railties/controller_runtime.rb:32:in `process_action'
+actionpack (7.1.3.2) lib/abstract_controller/base.rb:160:in `process'
+actionview (7.1.3.2) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.1.3.2) lib/action_controller/metal.rb:227:in `dispatch'
+actionpack (7.1.3.2) lib/action_controller/metal.rb:309:in `dispatch'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:51:in `block in serve'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:882:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (3.0.9.1) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.0.9.1) lib/rack/etag.rb:29:in `call'
+rack (3.0.9.1) lib/rack/conditional_get.rb:31:in `call'
+rack (3.0.9.1) lib/rack/head.rb:15:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.3.2) lib/active_record/migration.rb:655:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.3.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.3.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.3.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.9.1) lib/rack/method_override.rb:28:in `call'
+rack (3.0.9.1) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.9.1) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.3.2) lib/rails/engine.rb:536:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/dashboards" for ::1 at 2024-03-25 12:18:46 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 406 Not Acceptable in 21ms (ActiveRecord: 1.8ms | Allocations: 2270)
+
+
+  
+ActionController::MissingExactTemplate (DashboardsController#index is missing a template for request formats: text/html):
+  
+actionpack (7.1.3.2) lib/action_controller/metal/implicit_render.rb:47:in `default_render'
+actionpack (7.1.3.2) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+actionpack (7.1.3.2) lib/abstract_controller/base.rb:224:in `process_action'
+actionpack (7.1.3.2) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.1.3.2) lib/abstract_controller/callbacks.rb:259:in `block in process_action'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+turbo-rails (2.0.5) lib/turbo-rails.rb:24:in `with_request_id'
+turbo-rails (2.0.5) app/controllers/concerns/turbo/request_id_tracking.rb:10:in `turbo_tracking_request_id'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+actiontext (7.1.3.2) lib/action_text/rendering.rb:23:in `with_renderer'
+actiontext (7.1.3.2) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:130:in `instance_exec'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:141:in `run_callbacks'
+actionpack (7.1.3.2) lib/abstract_controller/callbacks.rb:258:in `process_action'
+actionpack (7.1.3.2) lib/action_controller/metal/rescue.rb:25:in `process_action'
+actionpack (7.1.3.2) lib/action_controller/metal/instrumentation.rb:74:in `block in process_action'
+activesupport (7.1.3.2) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.1.3.2) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.1.3.2) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.1.3.2) lib/action_controller/metal/instrumentation.rb:73:in `process_action'
+actionpack (7.1.3.2) lib/action_controller/metal/params_wrapper.rb:261:in `process_action'
+activerecord (7.1.3.2) lib/active_record/railties/controller_runtime.rb:32:in `process_action'
+actionpack (7.1.3.2) lib/abstract_controller/base.rb:160:in `process'
+actionview (7.1.3.2) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.1.3.2) lib/action_controller/metal.rb:227:in `dispatch'
+actionpack (7.1.3.2) lib/action_controller/metal.rb:309:in `dispatch'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:51:in `block in serve'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.3.2) lib/action_dispatch/routing/route_set.rb:882:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (3.0.9.1) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.0.9.1) lib/rack/etag.rb:29:in `call'
+rack (3.0.9.1) lib/rack/conditional_get.rb:31:in `call'
+rack (3.0.9.1) lib/rack/head.rb:15:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.3.2) lib/active_record/migration.rb:655:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.3.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.3.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.3.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.9.1) lib/rack/method_override.rb:28:in `call'
+rack (3.0.9.1) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.9.1) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.3.2) lib/rails/engine.rb:536:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/dashboards" for ::1 at 2024-03-25 12:21:23 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 160.1ms | Allocations: 8348)
+  Rendered layout layouts/application.html.erb (Duration: 160.9ms | Allocations: 8445)
+Completed 500 Internal Server Error in 335ms (ActiveRecord: 80.0ms | Allocations: 20147)
+
+
+  
+ActionView::Template::Error (undefined method `siret' for #<User id: 6, email: "superman@lewagon.com", created_at: "2024-03-22 11:54:33.278032000 +0000", updated_at: "2024-03-22 11:54:33.278032000 +0000", name: "Superman", user_img: nil>):
+    17: 
+    18:       <div class="field">
+    19:         <%= f.label :siret %>
+    20:         <%= f.text_field :siret, placeholder: "Numéro SIRET" %>
+    21:       </div>
+    22: 
+    23:       <div class="field">
+  
+app/views/dashboards/index.html.erb:20
+app/views/dashboards/index.html.erb:5
+Started GET "/dashboards" for ::1 at 2024-03-25 12:23:41 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (4.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 79.5ms | Allocations: 7854)
+  Rendered layout layouts/application.html.erb (Duration: 80.0ms | Allocations: 7943)
+Completed 500 Internal Server Error in 297ms (ActiveRecord: 54.7ms | Allocations: 19622)
+
+
+  
+ActionView::Template::Error (undefined method `telephone' for #<User id: 6, email: "superman@lewagon.com", created_at: "2024-03-22 11:54:33.278032000 +0000", updated_at: "2024-03-22 11:54:33.278032000 +0000", name: "Superman", user_img: nil>):
+    17: 
+    18:       <div class="field">
+    19:         <%= f.label :telephone %>
+    20:         <%= f.text_field :telephone, placeholder: "Numéro de téléphone" %>
+    21:       </div>
+    22: 
+    23:       <% @exploitations.each do |exploitation| %>
+  
+app/views/dashboards/index.html.erb:20
+app/views/dashboards/index.html.erb:5
+Started GET "/dashboards" for ::1 at 2024-03-25 12:26:28 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 53.9ms | Allocations: 7869)
+  Rendered layout layouts/application.html.erb (Duration: 54.4ms | Allocations: 7958)
+Completed 500 Internal Server Error in 177ms (ActiveRecord: 13.8ms | Allocations: 19633)
+
+
+  
+ActionView::Template::Error (undefined method `siret' for #<User id: 6, email: "superman@lewagon.com", created_at: "2024-03-22 11:54:33.278032000 +0000", updated_at: "2024-03-22 11:54:33.278032000 +0000", name: "Superman", user_img: nil>):
+    17: 
+    18:       <div class="field">
+    19:         <%= f.label :siret %>
+    20:         <%= f.text_field :siret, placeholder: "Numéro SIRET" %>
+    21:       </div>
+    22: 
+    23:       <div class="field">
+  
+app/views/dashboards/index.html.erb:20
+app/views/dashboards/index.html.erb:5
+Started GET "/dashboards" for ::1 at 2024-03-25 12:32:25 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (8.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 76.9ms | Allocations: 7825)
+  Rendered layout layouts/application.html.erb (Duration: 77.9ms | Allocations: 7914)
+Completed 500 Internal Server Error in 611ms (ActiveRecord: 109.7ms | Allocations: 25691)
+
+
+  
+ActionView::Template::Error (undefined method `telephone' for #<User id: 6, email: "superman@lewagon.com", created_at: "2024-03-22 11:54:33.278032000 +0000", updated_at: "2024-03-22 11:54:33.278032000 +0000", name: "Superman", user_img: nil>):
+    18: 
+    19:       <div class="field">
+    20:         <%= f.label :telephone %>
+    21:         <%= f.text_field :telephone, placeholder: "Numéro de téléphone", disabled: true %>
+    22:       </div>
+    23: 
+    24:       <h2>Mes exploitations</h2>
+  
+app/views/dashboards/index.html.erb:21
+app/views/dashboards/index.html.erb:7
+[dotenv] Set [36mCLOUDINARY_URL[0m
+[dotenv] Loaded [33m.env[0m
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/camille/code/StevenMirr-ops/Ma_Recolte_Connectee/config/environment.rb:5)
+[dotenv] Set [36mCLOUDINARY_URL[0m
+[dotenv] Loaded [33m.env[0m
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/camille/code/StevenMirr-ops/Ma_Recolte_Connectee/config/environment.rb:5)
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5483163850383299325)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (3.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (9.9ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+Migrating to AddTelephoneToUsers (20240325113606)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (34.6ms)[0m  [1m[35mALTER TABLE "users" ADD "telephone" character varying[0m
+  [1m[36mActiveRecord::SchemaMigration Create (5.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20240325113606') RETURNING "version"[0m
+  [1m[36mTRANSACTION (23.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(5483163850383299325)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/dashboards" for ::1 at 2024-03-25 12:37:20 +0100
+  
+NoMethodError (undefined method `attr_accessible' for User:Class
+Did you mean?  attr_accessor):
+  
+app/models/user.rb:6:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/dashboards" for ::1 at 2024-03-25 12:37:44 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (11.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (10.9ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 230.8ms | Allocations: 14144)
+  Rendered layout layouts/application.html.erb (Duration: 232.2ms | Allocations: 14231)
+Completed 500 Internal Server Error in 363ms (ActiveRecord: 40.4ms | Allocations: 29265)
+
+
+  
+ActionView::Template::Error (undefined method `siret' for #<Exploitation id: 6, name: "Les Côteaux Nantais", address: "3 place Pierre Desfossés, Vertou", user_id: 6, created_at: "2024-03-22 11:54:35.147034000 +0000", updated_at: "2024-03-22 11:54:35.270064000 +0000", logo: nil, latitude: 47.1747231, longitude: -1.5193826, description: "Mon exploitation est située à 20 minutes au sud-es...">):
+    26:         <div class="exploitation">
+    27:           <%= label_tag "Nom de l'exploitation" %>: <%= exploitation.name %><br>
+    28:           <%= label_tag "Adresse de l'exploitation" %>: <%= exploitation.address %><br>
+    29:           <%= label_tag "Numéro SIRET" %>: <%= exploitation.siret %><br>
+    30:           <br>
+    31:         </div>
+    32:       <% end %>
+  
+app/views/dashboards/index.html.erb:29
+app/views/dashboards/index.html.erb:25
+app/views/dashboards/index.html.erb:7
+[dotenv] Set [36mCLOUDINARY_URL[0m
+[dotenv] Loaded [33m.env[0m
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/camille/code/StevenMirr-ops/Ma_Recolte_Connectee/config/environment.rb:5)
+[dotenv] Set [36mCLOUDINARY_URL[0m
+[dotenv] Loaded [33m.env[0m
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/camille/code/StevenMirr-ops/Ma_Recolte_Connectee/config/environment.rb:5)
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5483163850383299325)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (3.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (8.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+Migrating to AddSiretToExploitations (20240325113946)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (14.6ms)[0m  [1m[35mALTER TABLE "exploitations" ADD "siret" character varying[0m
+  [1m[36mActiveRecord::SchemaMigration Create (3.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20240325113946') RETURNING "version"[0m
+  [1m[36mTRANSACTION (4.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(5483163850383299325)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/dashboards" for ::1 at 2024-03-25 12:40:28 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (4.4ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  [1m[36mExploitation Load (3.2ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 139.6ms | Allocations: 10801)
+  Rendered shared/_navbar.html.erb (Duration: 8.3ms | Allocations: 1219)
+  Rendered shared/_flashes.html.erb (Duration: 2.3ms | Allocations: 193)
+  Rendered shared/_footer.html.erb (Duration: 1.8ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 464.3ms | Allocations: 43161)
+Completed 200 OK in 689ms (Views: 460.2ms | ActiveRecord: 35.6ms | Allocations: 55246)
+
+
+Started GET "/dashboards" for ::1 at 2024-03-25 12:46:30 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (6.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (4.4ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:27
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 140.4ms | Allocations: 7836)
+  Rendered shared/_navbar.html.erb (Duration: 8.2ms | Allocations: 1219)
+  Rendered shared/_flashes.html.erb (Duration: 1.8ms | Allocations: 193)
+  Rendered shared/_footer.html.erb (Duration: 2.6ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 443.1ms | Allocations: 40163)
+Completed 200 OK in 930ms (Views: 459.9ms | ActiveRecord: 113.4ms | Allocations: 58203)
+
+
+Started GET "/_dashboard.scss" for ::1 at 2024-03-25 12:46:35 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/_dashboard.scss"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 12:47:59 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (2.3ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:27
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 32.2ms | Allocations: 1576)
+  Rendered shared/_navbar.html.erb (Duration: 2.9ms | Allocations: 657)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 118.5ms | Allocations: 12404)
+Completed 200 OK in 166ms (Views: 117.7ms | ActiveRecord: 3.9ms | Allocations: 14199)
+
+
+Started GET "/_dashboard.scss" for ::1 at 2024-03-25 12:47:59 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/_dashboard.scss"):
+  
+Started GET "/_dashboard.scss" for ::1 at 2024-03-25 12:49:57 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/_dashboard.scss"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 12:52:09 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (5.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (2.6ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:26
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 136.3ms | Allocations: 8156)
+  Rendered shared/_navbar.html.erb (Duration: 4.6ms | Allocations: 1223)
+  Rendered shared/_flashes.html.erb (Duration: 2.6ms | Allocations: 193)
+  Rendered shared/_footer.html.erb (Duration: 1.8ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 495.4ms | Allocations: 40491)
+Completed 200 OK in 848ms (Views: 498.2ms | ActiveRecord: 125.3ms | Allocations: 52552)
+
+
+Started GET "/_dashboard.scss" for ::1 at 2024-03-25 12:52:12 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/_dashboard.scss"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 12:55:20 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (6.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (4.9ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:26
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 345.2ms | Allocations: 8277)
+  Rendered shared/_navbar.html.erb (Duration: 4.4ms | Allocations: 1219)
+  Rendered shared/_flashes.html.erb (Duration: 2.0ms | Allocations: 193)
+  Rendered shared/_footer.html.erb (Duration: 2.6ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 577.9ms | Allocations: 40603)
+Completed 200 OK in 921ms (Views: 615.6ms | ActiveRecord: 92.9ms | Allocations: 52657)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 12:55:24 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 13:01:45 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (7.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (4.2ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:26
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 128.9ms | Allocations: 8116)
+  Rendered shared/_navbar.html.erb (Duration: 5.2ms | Allocations: 1219)
+  Rendered shared/_flashes.html.erb (Duration: 10.8ms | Allocations: 193)
+  Rendered shared/_footer.html.erb (Duration: 0.7ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 388.9ms | Allocations: 40439)
+Completed 200 OK in 932ms (Views: 395.0ms | ActiveRecord: 149.1ms | Allocations: 58574)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 13:01:48 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboard.css" for ::1 at 2024-03-25 13:56:38 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 14:07:46 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (14.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (8.3ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 898.8ms | Allocations: 8132)
+  Rendered shared/_navbar.html.erb (Duration: 47.6ms | Allocations: 1219)
+  Rendered shared/_flashes.html.erb (Duration: 24.3ms | Allocations: 193)
+  Rendered shared/_footer.html.erb (Duration: 8.7ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 1783.1ms | Allocations: 40462)
+Completed 200 OK in 3935ms (Views: 1824.9ms | ActiveRecord: 276.7ms | Allocations: 58576)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 14:08:04 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 14:13:52 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (7.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (6.1ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 162.1ms | Allocations: 7959)
+  Rendered shared/_navbar.html.erb (Duration: 15.5ms | Allocations: 1219)
+  Rendered shared/_flashes.html.erb (Duration: 5.8ms | Allocations: 193)
+  Rendered shared/_footer.html.erb (Duration: 2.2ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 444.1ms | Allocations: 40282)
+Completed 200 OK in 1013ms (Views: 469.5ms | ActiveRecord: 112.3ms | Allocations: 58419)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 14:13:57 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 14:16:09 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (2.6ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 170.8ms | Allocations: 8469)
+  Rendered shared/_navbar.html.erb (Duration: 12.2ms | Allocations: 1219)
+  Rendered shared/_flashes.html.erb (Duration: 25.8ms | Allocations: 193)
+  Rendered shared/_footer.html.erb (Duration: 0.7ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 449.2ms | Allocations: 40797)
+Completed 200 OK in 1058ms (Views: 464.1ms | ActiveRecord: 120.4ms | Allocations: 52895)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 14:16:15 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 14:19:28 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (43.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (4.8ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 230.6ms | Allocations: 1651)
+  Rendered shared/_navbar.html.erb (Duration: 143.9ms | Allocations: 663)
+  Rendered shared/_flashes.html.erb (Duration: 14.3ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 1.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 868.4ms | Allocations: 12494)
+Completed 200 OK in 1431ms (Views: 883.8ms | ActiveRecord: 49.0ms | Allocations: 14392)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 14:19:30 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 14:21:53 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (4.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (1.7ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 62.8ms | Allocations: 1650)
+  Rendered shared/_navbar.html.erb (Duration: 7.2ms | Allocations: 660)
+  Rendered shared/_flashes.html.erb (Duration: 1.4ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 211.7ms | Allocations: 12290)
+Completed 200 OK in 292ms (Views: 218.4ms | ActiveRecord: 6.1ms | Allocations: 14041)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 14:21:53 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 14:25:06 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (61.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (5.4ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 357.1ms | Allocations: 1650)
+  Rendered shared/_navbar.html.erb (Duration: 34.5ms | Allocations: 660)
+  Rendered shared/_flashes.html.erb (Duration: 5.8ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 1.6ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 977.2ms | Allocations: 12494)
+Completed 200 OK in 1723ms (Views: 1005.4ms | ActiveRecord: 64.1ms | Allocations: 14225)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 14:25:09 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 14:27:19 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (35.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (7.0ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 259.0ms | Allocations: 1651)
+  Rendered shared/_navbar.html.erb (Duration: 15.5ms | Allocations: 660)
+  Rendered shared/_flashes.html.erb (Duration: 15.4ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 647.6ms | Allocations: 12294)
+Completed 200 OK in 1079ms (Views: 656.4ms | ActiveRecord: 41.8ms | Allocations: 14039)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 14:27:21 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 14:28:39 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (4.9ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 57.2ms | Allocations: 1650)
+  Rendered shared/_navbar.html.erb (Duration: 14.3ms | Allocations: 660)
+  Rendered shared/_flashes.html.erb (Duration: 0.6ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 341.8ms | Allocations: 12491)
+Completed 200 OK in 414ms (Views: 342.6ms | ActiveRecord: 8.5ms | Allocations: 14233)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 14:28:40 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 14:32:06 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (22.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (7.6ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 261.2ms | Allocations: 1650)
+  Rendered shared/_navbar.html.erb (Duration: 14.8ms | Allocations: 660)
+  Rendered shared/_flashes.html.erb (Duration: 7.2ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 2.2ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 844.0ms | Allocations: 12294)
+Completed 200 OK in 1292ms (Views: 865.2ms | ActiveRecord: 30.1ms | Allocations: 14027)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 14:32:08 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 14:33:25 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (5.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (1.2ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 88.8ms | Allocations: 1650)
+  Rendered shared/_navbar.html.erb (Duration: 13.3ms | Allocations: 660)
+  Rendered shared/_flashes.html.erb (Duration: 2.0ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 335.0ms | Allocations: 12490)
+Completed 200 OK in 532ms (Views: 354.4ms | ActiveRecord: 5.8ms | Allocations: 14245)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 14:33:26 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 14:38:38 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (6.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 16.9ms | Allocations: 284)
+  Rendered shared/_navbar.html.erb (Duration: 39.5ms | Allocations: 1284)
+  Rendered shared/_flashes.html.erb (Duration: 5.9ms | Allocations: 193)
+  Rendered shared/_footer.html.erb (Duration: 3.4ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 754.7ms | Allocations: 32727)
+Completed 200 OK in 1551ms (Views: 776.6ms | ActiveRecord: 123.2ms | Allocations: 44806)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 14:38:45 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboard.css" for ::1 at 2024-03-25 14:38:48 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 14:39:22 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (4.1ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 162.7ms | Allocations: 8451)
+  Rendered shared/_navbar.html.erb (Duration: 8.6ms | Allocations: 1219)
+  Rendered shared/_flashes.html.erb (Duration: 2.8ms | Allocations: 193)
+  Rendered shared/_footer.html.erb (Duration: 4.7ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 362.9ms | Allocations: 40774)
+Completed 200 OK in 622ms (Views: 375.0ms | ActiveRecord: 34.4ms | Allocations: 52837)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 14:39:24 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboard.css" for ::1 at 2024-03-25 14:41:52 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 14:44:22 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (63.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (11.9ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 858.8ms | Allocations: 1650)
+  Rendered shared/_navbar.html.erb (Duration: 120.9ms | Allocations: 660)
+  Rendered shared/_flashes.html.erb (Duration: 98.1ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 4.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 3034.3ms | Allocations: 12496)
+Completed 200 OK in 5190ms (Views: 3170.7ms | ActiveRecord: 65.7ms | Allocations: 14374)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 14:44:35 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 14:47:01 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (6.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (2.4ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 455.8ms | Allocations: 8450)
+  Rendered shared/_navbar.html.erb (Duration: 59.7ms | Allocations: 1219)
+  Rendered shared/_flashes.html.erb (Duration: 13.2ms | Allocations: 193)
+  Rendered shared/_footer.html.erb (Duration: 0.8ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 1574.0ms | Allocations: 40774)
+Completed 200 OK in 2632ms (Views: 1634.5ms | ActiveRecord: 254.2ms | Allocations: 52860)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 14:47:13 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 14:48:38 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (22.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (3.3ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 204.1ms | Allocations: 1651)
+  Rendered shared/_navbar.html.erb (Duration: 12.6ms | Allocations: 660)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 55589.1ms | Allocations: 88139)
+Completed 200 OK in 56024ms (Views: 55622.3ms | ActiveRecord: 26.1ms | Allocations: 89919)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 14:49:35 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 14:51:20 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (48.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (10.1ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 400.6ms | Allocations: 1650)
+  Rendered shared/_navbar.html.erb (Duration: 33.1ms | Allocations: 660)
+  Rendered shared/_flashes.html.erb (Duration: 25.1ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.7ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 49846.0ms | Allocations: 89409)
+Completed 200 OK in 51042ms (Views: 49877.1ms | ActiveRecord: 56.6ms | Allocations: 91220)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 14:52:13 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 15:01:10 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (34.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (19.0ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 1207.0ms | Allocations: 8128)
+  Rendered shared/_navbar.html.erb (Duration: 10.6ms | Allocations: 1222)
+  Rendered shared/_flashes.html.erb (Duration: 21.4ms | Allocations: 193)
+  Rendered shared/_footer.html.erb (Duration: 4.4ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 33691.6ms | Allocations: 120190)
+Completed 200 OK in 36327ms (Views: 33887.2ms | ActiveRecord: 306.9ms | Allocations: 138381)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 15:01:54 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 15:02:27 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (30.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (2.8ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 118.9ms | Allocations: 1672)
+  Rendered layout layouts/application.html.erb (Duration: 8887.2ms | Allocations: 37869)
+Completed 500 Internal Server Error in 9323ms (ActiveRecord: 34.4ms | Allocations: 39726)
+
+
+  
+ActionView::Template::Error (Error: Invalid CSS after "  color": expected "}", was ": $brown"
+        on line 9:3 of app/assets/stylesheets/pages/_dashboard.scss
+        from line 5:1 of app/assets/stylesheets/pages/_index.scss
+        from line 14:1 of app/assets/stylesheets/application.scss
+>>   color: $brown
+
+   --^
+):
+    10:     <script src='https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.js'></script>
+    11:     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    12: 
+    13:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    14:     <%= javascript_importmap_tags %>
+    15:   </head>
+    16: 
+  
+app/views/layouts/application.html.erb:13
+Started GET "/dashboards" for ::1 at 2024-03-25 15:02:52 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (6.5ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 23.9ms | Allocations: 1650)
+  Rendered shared/_navbar.html.erb (Duration: 3.5ms | Allocations: 660)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 17539.9ms | Allocations: 92015)
+Completed 200 OK in 17557ms (Views: 17534.9ms | ActiveRecord: 8.2ms | Allocations: 93736)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 15:03:10 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 15:05:57 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (9.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (4.1ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 264.3ms | Allocations: 8413)
+  Rendered shared/_navbar.html.erb (Duration: 27.7ms | Allocations: 1222)
+  Rendered shared/_flashes.html.erb (Duration: 8.0ms | Allocations: 193)
+  Rendered shared/_footer.html.erb (Duration: 2.3ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 15830.7ms | Allocations: 120393)
+Completed 200 OK in 16410ms (Views: 15839.7ms | ActiveRecord: 174.3ms | Allocations: 132478)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 15:06:21 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 15:08:01 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (5.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (4.0ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 164.4ms | Allocations: 8410)
+  Rendered shared/_navbar.html.erb (Duration: 11.4ms | Allocations: 1223)
+  Rendered shared/_flashes.html.erb (Duration: 4.9ms | Allocations: 193)
+  Rendered shared/_footer.html.erb (Duration: 2.3ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 584.8ms | Allocations: 40631)
+Completed 200 OK in 982ms (Views: 592.8ms | ActiveRecord: 136.7ms | Allocations: 52691)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 15:08:05 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 15:08:16 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (1.7ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 18.9ms | Allocations: 1650)
+  Rendered shared/_navbar.html.erb (Duration: 3.9ms | Allocations: 660)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 73.3ms | Allocations: 12363)
+Completed 200 OK in 98ms (Views: 74.8ms | ActiveRecord: 3.9ms | Allocations: 14144)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 15:08:16 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 15:09:00 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (1.6ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 56.7ms | Allocations: 8410)
+  Rendered shared/_navbar.html.erb (Duration: 3.2ms | Allocations: 1223)
+  Rendered shared/_flashes.html.erb (Duration: 1.4ms | Allocations: 193)
+  Rendered shared/_footer.html.erb (Duration: 2.2ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 152.1ms | Allocations: 40649)
+Completed 200 OK in 244ms (Views: 164.7ms | ActiveRecord: 23.6ms | Allocations: 52714)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 15:09:01 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 15:11:57 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (7.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (5.6ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 247.3ms | Allocations: 8414)
+  Rendered shared/_navbar.html.erb (Duration: 26.5ms | Allocations: 1216)
+  Rendered shared/_flashes.html.erb (Duration: 9.6ms | Allocations: 193)
+  Rendered shared/_footer.html.erb (Duration: 1.3ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 1091.9ms | Allocations: 40496)
+Completed 200 OK in 1718ms (Views: 1112.7ms | ActiveRecord: 125.0ms | Allocations: 52537)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 15:12:02 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 15:12:43 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (1.2ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 61.2ms | Allocations: 1650)
+  Rendered shared/_navbar.html.erb (Duration: 5.2ms | Allocations: 660)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 348.1ms | Allocations: 12363)
+Completed 200 OK in 406ms (Views: 351.0ms | ActiveRecord: 2.7ms | Allocations: 14156)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 15:12:43 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 15:14:14 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (6.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (2.5ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 81.9ms | Allocations: 1650)
+  Rendered shared/_navbar.html.erb (Duration: 4.6ms | Allocations: 657)
+  Rendered shared/_flashes.html.erb (Duration: 0.6ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 238.3ms | Allocations: 12252)
+Completed 200 OK in 413ms (Views: 242.5ms | ActiveRecord: 8.4ms | Allocations: 14022)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 15:14:15 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 15:14:55 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (0.5ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 536.3ms | Allocations: 8429)
+  Rendered shared/_navbar.html.erb (Duration: 14.2ms | Allocations: 1219)
+  Rendered shared/_flashes.html.erb (Duration: 1.8ms | Allocations: 193)
+  Rendered shared/_footer.html.erb (Duration: 1.7ms | Allocations: 98)
+  Rendered layout layouts/application.html.erb (Duration: 816.6ms | Allocations: 40655)
+Completed 200 OK in 1126ms (Views: 821.1ms | ActiveRecord: 91.2ms | Allocations: 52709)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 15:14:59 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 15:15:19 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (5.5ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 45.7ms | Allocations: 1650)
+  Rendered shared/_navbar.html.erb (Duration: 5.1ms | Allocations: 660)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 108.4ms | Allocations: 12386)
+Completed 200 OK in 134ms (Views: 106.2ms | ActiveRecord: 6.1ms | Allocations: 14178)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 15:15:19 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 15:16:58 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (0.8ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 85.0ms | Allocations: 8412)
+  Rendered shared/_navbar.html.erb (Duration: 4.4ms | Allocations: 1219)
+  Rendered shared/_flashes.html.erb (Duration: 4.7ms | Allocations: 193)
+  Rendered shared/_footer.html.erb (Duration: 2.4ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 336.8ms | Allocations: 40632)
+Completed 200 OK in 499ms (Views: 336.2ms | ActiveRecord: 42.6ms | Allocations: 52707)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 15:17:00 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 15:38:03 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (12.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (6.0ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 457.0ms | Allocations: 8084)
+  Rendered shared/_navbar.html.erb (Duration: 33.0ms | Allocations: 1219)
+  Rendered shared/_flashes.html.erb (Duration: 20.2ms | Allocations: 193)
+  Rendered shared/_footer.html.erb (Duration: 1.2ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 1706.9ms | Allocations: 40169)
+Completed 200 OK in 3846ms (Views: 1830.0ms | ActiveRecord: 290.3ms | Allocations: 58196)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 15:38:15 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 15:39:23 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (5.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (4.7ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 231.5ms | Allocations: 8409)
+  Rendered shared/_navbar.html.erb (Duration: 17.0ms | Allocations: 1219)
+  Rendered shared/_flashes.html.erb (Duration: 7.5ms | Allocations: 193)
+  Rendered shared/_footer.html.erb (Duration: 3.8ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 591.8ms | Allocations: 40610)
+Completed 200 OK in 1140ms (Views: 625.9ms | ActiveRecord: 134.4ms | Allocations: 52699)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 15:39:28 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 15:44:31 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (7.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (4.5ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 185.6ms | Allocations: 8084)
+  Rendered shared/_navbar.html.erb (Duration: 15.9ms | Allocations: 1219)
+  Rendered shared/_flashes.html.erb (Duration: 4.2ms | Allocations: 193)
+  Rendered shared/_footer.html.erb (Duration: 1.4ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 545.0ms | Allocations: 40304)
+Completed 200 OK in 1205ms (Views: 557.3ms | ActiveRecord: 118.9ms | Allocations: 58380)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 15:44:36 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 15:44:58 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (1.4ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 99.9ms | Allocations: 8413)
+  Rendered shared/_navbar.html.erb (Duration: 22.2ms | Allocations: 1219)
+  Rendered shared/_flashes.html.erb (Duration: 12.4ms | Allocations: 193)
+  Rendered shared/_footer.html.erb (Duration: 5.9ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 388.3ms | Allocations: 40634)
+Completed 200 OK in 601ms (Views: 391.2ms | ActiveRecord: 98.2ms | Allocations: 52670)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 15:45:00 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 15:46:43 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (7.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (4.4ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 250.7ms | Allocations: 8412)
+  Rendered shared/_navbar.html.erb (Duration: 9.0ms | Allocations: 1219)
+  Rendered shared/_flashes.html.erb (Duration: 2.5ms | Allocations: 193)
+  Rendered shared/_footer.html.erb (Duration: 2.2ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 525.6ms | Allocations: 40662)
+Completed 200 OK in 1270ms (Views: 599.1ms | ActiveRecord: 118.4ms | Allocations: 52703)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 15:46:51 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 15:50:45 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (5.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (4.5ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 179.4ms | Allocations: 8425)
+  Rendered shared/_navbar.html.erb (Duration: 6.3ms | Allocations: 1220)
+  Rendered shared/_flashes.html.erb (Duration: 2.5ms | Allocations: 193)
+  Rendered shared/_footer.html.erb (Duration: 4.8ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 19462.2ms | Allocations: 120462)
+Completed 200 OK in 19850ms (Views: 19470.6ms | ActiveRecord: 104.7ms | Allocations: 132546)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 15:51:10 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 15:52:40 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (8.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (2.5ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 112.1ms | Allocations: 1650)
+  Rendered shared/_navbar.html.erb (Duration: 3.4ms | Allocations: 660)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.6ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 21977.7ms | Allocations: 91952)
+Completed 200 OK in 22148ms (Views: 21984.9ms | ActiveRecord: 10.6ms | Allocations: 93745)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 15:53:03 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 15:54:57 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (44.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (6.7ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 220.2ms | Allocations: 1650)
+  Rendered layout layouts/application.html.erb (Duration: 2925.9ms | Allocations: 37725)
+Completed 500 Internal Server Error in 3423ms (ActiveRecord: 50.8ms | Allocations: 39455)
+
+
+  
+ActionView::Template::Error (Error: Invalid CSS after "  color: $brown": expected expression (e.g. 1px, bold), was ".cherry {"
+        on line 26:3 of app/assets/stylesheets/pages/_dashboard.scss
+        from line 5:1 of app/assets/stylesheets/pages/_index.scss
+        from line 14:1 of app/assets/stylesheets/application.scss
+>>   .cherry {
+
+   --^
+):
+    10:     <script src='https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.js'></script>
+    11:     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    12: 
+    13:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    14:     <%= javascript_importmap_tags %>
+    15:   </head>
+    16: 
+  
+app/views/layouts/application.html.erb:13
+Started GET "/dashboards" for ::1 at 2024-03-25 15:55:28 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (0.8ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 83.8ms | Allocations: 1650)
+  Rendered shared/_navbar.html.erb (Duration: 23.7ms | Allocations: 660)
+  Rendered shared/_flashes.html.erb (Duration: 10.2ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 2.3ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 540.9ms | Allocations: 12309)
+Completed 200 OK in 632ms (Views: 546.4ms | ActiveRecord: 4.0ms | Allocations: 14030)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 15:55:29 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 15:56:13 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (0.7ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 99.3ms | Allocations: 8421)
+  Rendered shared/_navbar.html.erb (Duration: 4.9ms | Allocations: 1219)
+  Rendered shared/_flashes.html.erb (Duration: 4.6ms | Allocations: 193)
+  Rendered shared/_footer.html.erb (Duration: 1.7ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 287.6ms | Allocations: 40518)
+Completed 200 OK in 563ms (Views: 284.7ms | ActiveRecord: 112.2ms | Allocations: 52577)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 15:56:16 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 15:59:43 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (22.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (7.0ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 636.4ms | Allocations: 1653)
+  Rendered shared/_navbar.html.erb (Duration: 15.4ms | Allocations: 660)
+  Rendered shared/_flashes.html.erb (Duration: 4.1ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 1.6ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 25624.1ms | Allocations: 92077)
+Completed 200 OK in 26451ms (Views: 25663.6ms | ActiveRecord: 29.1ms | Allocations: 93862)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 16:00:10 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 16:02:17 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (6.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (4.3ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 272.1ms | Allocations: 8422)
+  Rendered shared/_navbar.html.erb (Duration: 8.6ms | Allocations: 1218)
+  Rendered shared/_flashes.html.erb (Duration: 6.3ms | Allocations: 193)
+  Rendered shared/_footer.html.erb (Duration: 3.4ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 18193.8ms | Allocations: 120330)
+Completed 200 OK in 19021ms (Views: 18294.1ms | ActiveRecord: 150.8ms | Allocations: 132412)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 16:02:42 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 16:03:35 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (3.0ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 126.9ms | Allocations: 8402)
+  Rendered shared/_navbar.html.erb (Duration: 7.5ms | Allocations: 1219)
+  Rendered shared/_flashes.html.erb (Duration: 2.9ms | Allocations: 193)
+  Rendered shared/_footer.html.erb (Duration: 4.5ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 315.0ms | Allocations: 40500)
+Completed 200 OK in 617ms (Views: 323.4ms | ActiveRecord: 82.0ms | Allocations: 52556)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 16:03:37 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 16:04:32 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (1.6ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 147.0ms | Allocations: 8402)
+  Rendered shared/_navbar.html.erb (Duration: 7.8ms | Allocations: 1219)
+  Rendered shared/_flashes.html.erb (Duration: 5.2ms | Allocations: 193)
+  Rendered shared/_footer.html.erb (Duration: 1.3ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 350.1ms | Allocations: 40505)
+Completed 200 OK in 619ms (Views: 355.4ms | ActiveRecord: 41.0ms | Allocations: 52528)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 16:04:35 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 16:04:52 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (1.1ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 85.3ms | Allocations: 8402)
+  Rendered shared/_navbar.html.erb (Duration: 5.4ms | Allocations: 1219)
+  Rendered shared/_flashes.html.erb (Duration: 2.7ms | Allocations: 193)
+  Rendered shared/_footer.html.erb (Duration: 2.1ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 194.6ms | Allocations: 40506)
+Completed 200 OK in 292ms (Views: 202.8ms | ActiveRecord: 10.1ms | Allocations: 52556)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 16:04:53 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 16:08:01 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (5.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (6.2ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 230.1ms | Allocations: 8407)
+  Rendered shared/_navbar.html.erb (Duration: 10.0ms | Allocations: 1219)
+  Rendered shared/_flashes.html.erb (Duration: 7.5ms | Allocations: 193)
+  Rendered shared/_footer.html.erb (Duration: 24.8ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 837.3ms | Allocations: 40506)
+Completed 200 OK in 1421ms (Views: 850.5ms | ActiveRecord: 124.3ms | Allocations: 52565)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 16:08:08 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 16:10:42 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (4.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (6.3ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 338.1ms | Allocations: 8401)
+  Rendered shared/_navbar.html.erb (Duration: 11.9ms | Allocations: 1222)
+  Rendered shared/_flashes.html.erb (Duration: 5.2ms | Allocations: 193)
+  Rendered shared/_footer.html.erb (Duration: 2.1ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 17452.2ms | Allocations: 120384)
+Completed 200 OK in 18062ms (Views: 17479.5ms | ActiveRecord: 114.4ms | Allocations: 132432)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 16:11:07 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 16:11:18 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (2.9ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 52.6ms | Allocations: 1650)
+  Rendered shared/_navbar.html.erb (Duration: 20.2ms | Allocations: 660)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 201.4ms | Allocations: 12266)
+Completed 200 OK in 250ms (Views: 202.5ms | ActiveRecord: 4.0ms | Allocations: 14063)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 16:11:19 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
+Started GET "/dashboards" for ::1 at 2024-03-25 16:12:05 +0100
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboards/index.html.erb within layouts/application
+  [1m[36mExploitation Load (0.7ms)[0m  [1m[34mSELECT "exploitations".* FROM "exploitations" WHERE "exploitations"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/dashboards/index.html.erb:25
+  Rendered dashboards/index.html.erb within layouts/application (Duration: 230.7ms | Allocations: 8401)
+  Rendered shared/_navbar.html.erb (Duration: 20.2ms | Allocations: 1223)
+  Rendered shared/_flashes.html.erb (Duration: 4.3ms | Allocations: 193)
+  Rendered shared/_footer.html.erb (Duration: 10.3ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 832.4ms | Allocations: 40586)
+Completed 200 OK in 1308ms (Views: 842.1ms | ActiveRecord: 102.6ms | Allocations: 52645)
+
+
+Started GET "/dashboard.css" for ::1 at 2024-03-25 16:12:09 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard.css"):
+  
