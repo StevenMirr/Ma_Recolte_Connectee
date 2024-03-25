@@ -1,5 +1,4 @@
 class BasketsController < ApplicationController
-
   before_action :set_basket
 
   def index
@@ -17,5 +16,4 @@ class BasketsController < ApplicationController
   def set_basket
     @basket = current_user.basket
   end
-
 end
