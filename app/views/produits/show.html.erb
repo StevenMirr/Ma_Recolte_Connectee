@@ -1,2 +1,10 @@
-<%= @produit.name %>
-<%= cl_image_tag @produit.photo.key, crop: :fill %>
+<div>
+  <div><%= @produit.name %></div>
+  <div class="mw-100 mh-100">
+    <% if @produit.photo.attached? %>
+      <%= cl_image_tag @produit.photo.key, crop: :fill %>
+    <% else %>
+        <p width: 100>pas de photo</p>
+    <%end %>
+  </div>
+</div>
