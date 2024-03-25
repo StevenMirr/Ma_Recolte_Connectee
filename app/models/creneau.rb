@@ -1,4 +1,4 @@
 class Creneau < ApplicationRecord
   belongs_to :user
-  has_many :commandes
+  belongs_to :commande
 end

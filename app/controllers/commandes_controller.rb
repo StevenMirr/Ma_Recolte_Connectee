@@ -15,12 +15,17 @@ class CommandesController < ApplicationController
   # GET /commandes/new
   def new
     @commande = Commande.new
+    @baskets = Basket.where(params[:id])
   end
 
   # POST /commandes
   def create
-    commande = current_user.commandes.create
-    commande.produit << current_user.panier.produits
+    @commande = Commande.new(commande_params)
+    @basket = Basket.find(params[:basket_id])
+    @commande.basket = @commande
+    @commande = current_user.commande.find_or_create_by(statut: )
+    @basket.commande = @commande
+    redirect_to home_path, notice: 'Produit ajouté au panier.'
 
     if @commande.save
       redirect_to @commande, notice: 'Votre commande a été créée !'
