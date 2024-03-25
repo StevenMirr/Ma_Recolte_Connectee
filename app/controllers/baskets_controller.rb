@@ -1,19 +1,16 @@
 class BasketsController < ApplicationController
-  before_action :set_basket
-
-  def index
-    @baskets = Basket.all
-  end
-
   def create
-    produit = Produit.find(params[:produit_id])
-    @basket.produits << produit
+    @basket = Basket.new(basket_params)
+    @produit = Produit.find(params[:produit_id])
+    @basket.produit = @produit
+    @commande = current_user.commande.find_or_create_by(statut: :pending)
+    @basket.commande = @commande
     redirect_to produits_path, notice: 'Produit ajouté au panier.'
   end
 
   private
 
-  def set_basket
-    @basket = current_user
+  def basket_params
+    params.require(:basket).permit(:produit_id)
   end
 end

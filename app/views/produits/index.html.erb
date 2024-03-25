@@ -15,7 +15,7 @@
             <div class="card-product-infos">
               <div><h2><%= produit.name %></h2></div>
               <div><p class="card-product-infos">Prix <%= produit.price %>€ | Quantité <%= produit.quantity %></p></div>
-              <div><%= link_to 'Ajouter au panier', baskets_path(produit.id), method: :post %></div>
+              <div><%= link_to 'Ajouter au panier', baskets_path, method: :post %></div>
               <p><%= link_to "Supprimer le produit", exploitation_produits_path(@exploitation), class: "btn button", data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %> </p>
             </div>
           </div>
