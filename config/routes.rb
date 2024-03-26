@@ -21,6 +21,5 @@ Rails.application.routes.draw do
   end
 
   resources :produits, only: [:destroy]
-
   # root "posts#index"
 end
