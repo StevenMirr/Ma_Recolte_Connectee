@@ -3,7 +3,7 @@
 <h1 class="title-dashboard">Mon Exploitation</h1>
 
 <div class="row-dashboard">
-  <div class="col-md-6">
+  <div class="col-md-4">
     <div class="title-dashboard">
       <%= form_for @user do |f| %>
         <h2 class="formulaire total-dashboard text-center">Mon profil</h2>
@@ -61,31 +61,24 @@
     </div>
   </div>
 
-<div class="col-md-6">
+<div class="col-md-8">
   <div class="chart-container dashboard-title">
     <!-- Insérer votre code de chart ici -->
-    <canvas id="myChart" width="80" height="40"></canvas>
+    <canvas id="myChart" width="70" height="30"></canvas>
   </div>
 
-<div class="podium-container">
-  <h2>Top produits du mois</h2>
-  <div class="podium-items">
-    <div class="podium-item">
+  <div class="custom-block">
+    <h2>Top produits du mois</h2>
+    <div class="podium-items">
       <div class="card-category cerise">
         <span class="category-label">Cerise</span>
       </div>
-    </div>
-    <div class="podium-item">
       <div class="card-category carrot">
         <span class="category-label">Carotte</span>
       </div>
-    </div>
-    <div class="podium-item">
       <div class="card-category apple">
         <span class="category-label">Pommes</span>
       </div>
-    </div>
-    <div class="podium-item">
       <div class="card-category broccoli">
         <span class="category-label">Brocolis</span>
       </div>

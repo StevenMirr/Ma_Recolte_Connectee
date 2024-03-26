@@ -6,6 +6,7 @@
 .formulaire {
   color: $brown;
   text-align: left;
+  margin-left: 40px;
 }
 
 .field {
@@ -13,6 +14,7 @@
   color: $brown;
   margin-bottom : 50px;
   width : 90%;
+  margin-left: 30px;
 }
 
 .row-dashboard {
@@ -27,48 +29,50 @@
 .label {
   text-align: left;
   width: 40%;
+  margin-left: 30px;
 }
 
-.chart-title {
-  font-family: 'Lily Script One', cursive;
-  font-size: 24px;
-  text-align: center;
-}
-.podium-container {
-  text-align: center;
+
+.custom-block {
+  border: 2px solid #654321;
+  border-radius: 10px;
+  padding: 20px;
+  margin-left: 20px;
+  background-color: #ffffff;
 }
 
 .podium-items {
   display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.podium-item {
-  flex: 1;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
 .card-category {
   background-size: cover;
   background-position: center;
   height: 180px;
-  width: 180px; /* Réglez la largeur selon vos besoins */
-  position: relative;
+  width: calc(25% - 5px);
   border-radius: 5px;
-  overflow: hidden;
 }
 
 .category-label {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  color: white;
-  font-size: 18px;
+  display: block;
+  text-align: center;
+  color: $brown;
+  margin-top: 10px;
+  font-size: 16px;
   font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-/* Background images */
+.chart-container {
+  border: 2px solid #654321; /* Couleur marron pour la bordure */
+  border-radius: 10px; /* Bordures arrondies */
+  padding: 20px; /* Espace à l'intérieur de la bordure */
+  margin-left: 20px; /* Espace à gauche */
+  background-color: #ffffff; /* Fond blanc */
+}
+
+
 .cerise {
   background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/cerise.jpg);
 }
