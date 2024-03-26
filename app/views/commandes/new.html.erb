@@ -26,16 +26,17 @@
         </tr>
       </tbody>
     </table>
-  </div>
 
-<div class="form_input">
-<%= simple_form_for(@creneau) do |form| %>
-  <%= form.input :date %>
-  <%= form.input :start_time %>
-  <%= form.input :end_time %>
 
-  <div class="form-actions">
-    <%= form.button :submit, 'Save' %>
+  <div class="form_input">
+      <%= simple_form_for(@creneau) do |form| %>
+        <%= form.input :date %>
+        <%= form.input :start_time %>
+        <%= form.input :end_time %>
+        <div class="form-actions">
+          <%= form.button :submit, 'Je sauvegarde ce créneau' %>
+        </div>
+      <% end %>
   </div>
-<% end %>
+  </div>
 </div>
