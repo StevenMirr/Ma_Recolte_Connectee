@@ -2,8 +2,8 @@ class ProduitsController < ApplicationController
   before_action :set_produit, only: [:show, :edit, :update, :destroy]
 
   def index
-    @produits = Produit.all
     @exploitation = Exploitation.find(params[:exploitation_id])
+    @produits = @exploitation.produits
     @markers = [{
         lat: @exploitation.latitude,
         lng: @exploitation.longitude,
