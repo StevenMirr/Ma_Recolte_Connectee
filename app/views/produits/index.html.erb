@@ -16,7 +16,7 @@
       <div class="col-md-6">
         <div class="card my-1">
           <div class="card-product">
-            <div>
+            <div class="card-product img">
                   <% if produit.photo.attached? %>
                     <%= link_to(cl_image_tag(produit.photo.key, crop: :fill), exploitation_produit_path(exploitation_id: produit.exploitation_id, id: produit.id)) %>
                   <% else %>
@@ -29,7 +29,7 @@
 
               <div><%= link_to 'Ajouter au panier', exploitation_produit_panier_index_path(@exploitation, produit) , data: { turbo_method: :post} %></div>
 
-              <p><%= link_to "Supprimer le produit", exploitation_produits_path(@exploitation), class: "btn button", data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %> </p>
+              <p><%= link_to "Supprimer le produit", produit_path(produit), class: "btn button", data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %> </p>
             </div>
           </div>
         </div>
