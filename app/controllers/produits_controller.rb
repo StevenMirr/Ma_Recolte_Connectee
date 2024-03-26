@@ -2,8 +2,8 @@ class ProduitsController < ApplicationController
   before_action :set_produit, only: [:show, :edit, :update, :destroy]
 
   def index
-    @produits = Produit.all
     @exploitation = Exploitation.find(params[:exploitation_id])
+    @produits = @exploitation.produits
     @markers = [{
         lat: @exploitation.latitude,
         lng: @exploitation.longitude,
@@ -14,6 +14,7 @@ class ProduitsController < ApplicationController
 
   def show
     @exploitation = Exploitation.find(params[:exploitation_id])
+    @related_recipes = @produit.find_related_recipes
   end
 
   def new
@@ -42,7 +43,7 @@ class ProduitsController < ApplicationController
 
   def destroy
     @produit.destroy
-    redirect_to exploitation_produits_path(@produit.exploitation), notice: 'Suppression confirmée'
+    redirect_to exploitation_produit_path(@produit.exploitation), notice: 'Suppression confirmée'
   end
 
   private

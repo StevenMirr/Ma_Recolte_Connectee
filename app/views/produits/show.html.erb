@@ -1,10 +1,34 @@
-<div>
-  <div><%= @produit.name %></div>
-  <div class="mw-100 mh-100">
-    <% if @produit.photo.attached? %>
-      <%= cl_image_tag @produit.photo.key, crop: :fill %>
-    <% else %>
-        <p width: 100>pas de photo</p>
-    <%end %>
+<div class="row">
+  <div class="col-md-12">
+    <div class="card my-1">
+      <div><h1><%= @produit.name.capitalize %></h1></div>
+      <div class="card-category img">
+        <% if @produit.photo.attached? %>
+          <%= cl_image_tag @produit.photo.key, crop: :fill %>
+        <% else %>
+            <p width: 100>pas de photo</p>
+        <%end %>
+      </div>
+    </div>
   </div>
 </div>
+<%= link_to "revenir à la liste des produits", exploitation_produits_path(@exploitation) %>
+<div>
+  <h2>Le tri des déchets alimentaires généralisé au 31 décembre 2023</h2>
+  <p>Les biodéchets représentent un tiers des déchets non triés des Français. Des déchets qui peuvent pourtant être valorisés en solution de compostage.
+  À partir du 1er janvier 2024, le tri des biodéchets se généralise et doit se faire à la source pour tous les particuliers et les professionnels en France, conformément au droit européen et à la loi antigaspillage de 2020.
+  Quels sont les biodéchets concernés ?
+  Les déchets verts : les déchets non dangereux biodégradables de jardin ou de parc (tontes de pelouse et fauchage, feuilles mortes, tailles d’arbustes, haies et brindilles ou encore déchets ligneux issus de l’élagage et de l’abattage d’arbres et de haies).
+  Les déchets alimentaires ou de cuisine provenant des ménages, des bureaux, des restaurants, du commerce de gros, des cantines, des traiteurs ou des magasins de vente au détail (restes de repas ou de préparation de repas ou produits périmés non consommés).
+  Les déchets comparables provenant des usines de transformation de denrées alimentaires.
+  Quelles solutions sont possibles ?
+  Le compostage de proximité des biodéchets, avec la mise en place d’un composteur à domicile.
+  La collecte séparée des biodéchets par la collectivité.</p>
+</div>
+<h1><%= @produit.name %></h1>
+<h2>Related Recipes</h2>
+<ul>
+  <% @related_recipes.each do |recipe| %>
+    <li><%= link_to recipe[:title], recipe[:url], target: "_blank" %></li>
+  <% end %>
+</ul>

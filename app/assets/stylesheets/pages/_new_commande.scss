@@ -1,0 +1,37 @@
+.table-container {
+  // font-family: Arial, sans-serif;
+  min-height: fit-content;
+  font-size: 20px;
+
+}
+
+table {
+  width: 50%;
+  border-collapse: collapse;
+  border: 3px double transparent;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin: auto;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tbody tr:last-child {
+  font-weight: bold;
+}
+
+tfoot {
+  font-weight: bold;
+}
+
+tfoot td {
+  border-top: 2px solid #000;
+}

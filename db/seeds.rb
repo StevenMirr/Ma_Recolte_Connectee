@@ -8,6 +8,9 @@ require "open-uri"
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+Creneau.destroy_all
+Basket.destroy_all
+Commande.destroy_all
 Produit.destroy_all
 Exploitation.destroy_all
 User.destroy_all
@@ -45,22 +48,26 @@ exploitation5.logo.attach(io: file, filename: "moulins.png", content_type: "imag
 exploitation5.save
 
 file = URI.open("https://img-3.journaldesfemmes.fr/KcrwoKVyt9WyplVHiDLvXVjKN7k=/1500x/smart/4e81297bc0b94259b9c83b576873e28a/ccmcms-jdf/25936494.jpg")
-produit1 = Produit.new(name: "carottes", category:"légume", price:"3€/kg", quantity:"2", availability:"true", exploitation: exploitation1)
+produit1 = Produit.new(name: "carottes", category:"légume", price:"3€/kg", quantity:"1", availability:"true", exploitation: exploitation1)
 produit1.photo.attach(io: file, filename: "carottes.png", content_type: "image/png")
 produit1.save
 file = URI.open("https://www.jardinet.fr/wp-content/uploads/2023/03/Tout-savoir-sur-la-pomme-de-terre-1.jpg")
-produit2 = Produit.new(name: "pommes de terre", category:"tubercule", price:"3€/kg", quantity:"2", availability:"true", exploitation: exploitation1)
+produit2 = Produit.new(name: "pommes de terre", category:"tubercule", price:"3€/kg", quantity:"1", availability:"true", exploitation: exploitation1)
 produit2.photo.attach(io: file, filename: "patates.png", content_type: "image/png")
 produit2.save
 file = URI.open("https://img.passeportsante.net/1200x675/2021-05-03/i102110-oeuf-nu.webp")
-produit3 = Produit.new(name: "oeufs", category:"oeuf", price:"3€/kg", quantity:"2", availability:"true", exploitation: exploitation1)
+produit3 = Produit.new(name: "oeufs", category:"oeuf", price:"3€/kg", quantity:"1", availability:"true", exploitation: exploitation1)
 produit3.photo.attach(io: file, filename: "oeufs.png", content_type: "image/png")
 produit3.save
 file = URI.open("https://upload.wikimedia.org/wikipedia/commons/2/20/Kropsla_herfst.jpg")
-produit4 = Produit.new(name: "salades", category:"salade", price:"3€/kg", quantity:"2", availability:"true", exploitation: exploitation1)
+produit4 = Produit.new(name: "salades", category:"salade", price:"3€/kg", quantity:"1", availability:"true", exploitation: exploitation1)
 produit4.photo.attach(io: file, filename: "salades.png", content_type: "image/png")
 produit4.save
 file = URI.open("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpiqlyU5p3KOdIr5TqNF7p6SljZ3A_y_78Cw&usqp=CAU")
-produit5 = Produit.new(name: "navets", category:"légume", price:"3€/kg", quantity:"2", availability:"true", exploitation: exploitation1)
+produit5 = Produit.new(name: "navets", category:"légume", price:"3€/kg", quantity:"1", availability:"true", exploitation: exploitation1)
 produit5.photo.attach(io: file, filename: "navets.png", content_type: "image/png")
 produit5.save
+
+Creneau.create!(date: Date.today, start_time: 15.00, end_time: 19.00, user: user1)
+Creneau.create!(date: Date.today, start_time: 12, end_time: 19, user: user2)
+Creneau.create!(date: Date.today, start_time: 16, end_time: 19, user: user3)
