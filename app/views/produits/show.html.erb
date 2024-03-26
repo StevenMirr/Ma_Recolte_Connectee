@@ -25,3 +25,10 @@
   Le compostage de proximité des biodéchets, avec la mise en place d’un composteur à domicile.
   La collecte séparée des biodéchets par la collectivité.</p>
 </div>
+<h1><%= @produit.name %></h1>
+<h2>Related Recipes</h2>
+<ul>
+  <% @related_recipes.each do |recipe| %>
+    <li><%= link_to recipe[:title], recipe[:url], target: "_blank" %></li>
+  <% end %>
+</ul>

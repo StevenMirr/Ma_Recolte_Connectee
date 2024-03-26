@@ -14,6 +14,7 @@ class ProduitsController < ApplicationController
 
   def show
     @exploitation = Exploitation.find(params[:exploitation_id])
+    @related_recipes = @produit.find_related_recipes
   end
 
   def new

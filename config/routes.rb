@@ -19,9 +19,9 @@ Rails.application.routes.draw do
       resources :baskets, only: [:create], as: "panier"
     end
   end
-
+  
   resources :creneaus 
-
+  
   resources :produits, only: [:destroy]
   # root "posts#index"
 end
