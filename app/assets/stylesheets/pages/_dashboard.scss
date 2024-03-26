@@ -1,46 +1,86 @@
 .title-dashboard {
-    color: $brown
+    color: $brown;
+    text-align: center;
 }
 
 .formulaire {
-  margin-bottom :458px;
   color: $brown;
+  text-align: left;
 }
 
 .field {
   text-align: left;
   color: $brown;
+  margin-bottom : 50px;
+  width : 90%;
+}
+
+.row-dashboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.label {
+  text-align: left;
+  width: 40%;
+}
+
+.chart-title {
+  font-family: 'Lily Script One', cursive;
+  font-size: 24px;
+  text-align: center;
 }
 .podium-container {
+  text-align: center;
+}
+
+.podium-items {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: $brown
+  justify-content: center;
+  gap: 20px;
 }
 
 .podium-item {
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  color: $brown
+  flex: 1;
 }
 
-.product-image {
-  width: 100px;
-  height: 100px;
+.card-category {
   background-size: cover;
-  margin-right: 10px;
+  background-position: center;
+  height: 180px;
+  width: 180px; /* Réglez la largeur selon vos besoins */
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
-.product-label {
+.category-label {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
   font-size: 18px;
-
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
+/* Background images */
 .cerise {
-  width: 100px;
-  height: 100px;
-  background-image: url('https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F4%2F40%2FBing_Cherries_%2528USDA_ARS%2529.jpg&tbnid=iGdZirZUTf0rRM&vet=12ahUKEwiE6O-_2I-FAxWdlycCHcSXD60QMygAegQIARBx..i&imgrefurl=https%3A%2F%2Ffr.wikipedia.org%2Fwiki%2FCerise&docid=p-jCeFL2WvlsnM&w=1795&h=2700&q=cerise&ved=2ahUKEwiE6O-_2I-FAxWdlycCHcSXD60QMygAegQIARBx');
-  background-size: cover;
-  margin-right: 10px;
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/cerise.jpg);
+}
+
+.carrot {
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/carrot.jpg);
+}
+
+.apple {
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/apple.jpg);
+}
+
+.broccoli {
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/broccoli.jpg);
 }

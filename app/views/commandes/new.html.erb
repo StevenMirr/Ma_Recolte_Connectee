@@ -1,5 +1,4 @@
 <div class="container">
-
   <div class="table-container">
     <table>
       <thead>
@@ -28,4 +27,15 @@
       </tbody>
     </table>
   </div>
+
+<div class="form_input">
+<%= simple_form_for(@creneau) do |form| %>
+  <%= form.input :date %>
+  <%= form.input :start_time %>
+  <%= form.input :end_time %>
+
+  <div class="form-actions">
+    <%= form.button :submit, 'Save' %>
+  </div>
+<% end %>
 </div>
