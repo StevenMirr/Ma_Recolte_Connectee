@@ -1,5 +1,28 @@
-# app/controllers/creneaus_controller.rb
-# class CreneausController < ApplicationController
+class CreneausController < ApplicationController
+  def new
+    @creneau = Creneau.new
+  end
+
+  def create
+    @creneau = Creneau.new(creneau_params)
+    @creneau.user = current_user
+    @commande = Commande.find(params[:commande_id])
+    @creneau.commande = @commande
+    if @creneau.save
+      @commande.update(status: true)
+      redirect_to exploitation_commande_path(@commande.exploitation, @commande), notice: "Créneau créé avec succès."
+    else
+      render "commandes/new"
+    end
+  end
+
+  private
+
+  def creneau_params
+    params.require(:creneau).permit(:date, :start_time, :end_time)
+  end
+end
+
 #   before_action :set_creneau, only: [ :edit, :update, :destroy ]
 # before_action :set_commande, only: [:new, :create]
 
