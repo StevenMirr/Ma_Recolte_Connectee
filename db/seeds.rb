@@ -8,6 +8,9 @@ require "open-uri"
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+Creneau.destroy_all
+Basket.destroy_all
+Commande.destroy_all
 Produit.destroy_all
 Exploitation.destroy_all
 User.destroy_all
@@ -64,3 +67,7 @@ file = URI.open("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpiqlyU5p
 produit5 = Produit.new(name: "navets", category:"légume", price:"3€/kg", quantity:"2", availability:"true", exploitation: exploitation1)
 produit5.photo.attach(io: file, filename: "navets.png", content_type: "image/png")
 produit5.save
+
+Creneau.create!(date: Date.today, start_time: 15.00, end_time: 19.00, user: user1)
+Creneau.create!(date: Date.today, start_time: 12, end_time: 19, user: user2)
+Creneau.create!(date: Date.today, start_time: 16, end_time: 19, user: user3)
