@@ -1,44 +1,44 @@
 <div class="container mycontainer">
-<div class="row">
-<div class="bannerpanierdefruits">
-  <div class="col-6">
-  <h1> <strong> Je fais mon marché </strong></h1>
-    <h2>Je souhaite commander mes fruits et légumes et aller les récupérer directement chez le producteur que j’ai choisi.</h2>
+  <div class="row">
+  <div class="bannerpanierdefruits">
+    <div class="col-6">
+    <h1> <strong> Je fais mon marché </strong></h1>
+      <h2>Je souhaite commander mes fruits et légumes et aller les récupérer directement chez le producteur que j’ai choisi.</h2>
+    </div>
+    <div class="col-6">
+      <h1> <strong> Je propose mes produits </strong> </h1>
+        <h2>Je souhaite vendre mes fruits et légumes  et  mettre les commandes à disposition directement à la ferme</h2>
+    </div>
   </div>
-  <div class="col-6">
-    <h1> <strong> Je propose mes produits </strong> </h1>
-      <h2>Je souhaite vendre mes fruits et légumes  et  mettre les commandes à disposition directement à la ferme</h2>
   </div>
-</div>
-</div>
 
-<div class="row">
-<div class="containercarte">
-  <div class="col-6">
-  <h1>Où trouver nos producteurs autour de Nantes</h1>
+  <div class="row">
+    <div class="containercarte">
+      <div class="col-6">
+        <h1>Où trouver nos producteurs autour de Nantes</h1>
+      </div>
+        <div class="carte-exploitation" style="width: 50%; height: 400px;"
+          data-controller="map"
+          data-map-markers-value="<%= @markers.to_json %>"
+          data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
+        </div>
+      </div>
   </div>
-    <div class="carte-exploitation" style="width: 50%; height: 400px;"
-              data-controller="map"
-              data-map-markers-value="<%= @markers.to_json %>"
-              data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
-          </div>
-   </div>
-</div>
-<div class="row">
-<div class="containerrecettes">
-  <div class="col-6">
-  <h1>Idée recette de la semaine</h1>
-  <ul class="list">
-    <li>2 Carotte(s)</li>
-    <li>2 Pomme(s) de terre</li>
-    <li>2 Poireau(x)</li>
-    <li>3 Navet(s)</li>
-    <li>4 Feuille(s) de chou</li>
-  </ul>
-  <%= link_to "Voir la recette", exploitations_path, class:"button" %>
+  <div class="row">
+    <div class="containerrecettes">
+      <div class="col-6">
+        <h1>Idée recette de la semaine</h1>
+        <ul class="list">
+          <li>2 Carotte(s)</li>
+          <li>2 Pomme(s) de terre</li>
+          <li>2 Poireau(x)</li>
+          <li>3 Navet(s)</li>
+          <li>4 Feuille(s) de chou</li>
+        </ul>
+        <%= link_to "Voir la recette", exploitations_path, class:"button" %>
+      </div>
+      <div class="imagerecettes col-6">
+      </div>
+    </div>
   </div>
-  <div class="imagerecettes col-6">
-  </div>
-</div>
-</div>
 </div>

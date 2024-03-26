@@ -1,5 +1,41 @@
-<h1>Nouvelle Commande</h1>
+<div class="container">
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Nom du Produit</th>
+          <th>Prix unitaire</th>
+          <th>Quantité</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% total_price = 0 %>
+        <% @baskets.group_by(&:produit).each do |produit, baskets| %>
+          <tr>
+            <td><%= produit.name %></td>
+            <td class="text-center"><%= produit.price %> €</td>
+            <td class="text-center"><%= baskets.count %></td>
+            <td class="text-center"><%= produit.price * baskets.count %> €</td>
+          </tr >
+          <% total_price += produit.price * baskets.count %>
+        <% end %>
+        <tr>
+          <td colspan="3" class="text-right">Prix Total :</td>
+          <td><%= total_price %> €</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-<% @baskets.each do |basket| %>
-<%= basket.produit.name %>
+<div class="form_input">
+<%= simple_form_for(@creneau) do |form| %>
+  <%= form.input :date %>
+  <%= form.input :start_time %>
+  <%= form.input :end_time %>
+
+  <div class="form-actions">
+    <%= form.button :submit, 'Save' %>
+  </div>
 <% end %>
+</div>

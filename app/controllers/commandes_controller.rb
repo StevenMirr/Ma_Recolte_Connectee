@@ -16,6 +16,7 @@ class CommandesController < ApplicationController
   def new
     @commande = Commande.new
     @baskets = Basket.where(params[:id])
+    @creneau = Creneau.new
   end
 
   # POST /commandes
