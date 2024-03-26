@@ -20,7 +20,8 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :produits, only: [:destroy]
+  resources :creneaus 
 
+  resources :produits, only: [:destroy]
   # root "posts#index"
 end

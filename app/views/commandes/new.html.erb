@@ -3,3 +3,14 @@
 <% @baskets.each do |basket| %>
 <%= basket.produit.name %>
 <% end %>
+<div class="form_input">
+<%= simple_form_for(@creneau) do |form| %>
+  <%= form.input :date %>
+  <%= form.input :start_time %>
+  <%= form.input :end_time %>
+
+  <div class="form-actions">
+    <%= form.button :submit, 'Save' %>
+  </div>
+<% end %>
+</div>
