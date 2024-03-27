@@ -1,5 +1,6 @@
 .card-product {
   overflow: hidden;
+  width: 400px;
   height: 150px;
   padding: 5px;
   background: white;
@@ -7,20 +8,29 @@
   display: flex;
   align-items: center;
   border-radius: 10px;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+.card {
+  width: 400px;
+  height: 150px;
+  border-radius: 10px;
+  background: white;
 }
 
+a {
+  color: black;
+}
 .card-product img {
   height: 135px;
-  width: 200px;
+  width: 150px;
   object-fit: cover;
   border-radius: 10px;
 }
 
 .card-product h2 {
-  font-size: 14px;
+  font-size: 24px;
   font-weight: bold;
-  margin: 0;
+  margin-bottom: 5px;
 }
 
 .card-product p {

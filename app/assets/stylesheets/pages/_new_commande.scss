@@ -1,12 +1,25 @@
+.container-valid-commande {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 .table-container {
   // font-family: Arial, sans-serif;
   min-height: fit-content;
   font-size: 20px;
+  width: 50%;
+}
+.form-creneau {
+  width: 50%;
+}
 
+.form_input {
+width: 70%;
+margin: auto;
 }
 
 table {
-  width: 50%;
+  width: 60%;
   border-collapse: collapse;
   border: 3px double transparent;
   border-radius: 5px;
