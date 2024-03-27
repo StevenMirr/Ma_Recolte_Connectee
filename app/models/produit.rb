@@ -20,9 +20,9 @@ class Produit < ApplicationRecord
 
     # Extract recipe titles and URLs
     recipes = []
-    doc.css('.teaser-item__title a').each do |link|
-      recipe_title = link.content.strip
-      recipe_url = link['href']
+    doc.css(".comp.mntl-card-list-items.mntl-document-card.mntl-card.card.card--no-image").each do |link|
+      recipe_title = link.css(".card__title-text").text.strip
+      recipe_url = link.attribute('href').value
       recipes << { title: recipe_title, url: recipe_url }
     end
 
