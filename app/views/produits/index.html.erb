@@ -30,8 +30,17 @@
               <% if current_user == @exploitation.user%>
                 <p><%= link_to "Supprimer le produit", produit_path(produit), class: "btn button", data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %> </p>
               <% else %>
-                <div><%= link_to 'Ajouter au panier', exploitation_produit_panier_index_path(@exploitation, produit) , data: { turbo_method: :post} %></div>
-                <div><%= link_to 'Enlever du panier', exploitation_produit_panier_index_path(@exploitation, produit) , data: { turbo_method: :post} %></div>
+                <% if @commande.nil? %>
+                  <div class="cart-actions">
+                    <div><%= link_to 'Ajouter au panier', exploitation_produit_panier_index_path(@exploitation, produit) , data: { turbo_method: :post} %></div>
+                  </div>
+                <% else %>
+                    <div class="cart-actions">
+                      <div><%= link_to '-', exploitation_produit_panier_index_path(@exploitation, produit) , data: { turbo_method: :post} %></div>
+                      <p><%= @basket_counts[produit.id] %></p>
+                      <div><%= link_to '+', exploitation_produit_panier_index_path(@exploitation, produit) , data: { turbo_method: :post} %></div>
+                    </div>
+                <% end %>
               <% end %>
             </div>
           </div>
@@ -43,7 +52,11 @@
     <% if current_user == @exploitation.user%>
          <%= link_to "Ajouter un nouveau produit", new_exploitation_produit_path, class:"button" %>
     <% else %>
-      <%= link_to "Finaliser ma commande", exploitation_commande_path(@exploitation.id, @commande.id), class:"button" %>
+      <% if @commande.nil? %>
+        <p>La commande n'existe pas</p>
+      <% else %>
+        <%= link_to "Finaliser ma commande", exploitation_commande_path(@exploitation.id, @commande.id), class:"button" %>
+      <% end %>
     <% end %>
   </div>
 </div>

@@ -1,5 +1,11 @@
 <div class="container-valid-commande">
   <div class="table-container">
+    <div id="retour_panier_button">
+  <a href="javascript:history.go(-1)" class="button">
+    <i class="fas fa-arrow-left"></i> Retour sur mon panier
+  </a>
+</div>
+
     <h1 class="text-center mb-5">Récapitulatif</h1>
     <table>
       <thead>
@@ -11,15 +17,15 @@
         </tr>
       </thead>
       <tbody>
-        <% total_price = 0 %>
+        <% total_price = 0.00 %>
         <% @baskets.group_by(&:produit).each do |produit, baskets| %>
           <tr>
             <td><%= produit.name %></td>
             <td class="text-center"><%= number_with_precision(produit.price, precision: 2) %> €</td>
             <td class="text-center"><%= baskets.count %></td>
-            <td class="text-center"><%= number_with_precision(produit.price, precision: 2) * baskets.count %> €</td>
+            <td class="text-center"><%= (produit.price.to_f * baskets.count) %> €</td>
           </tr >
-          <% total_price += produit.price * baskets.count %>
+          <% total_price += (produit.price.to_f * baskets.count) %>
         <% end %>
         <tr>
           <td colspan="3" class="text-right">Prix Total :</td>
@@ -34,11 +40,37 @@
         <%= form_with(model: [@commande, @creneau], local: true) do |form| %>
     <div>
       <label for="creneau_start_time">Veuillez choisir une heure de rendez-vous (heures d'ouverture entre 15:00 et 19:00) :</label>
-      <%= form.time_field :start_time, min: "15:00", max: "19:00", required: true %>
+      <%= form.time_field :start_time, id: "creneau_start_time", min: "15:00", max: "19:00", required: true %>
     </div>
     <div>
-      <%= form.submit "Confirmer ma commande" %>
+      <%= form.submit "Confirmer ma commande", id: "confirm_button" %>
     </div>
   <% end %>
-    </div>
 </div>
+  
+<div id="message" style="display: none;">
+  GENIAL ! Votre commande sera prête à <span id="selected_time"> </span>h. Camille vous acceuillera et vous fera visiter nos locaux par la même occasion <i class="fa-regular fa-star"></i>
+</div>
+
+<script>
+ document.addEventListener('DOMContentLoaded', function() {
+  var confirmButton = document.getElementById('confirm_button');
+  var message = document.getElementById('message');
+  var creneauForm = document.getElementById('creneau_form');
+  var selectedTimeSpan = document.getElementById('selected_time');
+
+  confirmButton.addEventListener('click', function(event) {
+    event.preventDefault();
+    var selectedTimeInput = document.getElementById('creneau_start_time');
+    var selectedTime = selectedTimeInput.value;
+    selectedTimeSpan.textContent = selectedTime;
+    creneauForm.style.display = 'none';
+    message.style.display = 'block';
+  });
+});
+
+</script>
+
+
+</div>
+
