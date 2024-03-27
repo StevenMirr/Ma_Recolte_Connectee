@@ -23,7 +23,7 @@
   align-items: flex-start;
   padding: 20px;
   text-align: center;
-  color: white;
+  color: #FFFFFF80;
 }
 
 .label {
@@ -38,53 +38,63 @@
   border-radius: 10px;
   padding: 20px;
   margin-left: 20px;
-  background-color: #ffffff;
+  background-color: #FFFFFF80;
+  color: #654321;
 }
 
 .podium-items {
   display: flex;
-  justify-content: space-between;
+  align-items: flex-end;
   margin-top: 20px;
+  justify-content: center;
 }
 
 .card-category {
   background-size: cover;
   background-position: center;
-  height: 180px;
-  width: calc(25% - 5px);
   border-radius: 5px;
+  width: 150px;
 }
 
-.category-label {
-  display: block;
+.category-item {
+  text-align: center;
+}
+
+.category-title {
   text-align: center;
   color: $brown;
-  margin-top: 10px;
-  font-size: 16px;
-  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .chart-container {
-  border: 2px solid #654321; /* Couleur marron pour la bordure */
-  border-radius: 10px; /* Bordures arrondies */
-  padding: 20px; /* Espace à l'intérieur de la bordure */
-  margin-left: 20px; /* Espace à gauche */
-  background-color: #ffffff; /* Fond blanc */
+  border: 2px solid #654321;
+  border-radius: 10px;
+  padding: 20px;
+  margin-left: 20px;
+  background-color: #FFFFFF80;
 }
 
+.chart-title {
+  font-family: 'Lily Script One', cursive;
+}
 
 .cerise {
-  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/cerise.jpg);
+  background-image: url(https://res.cloudinary.com/dewccbv1v/image/upload/v1711530606/319px-Bing_Cherries__USDA_ARS_uchywx.jpg);
+  height: 160px;
 }
 
 .carrot {
-  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/carrot.jpg);
+  background-image: url(https://res.cloudinary.com/dewccbv1v/image/upload/v1711530608/Carrots_on_Display_ssopir.jpg);
+  height: 130px;
 }
 
 .apple {
-  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/apple.jpg);
+  background-image: url(https://res.cloudinary.com/dewccbv1v/image/upload/v1711530606/pomme_z3kx3n.jpg);
+  height: 100px;
 }
 
+
 .broccoli {
-  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/broccoli.jpg);
+  background-image: url(https://res.cloudinary.com/dewccbv1v/image/upload/v1711530585/brocolis_zbjijp.jpg);
+  height: 70px;
 }
