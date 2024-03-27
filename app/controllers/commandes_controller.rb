@@ -3,8 +3,8 @@ class CommandesController < ApplicationController
   before_action :set_commande, only: [:show, :edit, :update, :destroy]
 
   def index
-    @exploitations = Exploitation.all
-    @commandes = Commande.all
+    @exploitation = Exploitation.find(params[:exploitation_id])
+    @commandes = @exploitation.commandes.where(status: true)
   end
 
   def show
