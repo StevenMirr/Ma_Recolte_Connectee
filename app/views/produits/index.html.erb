@@ -13,10 +13,10 @@
 
   <div class="row">
     <% @produits.each do |produit| %>
-      <div class="col-md-6">
+      <div class="col-md-4 flex justify-content-center">
         <div class="card my-1">
           <div class="card-product">
-            <div class="card-product img">
+            <div class="card-product-img">
                   <% if produit.photo.attached? %>
                     <%= link_to(cl_image_tag(produit.photo.key, crop: :fill), exploitation_produit_path(exploitation_id: produit.exploitation_id, id: produit.id)) %>
                   <% else %>
@@ -25,10 +25,10 @@
             </div>
             <div class="card-product-infos">
               <div><h2><%= link_to produit.name, exploitation_produit_path(exploitation_id: produit.exploitation_id, id: produit.id) %></h2></div>
-              <div><h5 class="card-product-infos">Prix <%= produit.price %>€ | Quantité <%= produit.quantity %></h5></div>
+              <div><h5> <%= number_with_precision(produit.price, precision: 2) %>€ le kg/ l'unité </h5></div>
 
               <div><%= link_to 'Ajouter au panier', exploitation_produit_panier_index_path(@exploitation, produit) , data: { turbo_method: :post} %></div>
-
+              <div><%= link_to 'Enlever du panier', exploitation_produit_panier_index_path(@exploitation, produit) , data: { turbo_method: :post} %></div>
               <p><%= link_to "Supprimer le produit", produit_path(produit), class: "btn button", data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %> </p>
             </div>
           </div>
