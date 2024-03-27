@@ -43,7 +43,7 @@
     <% if current_user == @exploitation.user%>
          <%= link_to "Ajouter un nouveau produit", new_exploitation_produit_path, class:"button" %>
     <% else %>
-      <%= link_to "Finaliser ma commande", new_exploitation_commande_path(@exploitation.id), class:"button" %>
+      <%= link_to "Finaliser ma commande", exploitation_commande_path(@exploitation.id, @commande.id), class:"button" %>
     <% end %>
   </div>
 
