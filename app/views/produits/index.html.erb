@@ -30,12 +30,17 @@
               <% if current_user == @exploitation.user%>
                 <p><%= link_to "Supprimer le produit", produit_path(produit), class: "btn button", data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %> </p>
               <% else %>
-              if @commande.nil
-              <p>0</p>
-              <% else %>
-               @commande.produits.count
-                <div><%= link_to 'Ajouter au panier', exploitation_produit_panier_index_path(@exploitation, produit) , data: { turbo_method: :post} %></div>
-                <div><%= link_to 'Enlever du panier', exploitation_produit_panier_index_path(@exploitation, produit) , data: { turbo_method: :post} %></div>
+                <% if @commande.nil? %>
+                  <div class="cart-actions">
+                    <div><%= link_to 'Ajouter au panier', exploitation_produit_panier_index_path(@exploitation, produit) , data: { turbo_method: :post} %></div>
+                  </div>
+                <% else %>
+                    <div class="cart-actions">
+                      <div><%= link_to '-', exploitation_produit_panier_index_path(@exploitation, produit) , data: { turbo_method: :post} %></div>
+                      <p><%= @basket_counts[produit.id] %></p>
+                      <div><%= link_to '+', exploitation_produit_panier_index_path(@exploitation, produit) , data: { turbo_method: :post} %></div>
+                    </div>
+                <% end %>
               <% end %>
             </div>
           </div>

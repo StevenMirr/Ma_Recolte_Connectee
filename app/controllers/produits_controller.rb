@@ -11,6 +11,10 @@ class ProduitsController < ApplicationController
         info_window_html: render_to_string(partial: "info_window", locals: { exploitation: @exploitation }),
         marker_html: render_to_string(partial: "marker", locals: { exploitation: @exploitation })
       }]
+    @basket_counts = {}
+    @produits.each do |produit|
+      @basket_counts[produit.id] = Basket.where(produit_id: produit.id).count
+    end
   end
 
   def show
