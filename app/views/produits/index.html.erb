@@ -27,7 +27,7 @@
               <div><h2><%= link_to produit.name, exploitation_produit_path(exploitation_id: produit.exploitation_id, id: produit.id) %></h2></div>
               <div><h5 class="card-product-infos">Prix <%= produit.price %>€ | Quantité <%= produit.quantity %></h5></div>
 
-              <div><%= link_to 'Ajouter au panier', exploitation_produit_panier_index_path(@exploitation, produit) , data: { turbo_method: :post} %></div>
+              <div><%= link_to 'Ajouter au panier', produit_panier_index_path(produit) , data: { turbo_method: :post} %></div>
 
               <p><%= link_to "Supprimer le produit", produit_path(produit), class: "btn button", data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %> </p>
             </div>
@@ -38,7 +38,9 @@
   </div>
   <div class="text-end p-3">
   <%= link_to "Ajouter un nouveau produit", new_exploitation_produit_path, class:"button" %>
-  <%= link_to "Finaliser ma commande", new_exploitation_commande_path(@exploitation.id), class:"button" %>
+  <% if @commande  %>
+    <%= link_to "Finaliser ma commande", exploitation_commande_path(@exploitation.id, @commande), class:"button" %>
+  <%end %>
   </div>
 
 </div>

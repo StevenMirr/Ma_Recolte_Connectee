@@ -3,6 +3,7 @@ class ProduitsController < ApplicationController
 
   def index
     @exploitation = Exploitation.find(params[:exploitation_id])
+    @commande = Commande.find_by(exploitation: @exploitation, user: current_user)
     @produits = @exploitation.produits
     @markers = [{
         lat: @exploitation.latitude,
