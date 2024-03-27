@@ -1,9 +1,12 @@
 <link rel="stylesheet" href="dashboard.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-chart-imagebars"></script>
+
 
 <h1 class="title-dashboard">Mon Exploitation</h1>
 
 <div class="row-dashboard">
-  <div class="col-md-6">
+  <div class="col-md-4">
     <div class="title-dashboard">
       <%= form_for @user do |f| %>
         <h2 class="formulaire total-dashboard text-center">Mon profil</h2>
@@ -61,37 +64,45 @@
     </div>
   </div>
 
-<div class="col-md-6">
+<div class="col-md-8">
   <div class="chart-container dashboard-title">
     <!-- Insérer votre code de chart ici -->
-    <canvas id="myChart" width="80" height="40"></canvas>
+    <canvas id="myChart" width="30" height="10"></canvas>
   </div>
 
-<div class="podium-container">
+<div class="custom-block">
   <h2>Top produits du mois</h2>
   <div class="podium-items">
-    <div class="podium-item">
-      <div class="card-category cerise">
+    <div class="category-item">
+      <div class="category-title"> <!-- Nouvelle classe pour le titre -->
         <span class="category-label">Cerise</span>
       </div>
+      <div class="card-category cerise"></div> <!-- Carte image produit -->
     </div>
-    <div class="podium-item">
-      <div class="card-category carrot">
+
+    <div class="category-item">
+      <div class="category-title"> <!-- Nouvelle classe pour le titre -->
         <span class="category-label">Carotte</span>
       </div>
+      <div class="card-category carrot"></div> <!-- Carte image produit -->
     </div>
-    <div class="podium-item">
-      <div class="card-category apple">
+
+    <div class="category-item">
+      <div class="category-title"> <!-- Nouvelle classe pour le titre -->
         <span class="category-label">Pommes</span>
       </div>
+      <div class="card-category apple"></div> <!-- Carte image produit -->
     </div>
-    <div class="podium-item">
-      <div class="card-category broccoli">
+
+    <div class="category-item">
+      <div class="category-title"> <!-- Nouvelle classe pour le titre -->
         <span class="category-label">Brocolis</span>
       </div>
+      <div class="card-category broccoli"></div> <!-- Carte image produit -->
     </div>
   </div>
 </div>
+
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
@@ -105,13 +116,13 @@
           label: 'Résultats du mois',
           data: [10, 12, 3,],
           backgroundColor: [
-            'rgba(255, 99, 132, 0.2)',
-            'rgba(54, 162, 235, 0.2)',
+            'rgba(255, 206, 86, 0.2)',
+            'rgba(255, 206, 86, 0.2)',
             'rgba(255, 206, 86, 0.2)',
           ],
           borderColor: [
-            'rgba(255, 99, 132, 1)',
-            'rgba(54, 162, 235, 1)',
+            'rgba(255, 206, 86, 1)',
+            'rgba(255, 206, 86, 1)',
             'rgba(255, 206, 86, 1)',
           ],
           borderWidth: 1
