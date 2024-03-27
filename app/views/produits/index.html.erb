@@ -36,9 +36,13 @@
                   </div>
                 <% else %>
                     <div class="cart-actions">
-                      <div><%= link_to '-', exploitation_produit_panier_index_path(@exploitation, produit) , data: { turbo_method: :post} %></div>
-                      <p><%= @basket_counts[produit.id] %></p>
-                      <div><%= link_to '+', exploitation_produit_panier_index_path(@exploitation, produit) , data: { turbo_method: :post} %></div>
+                        <% basket = @commande.baskets.find_by(produit: produit) %>
+                        <% if basket %>
+                          <div><%= link_to '-', exploitation_produit_panier_path(@exploitation, produit, basket) , data: { turbo_method: :delete}, class: "minus-count" %> </div>
+                        <% end %>
+                          <div class="product-count"><%= @basket_counts[produit.id] %></div>
+                          <div><%= link_to '+', exploitation_produit_panier_index_path(@exploitation, produit) , data: { turbo_method: :post}, class: "magnus-count" %></div>
+                      <%# <% end %>
                     </div>
                 <% end %>
               <% end %>

@@ -35,6 +35,12 @@
   height: 300px;
 }
 
+.containercarte .carte-exploitation {
+  border: 2px double transparent;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
 .containerrecettes {
   display: flex;
   justify-content: space-between;

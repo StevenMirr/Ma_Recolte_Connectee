@@ -12,7 +12,13 @@ class BasketsController < ApplicationController
       redirect_to produits_path, notice: 'erreur'
     end
   end
-    
+
+  def destroy
+    @basket = Basket.find(params[:id])
+    @basket.destroy
+    redirect_to "/produits/index", notice: 'Produit ajouté au panier.'
+  end
+
   private
 
   def basket_params
