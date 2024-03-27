@@ -12,7 +12,7 @@ class BasketsController < ApplicationController
       redirect_to produits_path, notice: 'erreur'
     end
   end
-
+    
   private
 
   def basket_params
