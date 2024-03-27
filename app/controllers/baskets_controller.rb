@@ -7,12 +7,14 @@ class BasketsController < ApplicationController
     @commande = current_user.commandes.find_or_create_by(exploitation_id: @exploitation.id)
     @basket.commande = @commande
     if @basket.save
+      @commande.total_price = @commande.total_price ? @commande.total_price + @produit.price : @produit.price
+      @commande.save
       redirect_to "/produits/index", notice: 'Produit ajouté au panier.'
     else
       redirect_to produits_path, notice: 'erreur'
     end
   end
-    
+
   private
 
   def basket_params
