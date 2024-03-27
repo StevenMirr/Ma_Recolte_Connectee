@@ -68,6 +68,6 @@ produit5 = Produit.new(name: "Navets", category:"légume", price:"2.50€/kg", q
 produit5.photo.attach(io: file, filename: "navets.png", content_type: "image/png")
 produit5.save
 
-Creneau.create!(date: Date.today, start_time: 15.00, end_time: 19.00, user: user1)
+Creneau.create!(date: Date.today, start_time: 15, end_time: 19, user: user1)
 Creneau.create!(date: Date.today, start_time: 12, end_time: 19, user: user2)
 Creneau.create!(date: Date.today, start_time: 16, end_time: 19, user: user3)

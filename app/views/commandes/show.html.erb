@@ -28,19 +28,18 @@
       </tbody>
     </table>
   </div>
-
-  <div class="form-creneau">
-    <h1 class="text-center mb-5">Choisi ton créneau de retrait et confirme ta commande</h1>
-    <div class="form_input">
-      <%= simple_form_for(@creneau) do |form| %>
-        <%= form.input :date %>
-        <%= form.input :start_time %>
-        <%= form.input :end_time %>
-
-        <div class="form-actions mt-5">
-          <%= form.button :submit, 'Confirmer ma commande', class:"button" %>
-        </div>
-      <% end %>
+  
+    <div class="form-creneau">
+      <h1 class="text-center mb-5">Choisi ton créneau de retrait et confirme ta commande</h1>
+        <%= form_with(model: [@commande, @creneau], local: true) do |form| %>
+    <div>
+      <label for="creneau_start_time">Veuillez choisir une heure de rendez-vous (heures d'ouverture entre 15:00 et 19:00) :</label>
+      <%= form.time_field :start_time, min: "15:00", max: "19:00", required: true %>
     </div>
-  </div>
+    <div>
+      <%= form.submit "Confirmer ma commande" %>
+    </div>
+  <% end %>
+    </div>
 </div>
+
