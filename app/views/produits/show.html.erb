@@ -1,20 +1,22 @@
 <h1 class="text-center m-5"><%= @produit.name.capitalize %></h1>
-<div class="d-flex justify-content-between m-5">
-  <div>
-    <h2>Recette de <%= @produit.name %></h2>
-  </div>
-  <div>
-    <ul>
-      <% @related_recipes.each do |recipe| %>
-      <li class="btn button fs-3"><i class="fa-solid fa-kitchen-set"></i> <%= link_to recipe[:title], recipe[:url], target: "_blank" %> <i class="fa-solid fa-utensils"></i></li>    <% end %>
-    </ul>
-  </div>
-  <div>
-    <%= cl_image_tag @produit.photo.key, class: "card-category", crop: :fill %>
+<div class="card-categry m-5">
+  <div class="card-category-box">
+    <div>
+      <h2><i class="fa-solid fa-book"></i> Recette de <%= @produit.name %></h2>
+    </div>
+    <div class="card-category-img">
+      <%= cl_image_tag @produit.photo.key, crop: :fill %>
+    </div>
   </div>
 </div>
 
-
+<div>
+    <ul>
+      <% @related_recipes.each do |recipe| %>
+      <li class="btn button fs-3 m-3"><i class="fa-solid fa-kitchen-set"></i> <%= link_to recipe[:title], recipe[:url], target: "_blank" %> <i class="fa-solid fa-utensils"></i></li>
+      <% end %>
+    </ul>
+  </div>
 
 <div class="m-5"><%= link_to "revenir à la liste des produits", exploitation_produits_path(@exploitation) %></div>
 
@@ -25,9 +27,9 @@
 
 <p>Chez Ma Récolte Connectée, nous croyons fermement en la puissance de l'agriculture locale et en la richesse des terroirs de notre région. C'est pourquoi nous avons créé une plateforme intuitive qui met en relation les producteurs locaux de fruits et légumes avec les habitants de Nantes et de ses environs. Notre mission est de favoriser un lien direct entre ceux qui cultivent avec amour et dévouement la terre et ceux qui souhaitent savourer des produits frais et de saison.</p>
 
-<p>Ce qui nous distingue, c'est notre engagement envers la transparence et la durabilité. Chaque produit que vous trouvez sur notre plateforme est le fruit d'un travail méticuleux et respectueux de l'environnement. Nous sélectionnons soigneusement nos partenaires, des agriculteurs qui partagent nos valeurs de qualité, d'authenticité et de respect de la nature. En optant pour [Nom de votre entreprise], vous soutenez non seulement l'économie locale, mais vous contribuez également à préserver notre environnement pour les générations futures.</p>
+<p>Ce qui nous distingue, c'est notre engagement envers la transparence et la durabilité. Chaque produit que vous trouvez sur notre plateforme est le fruit d'un travail méticuleux et respectueux de l'environnement. Nous sélectionnons soigneusement nos partenaires, des agriculteurs qui partagent nos valeurs de qualité, d'authenticité et de respect de la nature. En optant pour Ma Récolte Connectée, vous soutenez non seulement l'économie locale, mais vous contribuez également à préserver notre environnement pour les générations futures.</p>
 
 <p>Notre plateforme vous offre une expérience de shopping en ligne pratique et conviviale. Parcourez notre sélection de fruits et légumes fraîchement récoltés, découvrez des variétés uniques et redécouvrez le plaisir de déguster des aliments cultivés avec passion. Nous mettons un point d'honneur à vous fournir des produits d'une fraîcheur irréprochable, livrés directement à votre porte, pour que vous puissiez profiter pleinement de leurs saveurs authentiques.</p>
 
-<p>Chez Ma Récolte Connectée, nous sommes bien plus qu'une entreprise de vente en ligne ; nous sommes les artisans d'une communauté engagée autour de la qualité, de la traçabilité et du respect de la nature. Rejoignez-nous dans notre quête pour redonner ses lettres de noblesse à l'agriculture locale et pour promouvoir un mode de consommation plus responsable. Commandez dès aujourd'hui et découvrez la différence [Nom de votre entreprise] peut faire dans votre assiette et dans votre vie.</p>
+<p>Chez Ma Récolte Connectée, nous sommes bien plus qu'une entreprise de vente en ligne ; nous sommes les artisans d'une communauté engagée autour de la qualité, de la traçabilité et du respect de la nature. Rejoignez-nous dans notre quête pour redonner ses lettres de noblesse à l'agriculture locale et pour promouvoir un mode de consommation plus responsable. Commandez dès aujourd'hui et découvrez la différence Ma Récolte Connectée peut faire dans votre assiette et dans votre vie.</p>
 </div>
