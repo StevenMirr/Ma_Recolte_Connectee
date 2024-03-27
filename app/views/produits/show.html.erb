@@ -1,25 +1,19 @@
-<div class="row">
-  <div class="containerproduit">
-    <div class="col-6">
-
-        <div>
-          <h1><%= @produit.name.capitalize %></h1>
-        </div>
-        <div class="col-6">
-            <%= cl_image_tag @produit.photo.key, crop: :fill %>
-        </div>
-
-    </div>
+<h1 class="text-center m-5"><%= @produit.name.capitalize %></h1>
+<div class="d-flex justify-content-between m-5">
+  <div>
+    <h2>Recette de <%= @produit.name %></h2>
+  </div>
+  <div>
+    <ul>
+      <% @related_recipes.each do |recipe| %>
+      <li class="btn button fs-3"><i class="fa-solid fa-kitchen-set"></i> <%= link_to recipe[:title], recipe[:url], target: "_blank" %> <i class="fa-solid fa-utensils"></i></li>    <% end %>
+    </ul>
+  </div>
+  <div>
+    <%= cl_image_tag @produit.photo.key, class: "card-category", crop: :fill %>
   </div>
 </div>
 
 
-<div class="m-3"><%= link_to "revenir à la liste des produits", exploitation_produits_path(@exploitation) %></div>
 
-<div class="m-3">
-  <h2>Recette avec des <%= @produit.name %></h2>
-  <ul>
-    <% @related_recipes.each do |recipe| %>
-    <li class="link-opacity-50 fs-2"><i class="fa-solid fa-kitchen-set"></i> <%= link_to recipe[:title], recipe[:url], target: "_blank" %> <i class="fa-solid fa-utensils"></i></li>    <% end %>
-  </ul>
-</div>
+<div class="m-5"><%= link_to "revenir à la liste des produits", exploitation_produits_path(@exploitation) %></div>
