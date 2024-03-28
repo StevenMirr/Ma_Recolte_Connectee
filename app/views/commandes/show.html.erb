@@ -1,5 +1,11 @@
 <div class="container-valid-commande">
   <div class="table-container">
+    <div id="retour_panier_button">
+  <a href="javascript:history.go(-1)" class="button">
+    <i class="fas fa-arrow-left"></i> Retour sur mon panier
+  </a>
+</div>
+
     <h1 class="text-center mb-5">Récapitulatif</h1>
     <table>
       <thead>
@@ -29,16 +35,33 @@
     </table>
   </div>
 
+
     <div class="form-creneau">
       <h1 class="text-center mb-5">Choisi ton créneau de retrait et confirme ta commande</h1>
         <%= form_with(model: [@commande, @creneau], local: true) do |form| %>
-    <div>
-      <label for="creneau_start_time">Veuillez choisir une heure de rendez-vous (heures d'ouverture entre 15:00 et 19:00) :</label>
-      <%= form.time_field :start_time, min: "15:00", max: "19:00", required: true %>
+          <label for="creneau_start_time">Veuillez choisir une heure de rendez-vous (heures d'ouverture entre 15:00 et 19:00) :</label>
+          <%= form.time_field :start_time, id: "creneau_start_time", min: "15:00", max: "19:00", required: true %>
+          <%= form.submit "Confirmer ma commande", id: "confirm_button" %>
+        <% end %>
     </div>
-    <div>
-      <%= form.submit "Confirmer ma commande" %>
-    </div>
-  <% end %>
-    </div>
+<div id="message" style="display: none;">
+  GENIAL ! Votre commande sera prête à <span id="selected_time"> </span>h. Camille vous acceuillera et vous fera visiter nos locaux par la même occasion <i class="fa-regular fa-star"></i>
+</div>
+
+<script>
+ document.addEventListener('DOMContentLoaded', function() {
+  var confirmButton = document.getElementById('confirm_button');
+  var message = document.getElementById('message');
+  var creneauForm = document.querySelector('.form-creneau');
+  var selectedTimeSpan = document.getElementById('selected_time');
+  confirmButton.addEventListener('click', function(event) {
+    event.preventDefault();
+    var selectedTimeInput = document.getElementById('creneau_start_time');
+    var selectedTime = selectedTimeInput.value;
+    selectedTimeSpan.textContent = selectedTime;
+    creneauForm.style.display = 'none';
+    message.style.display = 'block';
+  });
+});
+</script>
 </div>
