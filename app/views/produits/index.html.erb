@@ -25,7 +25,7 @@
             </div>
             <div class="card-product-infos">
               <div><h2><%= link_to produit.name, exploitation_produit_path(exploitation_id: produit.exploitation_id, id: produit.id) %></h2></div>
-              <div><h5> <%= number_with_precision(produit.price, precision: 2) %>€ le kg/ l'unité </h5></div>
+              <div><h5> <%= number_with_precision(produit.price, precision: 2) %>€ <%= produit.quantity %> </h5></div>
 
               <% if current_user == @exploitation.user%>
                 <p><%= link_to "Supprimer le produit", produit_path(produit), class: "btn button", data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %> </p>

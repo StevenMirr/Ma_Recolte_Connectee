@@ -1,11 +1,11 @@
-<div class="m-3">
-  <h1>Ajouter un nouveau produit à mon catalogue</h1>
+<div class="m-5 mx-auto" style= "max-width: 30%">
+  <h1 class="mb-5 ">Ajouter un nouveau produit à mon catalogue</h1>
   <%= simple_form_for [@exploitation, @produit] do |f| %>
   <%= f.input :name, placeholder: 'Produit', label: "Nom" %>
-  <%= f.input :category, collection: ["légume", "fruit", "épicerie"], label: "Catégorie" %>
+  <%= f.input :category, collection: ["Légume", "Fruit", "Épicerie"], label: "Catégorie" %>
   <%= f.input :price, label: "Prix" %>
-  <%= f.input :quantity, label: "quantité" %>
+  <%= f.input :quantity, collection: ["le kilo", "l'unité"], label: "Quantité" %>
   <%= f.input :photo, as: :file %>
-  <%= f.submit class:'btn button' %>
+  <%= f.submit 'Ajouter', name: "Ajouter", class:'btn button mt-4' %>
   <% end  %>
 </div>
