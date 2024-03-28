@@ -78,3 +78,5 @@ produit5.save
 Creneau.create!(date: Date.today, start_time: 15, end_time: 19, user: user1)
 Creneau.create!(date: Date.today, start_time: 12, end_time: 19, user: user2)
 Creneau.create!(date: Date.today, start_time: 16, end_time: 19, user: user3)
+
+Commande.create!()
