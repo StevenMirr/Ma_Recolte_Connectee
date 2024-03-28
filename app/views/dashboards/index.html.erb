@@ -67,7 +67,7 @@
 <div class="col-md-8">
   <div class="chart-container dashboard-title">
     <!-- Insérer votre code de chart ici -->
-    <canvas id="myChart" width="30" height="10"></canvas>
+    <canvas id="myChart" width="20" height="5"></canvas>
   </div>
 
 <div class="custom-block">
@@ -111,19 +111,19 @@
     var myChart = new Chart(ctx, {
       type: 'bar',
       data: {
-        labels: ['Ventes (€)', 'panier moyen (€)', 'Nd de clients (Nb)'],
+        labels: ['Ventes 100 (€)', 'panier moyen 24 (€)', 'Nd de clients 12  (Nb)'],
         datasets: [{
-          label: 'Résultats du mois',
-          data: [10, 12, 3,],
+          label: 'Mes ventes du mois',
+          data: [100, 24, 12,],
           backgroundColor: [
-            'rgba(255, 206, 86, 0.2)',
-            'rgba(255, 206, 86, 0.2)',
-            'rgba(255, 206, 86, 0.2)',
+            'rgba(139, 69, 19, 0.2)',
+            'rgba(139, 69, 19, 0.2)',
+            'rgba(139, 69, 19, 0.2)',
           ],
           borderColor: [
-            'rgba(255, 206, 86, 1)',
-            'rgba(255, 206, 86, 1)',
-            'rgba(255, 206, 86, 1)',
+            'rgba(139, 69, 19, 1)',
+            'rgba(139, 69, 19, 1)',
+            'rgba(139, 69, 19, 1)',
           ],
           borderWidth: 1
         }]
@@ -137,7 +137,6 @@
         plugins: {
           title: {
             display: true,
-            text: 'Mes chiffres de ventes'
           }
         }
       }
