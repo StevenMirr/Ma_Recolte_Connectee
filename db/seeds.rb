@@ -19,7 +19,10 @@ file = URI.open("https://www.mokaddict.com/media/cache/og_filter/2019/01/8583-ra
 user1 = User.new(email: "francis@lewagon.com", password: "123456", name: "Francis")
 user1.user_img.attach(io:file, filename:"francis.jpeg", content_type: "image/png")
 user1.save
-user2 = User.create!(email: "georges@lewagon.com", password: "123456", name: "Georges")
+file = URI.open("https://images.lesindesradios.fr/fit-in/1100x2000/filters:format(webp)/radios/rts/importrk/news/original/5f69d05ff2fd57.43951437.jpg")
+user2 = User.new(email: "georges@lewagon.com", password: "123456", name: "Georges")
+user2.user_img.attach(io:file, filename:"georges.jpeg", content_type: "image/png")
+user2.save
 user3 = User.create!(email: "fermier@lewagon.com", password: "123456", name: "Jean")
 user4 = User.create!(email: "jeanette@lewagon.com", password: "123456", name: "Jeanette")
 user5 = User.create!(email: "sophie@lewagon.com", password: "123456", name: "Sophie")
@@ -27,6 +30,10 @@ file = URI.open("https://images1.fanpop.com/images/photos/1400000/Eva-eva-longor
 user6 = User.new(email: "eva@lewagon.com", password: "123456", name: "Eva")
 user6.user_img.attach(io:file, filename:"eva.jpeg", content_type: "image/png")
 user6.save
+file = URI.open("https://d3mdtxxgfz6upn.cloudfront.net/WEBFILES/000/201/321/355299-201321.jpg")
+user7 = User.new(email: "jose@lewagon.com", password: "123456", name: "José")
+user7.user_img.attach(io:file, filename:"jose.jpeg", content_type: "image/png")
+user7.save
 
 file = URI.open("https://storage.sbg.cloud.ovh.net/v1/AUTH_dd430e2a89404e97bf6a772afa5dd938/2als-production-public/producer_photo/1768e9f244a.png")
 exploitation1 = Exploitation.new(name: 'Les Côteaux Nantais', address: "3 place Pierre Desfossés, Vertou", user: user1)
