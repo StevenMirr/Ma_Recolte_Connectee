@@ -1,24 +1,30 @@
-<h1 class="text-center m-5"><%= @produit.name.capitalize %></h1>
+<h1 class="text-center m-5"><i class="fa-solid fa-book"></i> Recette de <%= @produit.name %></h1>
+<div>
+  <ul>
+    <% @related_recipes.each do |recipe| %>
+    <li class="btn button fs-5 m-3"><i class="fa-solid fa-kitchen-set"></i> <%= link_to recipe[:title], recipe[:url], target: "_blank" %> <i class="fa-solid fa-utensils"></i></li>
+    <% end %>
+  </ul>
+</div>
 <div class="card-categry m-5">
   <div class="card-category-box">
     <div>
-      <h2><i class="fa-solid fa-book"></i> Recette de <%= @produit.name %></h2>
+      <h5>Manger des légumes présente de nombreux avantages pour la santé et le bien-être général. Voici quelques-uns des principaux avantages :</h5>
+      <p>Apport en nutriments essentiels</p>
+      <p>Faible en calories et en gras</p>
+      <p>Soutien à la santé digestive</p>
+      <p>Protection contre les maladies chroniques</p>
+      <p>Gestion du poids</p>
+      <p>Amélioration de la santé de la peau</p>
+      <p>En résumé, intégrer une variété de légumes dans votre alimentation quotidienne peut avoir un impact significatif sur votre santé globale et votre bien-être.</p>
     </div>
     <div class="card-category-img">
-      <%= cl_image_tag @produit.photo.key, crop: :fill %>
+      <%= image_tag "https://img.mesrecettesfaciles.fr/2020-06/poelee-legumes-copie-1.jpg", crop: :fill %>
     </div>
   </div>
 </div>
 
-<div>
-    <ul>
-      <% @related_recipes.each do |recipe| %>
-      <li class="btn button fs-3 m-3"><i class="fa-solid fa-kitchen-set"></i> <%= link_to recipe[:title], recipe[:url], target: "_blank" %> <i class="fa-solid fa-utensils"></i></li>
-      <% end %>
-    </ul>
-  </div>
-
-<div class="m-5"><%= link_to "revenir à la liste des produits", exploitation_produits_path(@exploitation) %></div>
+<div class="m-5"><i class="fa-solid fa-arrow-left"></i> <%= link_to "revenir à la liste des produits", exploitation_produits_path(@exploitation) %></div>
 
 <div class="m-5">
 <h1>Qui sommes nous</h1>
