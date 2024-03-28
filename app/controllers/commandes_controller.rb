@@ -4,7 +4,7 @@ class CommandesController < ApplicationController
 
   def index
     @exploitation = Exploitation.find(params[:exploitation_id])
-    @commandes = @exploitation.commandes.where(status: false)
+    @commandes = @exploitation.commandes.where(status: true)
   end
 
   def show
