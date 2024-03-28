@@ -14,7 +14,9 @@ class ProduitsController < ApplicationController
     @basket_counts = {}
     @produits.each do |produit|
       @basket_counts[produit.id] = Basket.where(produit_id: produit.id).count
+    @basket = Basket.find_by(produit_id: produit.id)
     end
+
   end
 
   def show

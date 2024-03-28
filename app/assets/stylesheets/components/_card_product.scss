@@ -49,10 +49,8 @@ a {
 .cart-actions {
   display: flex;
   align-items: center;
-}
-
-.cart-actions p {
-  margin-right: 10px;
+  justify-content: flex-end;
+  border-radius: 5px;
 }
 
 .cart-actions a {
@@ -61,10 +59,23 @@ a {
   background-color: #4CAF50;
   color: white;
   text-decoration: none;
-  border-radius: 5px;
   transition: background-color 0.3s;
 }
 
+.cart-actions .product-count{
+  background-color: #4CAF50;
+  padding: 8px;
+}
 .cart-actions a:hover {
   background-color: #45a049;
 }
+
+.cart-actions .minus-count {
+border-top-left-radius: 5px;
+border-bottom-left-radius: 5px;
+}
+
+.cart-actions .magnus-count {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  }
