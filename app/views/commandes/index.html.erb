@@ -1,21 +1,21 @@
-<div class="m-3">
-  <h1>Liste de toutes les commandes</h1>
-  <% if @commandes.any? %>
-    <% @commandes.each do |commande| %>
-      <div>
-        <h3>Commande #<%= rand(1000..9999) %></h3>
-        <p>Heure de passage : <%= commande.created_at %></p>
-        <p>Prix Totale : <%= commande.total_price %></p>
+<div class="container">
+<h1>Liste de toutes les commandes</h1>
+<% if @commandes.any? %>
+  <% @commandes.each do |commande| %>
+    <div>
+      <h3>Commande #<%= rand(1000..9999) %></h3>
+      <p>Heure de passage : <%= commande.created_at %></p>
+      <p>Prix Totale : <%= commande.total_price %></p>
 
-        <h4>Récapitulatif des articles :</h4>
-        <ul>
-          <% commande.produits.each do |produit| %>
-            <li><%= produit.name %> - <%= produit.price %></li>
-          <% end %>
-        </ul>
-      </div>
-    <% end %>
-  <% else %>
-    <p>Aucune commande pour l'instant</p>
+      <h4>Récapitulatif des articles :</h4>
+      <ul>
+        <% commande.produits.each do |produit| %>
+          <li><%= produit.name %> - <%= produit.price %></li>
+        <% end %>
+      </ul>
+    </div>
   <% end %>
+<% else %>
+  <p>Aucune commande pour l'instant</p>
+<% end %>
 </div>

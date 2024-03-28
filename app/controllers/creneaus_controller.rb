@@ -8,7 +8,7 @@ class CreneausController < ApplicationController
     @creneau.user = current_user
     @commande = Commande.find(params[:commande_id])
     @creneau.commande = @commande
-    if @creneau.save
+    if @creneau.save!
       @commande.update(status: true)
       redirect_to exploitation_commande_path(@commande.exploitation, @commande), notice: "Créneau créé avec succès."
     else

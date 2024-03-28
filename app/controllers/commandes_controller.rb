@@ -10,7 +10,7 @@ class CommandesController < ApplicationController
   def show
     @commande = Commande.find(params[:id])
     @baskets = @commande.baskets
-    @creneau = Creneau.new
+    @creneau = @commande.creneau || Creneau.new
   end
 
   # GET /commandes/1/edit
