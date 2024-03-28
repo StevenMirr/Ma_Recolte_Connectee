@@ -20,7 +20,7 @@ class BasketsController < ApplicationController
     @basket.destroy
     redirect_to "/produits/index", notice: 'Produit ajouté au panier.'
   end
-  
+
   private
 
   def basket_params
