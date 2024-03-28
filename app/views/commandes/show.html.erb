@@ -34,18 +34,20 @@
     </table>
   </div>
 
-
-    <div class="form-creneau m-3">
-      <h1 class="text-center mb-5">Choisi ton créneau de retrait et confirme ta commande</h1>
-        <%= form_with(model: [@commande, @creneau], local: true) do |form| %>
-          <label for="creneau_start_time">Veuillez choisir une heure de rendez-vous (heures d'ouverture entre 15:00 et 19:00) :</label>
-          <%= form.time_field :start_time, id: "creneau_start_time", min: "15:00", max: "19:00", required: true %>
-          <%= form.submit "Confirmer ma commande", id: "confirm_button" %>
-        <% end %>
-    </div>
-<div id="message" style="display: none" class='m-3'>
-  GENIAL ! Votre commande sera prête à <span id="selected_time"> </span>h. Camille vous acceuillera et vous fera visiter nos locaux par la même occasion <i class="fa-regular fa-star"></i>
-</div>
+      <% if @creneau.persisted?  %>
+        <div id="message" class='m-3'>
+            GENIAL ! Votre commande sera prête à <span id="selected_time"> </span>h. Camille vous acceuillera et vous fera visiter nos locaux par la même occasion <i class="fa-regular fa-star"></i>
+        </div>
+      <% else %>
+        <div class="form-creneau m-3">
+          <h1 class="text-center mb-5">Choisi ton créneau de retrait et confirme ta commande</h1>
+            <%= form_with(model: [@commande, @creneau]) do |form| %>
+              <label for="creneau_start_time">Veuillez choisir une heure de rendez-vous (heures d'ouverture entre 15:00 et 19:00) :</label>
+              <%= form.time_field :start_time, id: "creneau_start_time", min: "15:00", max: "19:00", required: true %>
+              <%= form.submit "Confirmer ma commande", id: "confirm_button" %>
+            <% end %>
+        </div>
+      <% end %>
 
 <script>
  document.addEventListener('DOMContentLoaded', function() {
@@ -55,7 +57,6 @@
   var creneauForm = document.querySelector('.form-creneau');
   var selectedTimeSpan = document.getElementById('selected_time');
   confirmButton.addEventListener('click', function(event) {
-    event.preventDefault();
     console.log("boutton click ok")
     var selectedTimeInput = document.getElementById('creneau_start_time');
     var selectedTime = selectedTimeInput.value;
