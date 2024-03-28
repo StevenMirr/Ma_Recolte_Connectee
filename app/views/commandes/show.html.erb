@@ -50,12 +50,14 @@
 
 <script>
  document.addEventListener('DOMContentLoaded', function() {
+  console.log("EventDOM")
   var confirmButton = document.getElementById('confirm_button');
   var message = document.getElementById('message');
   var creneauForm = document.querySelector('.form-creneau');
   var selectedTimeSpan = document.getElementById('selected_time');
   confirmButton.addEventListener('click', function(event) {
     event.preventDefault();
+    console.log("boutton click ok")
     var selectedTimeInput = document.getElementById('creneau_start_time');
     var selectedTime = selectedTimeInput.value;
     selectedTimeSpan.textContent = selectedTime;

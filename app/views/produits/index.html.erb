@@ -59,7 +59,7 @@
       <% if @commande.nil? %>
         <p>La commande n'existe pas</p>
       <% else %>
-        <%= link_to "Finaliser ma commande", exploitation_commande_path(@exploitation.id, @commande.id), class:"button" %>
+        <%= link_to "Finaliser ma commande", exploitation_commande_path(@exploitation.id, @commande.id), class:"button", data:{turbo:"false"} %>
       <% end %>
     <% end %>
   </div>
