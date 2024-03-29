@@ -37,7 +37,7 @@ user7.save
 
 file = URI.open("https://storage.sbg.cloud.ovh.net/v1/AUTH_dd430e2a89404e97bf6a772afa5dd938/2als-production-public/producer_photo/1768e9f244a.png")
 exploitation1 = Exploitation.new(name: 'Les Côteaux Nantais', address: "3 place Pierre Desfossés, Vertou", user: user1)
-exploitation1.description = "Bienvenue aux Coteaux Nantais, où la nature s'épanouit avec générosité. Parcourez nos vergers et nos champs, où fruits et légumes sont cultivés dans le respect de la terre et des saisons. Plongez dans une symphonie de couleurs et de saveurs, où chaque produit raconte l'histoire de notre terroir nantais. Découvrez une agriculture responsable et des produits frais qui éveilleront vos papilles à chaque bouchée. Je vous acceuille afin de récupérer vos cmmandes, le mercredi de 15h à 19h et le samedi de 16h à 19h. Vous pouvez également me retrouver au marché de Remuillé le dimanche matin."
+exploitation1.description = "Bienvenue aux Coteaux Nantais, où la nature s'épanouit avec générosité. Parcourez nos vergers et nos champs, où fruits et légumes sont cultivés dans le respect de la terre et des saisons. Plongez dans une symphonie de couleurs et de saveurs, où chaque produit raconte l'histoire de notre terroir nantais. Découvrez une agriculture responsable et des produits frais qui éveilleront vos papilles à chaque bouchée. Je vous acceuille afin de récupérer vos commandes, le mercredi de 15h à 19h et le samedi de 16h à 19h. Vous pouvez également me retrouver au marché de Remouillé le dimanche matin."
 exploitation1.logo.attach(io: file, filename: "coteaux.png", content_type: "image/png")
 exploitation1.save
 file = URI.open("https://cleliablabla.com/wp-content/uploads/2020/06/22195791_1968979266714699_3202439830026857682_n.png")

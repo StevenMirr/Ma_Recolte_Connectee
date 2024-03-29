@@ -54,24 +54,96 @@
   width: 100%;
   max-width: 1400px;
 }
-
-.carousel-item {
-  position: relative;
+.card-categorys {
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 100%;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
   text-align: center;
+  // cursor: pointer;
+}
+.card-categorys:hover {
+  transition: background 0.3s;
+  filter: brightness(1.4);
+  transform: scale(1.1);
+}
+.card-categorys-side {
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 100%;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  text-align: center;
+  cursor: pointer;
+}
+.card-banner-home1:hover {
+  transition: background 0.3s;
+  filter: brightness(1.2);
+  transform: scale(1.1);
+}
+.cards-categorys {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-gap: 10px;
+  justify-content: space-around;
+}
 
-  img {
-    max-width: 100%;
-    max-height: 400px;
-  }
+.card-banner-home1 {
+  background-color: #734b28;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
 
-  .carousel-caption {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
-    border-radius: 5px;
-  }
+#carte1 {
+  border-bottom-left-radius: 8px;
+}
+.card-banner-home3 {
+  background-color: #734b28;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+#carte3 {
+  border-bottom-right-radius: 8px;
+}
+.card-banner-home3:hover {
+  transition: background 0.3s;
+  filter: brightness(1.2);
+  transform: scale(1.1);
+}
+.text-banner-home {
+  color: white;
+  height: 110px;
+  text-align: center;
+  font-size: 24px;
+}
+.card-categorys-mid {
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 100%;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  text-align: center;
+  cursor: pointer;
+}
+.card-banner-home2 {
+  background-color: #734b28;
+}
+.card-banner-home2:hover {
+  transition: background 0.3s;
+  filter: brightness(1.2);
+  transform: scale(1.1);
 }
